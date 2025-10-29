@@ -126,8 +126,12 @@ body {
     font-weight: 400;
 }
 
+.video-posts .row .post-item{
+    padding: 0 4px;
+}
+
 .video-posts .row {
-    padding: 10px 4px;
+    padding: 10px 0;
     background-color: #fff;
     border-radius: 0 0 10px 10px;
 }
@@ -154,10 +158,154 @@ body #wrapper {
     color: #1a1a1a;
 }
 
+.flatsome-post-excerpt {
+    color: #1a1a1a !important;
+}
+
 .video-posts .is-divider {
     display: none;
 }
 
-.box-text {
+.video-posts .box-text {
     padding: 10px 4px 16px !important;
+}
+
+
+.section-heading {
+    font-size: 14px;
+    color: white;
+    background-color: rgb(3, 60, 61);
+    padding: 11px 20px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: none;
+}
+
+.video-posts-items {
+    padding: 10px 0px 0px;
+}
+
+.post-widget h3,
+.post-widget h5,
+.post-widget h4 {
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+}
+
+.post-widget  {
+    margin-top: 20px;
+}
+
+.post-widget .section-content, .video-posts .section-content {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.video-posts-items .post-item {
+    padding: 0px 4px;
+}
+
+.post-item.col {
+    padding: 0;
+}
+
+.video-posts .box-text {
+    padding: 10px 4px 16px !important;
+}
+
+.button.primary {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    max-width: 120px;
+    min-width: 120px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(0, 204, 153);
+    padding: 4px 20px;
+    border-radius: 27px;
+    margin: 0px auto 13px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    white-space: nowrap;
+}
+
+.post-widget .post-item:first-of-type .box-blog-post {
+    border-top: none;
+}
+
+.trending-posts .box-blog-post:hover h3 a,
+.trending-posts .box-blog-post:hover h4 a,
+.trending-posts .box-blog-post:hover h5 a{
+    color: #07888a;
+}
+
+.post-widget .box-blog-post {
+    padding: 10px;
+    border-top: 1px solid rgb(237, 238, 240);
+}
+
+.post-widget h3, .post-widget h4, .post-widget h5, .feature-posts h2, .feature-posts h3, .feature-posts h4 {
+    color: rgb(0, 45, 46);
+    transition: 0.3s ease-in-out;
+}
+
+.recent-series-widget > div {
+    background-color: rgb(3, 60, 61) !important;
+}
+
+.recent-series-widget td, .recent-series-widget th {
+    font-size: 12px;
+    color: rgb(26, 26, 26) !important;
+    padding: 10px !important;
+}
+
+.feature-posts .flatsome-widget-header {
+    padding: 10px 16px;
+}
+
+.feature-posts .flatsome-post-item:first-of-type {
+    padding: 0px 16px 16px;
+}
+
+.feature-posts .flatsome-post-item, .feature-posts .flatsome-widget-header {
+    margin-bottom: 0px !important;
+}
+
+.flatsome-post-thumb img {
+    border-radius: 0px !important;
+}
+
+.post-widget h3, .post-widget h4, .post-widget h5, .feature-posts h2, .feature-posts h3, .feature-posts h4 {
+    color: rgb(0, 45, 46);
+    transition: 0.3s ease-in-out;
+}
+
+.feature-posts .flatsome-post-item:hover h4 {
+    color: rgba(0, 204, 153, 0.867);
+}
+
+.feature-posts .flatsome-post-item:nth-child(n+2) {
+    padding: 12px 16px;
+    border-top: 1px solid rgb(237, 238, 240);
+}
+
+.flatsome-widget-header a {
+    color: rgb(0, 45, 46) !important;
+    min-width: fit-content;
+}
+
+.feature-posts .flatsome-widget-header {
+    padding: 10px 16px;
+}
+
+.feature-posts.col {
+    padding: 0;
+}
+
+.feature-posts {
+    background-color: white;
+    border-radius: 4px;
 }
