@@ -6,7 +6,7 @@ Version: 1.3
 Author: Your Name
 */
 require_once plugin_dir_path(__FILE__) . 'flatsome-category-widget.php';
-// require_once plugin_dir_path(__FILE__) . 'videos-cat.php';
+require_once plugin_dir_path(__FILE__) . 'players-data.php';
 require_once plugin_dir_path(__FILE__) . 'duplicate-posts.php';
 require_once plugin_dir_path(__FILE__) . 'recent-series.php';
 
