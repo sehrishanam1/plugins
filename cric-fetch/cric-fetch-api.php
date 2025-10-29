@@ -5,10 +5,16 @@ Description: Displays live cricket scores from bdcrictime API in a horizontal sl
 Version: 1.3
 Author: Your Name
 */
-require_once plugin_dir_path(__FILE__) . 'flatsome-category-widget.php';
-require_once plugin_dir_path(__FILE__) . 'players-data.php';
-require_once plugin_dir_path(__FILE__) . 'duplicate-posts.php';
-require_once plugin_dir_path(__FILE__) . 'recent-series.php';
+require_once plugin_dir_path(__FILE__) . 'templates/flatsome-category-widget.php';
+require_once plugin_dir_path(__FILE__) . 'templates/players-data.php';
+require_once plugin_dir_path(__FILE__) . 'templates/duplicate-posts.php';
+require_once plugin_dir_path(__FILE__) . 'templates/recent-series.php';
+require_once plugin_dir_path(__FILE__) . 'templates/women-series.php';
+require_once plugin_dir_path(__FILE__) . 'templates/latest-news.php';
+require_once plugin_dir_path(__FILE__) . 'templates/popular-posts.php';
+require_once plugin_dir_path(__FILE__) . 'templates/featured-pics.php';
+require_once plugin_dir_path(__FILE__) . 'templates/icc-rankings-widget.php';
+require_once plugin_dir_path(__FILE__) . 'templates/newsletter.php';
 
 if (!defined('ABSPATH')) exit; // Prevent direct access
 
@@ -44,10 +50,20 @@ if (!function_exists('lcs_format_score')) {
 
 // ✅ Enqueue CSS
 function lcs_enqueue_assets() {
+    // Main stylesheet
     wp_enqueue_style(
         'lcs-styles',
         plugin_dir_url(__FILE__) . 'assets/style.css',
         array(),
+        '1.3',
+        'all'
+    );
+
+    // Custom stylesheet (loaded after main one)
+    wp_enqueue_style(
+        'lcs-custom-styles',
+        plugin_dir_url(__FILE__) . 'assets/custom.css',
+        array('lcs-styles'), // depends on style.css
         '1.3',
         'all'
     );
