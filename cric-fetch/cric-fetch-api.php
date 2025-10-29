@@ -8,6 +8,8 @@ Author: Your Name
 require_once plugin_dir_path(__FILE__) . 'flatsome-category-widget.php';
 // require_once plugin_dir_path(__FILE__) . 'videos-cat.php';
 require_once plugin_dir_path(__FILE__) . 'duplicate-posts.php';
+require_once plugin_dir_path(__FILE__) . 'recent-series.php';
+
 if (!defined('ABSPATH')) exit; // Prevent direct access
 
 // ✅ Helper functions (moved outside to avoid redeclaration)
