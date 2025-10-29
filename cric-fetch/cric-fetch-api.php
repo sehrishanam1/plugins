@@ -6,7 +6,8 @@ Version: 1.3
 Author: Your Name
 */
 require_once plugin_dir_path(__FILE__) . 'flatsome-category-widget.php';
-require_once plugin_dir_path(__FILE__) . 'videos-cat.php';
+// require_once plugin_dir_path(__FILE__) . 'videos-cat.php';
+require_once plugin_dir_path(__FILE__) . 'duplicate-posts.php';
 if (!defined('ABSPATH')) exit; // Prevent direct access
 
 // ✅ Helper functions (moved outside to avoid redeclaration)
@@ -51,8 +52,7 @@ function lcs_enqueue_assets() {
 }
 add_action('wp_enqueue_scripts', 'lcs_enqueue_assets');
 
-// ✅ Shortcode
-// ✅ Shortcode
+
 function lcs_live_cricket_shortcode() {
     // Only show on homepage/front page
     if (!(is_front_page() || is_home())) {
