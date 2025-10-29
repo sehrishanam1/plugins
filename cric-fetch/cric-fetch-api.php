@@ -48,7 +48,15 @@ function lcs_enqueue_assets() {
         '1.3',
         'all'
     );
+    wp_enqueue_style(
+        'lcs-custom-styles',
+        plugin_dir_url(__FILE__) . 'assets/custom.css',
+        array(),
+        '1.3',
+        'all'
+    );
 }
+
 add_action('wp_enqueue_scripts', 'lcs_enqueue_assets');
 
 // ✅ Shortcode

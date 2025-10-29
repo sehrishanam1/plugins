@@ -151,7 +151,7 @@
 
 
 
-// videos category
+/* // videos category */
 .video-thumbnail-wrapper {
     position: relative;
     display: inline-block;
@@ -175,3 +175,4 @@
     height: 20px;
     filter: invert(1);
 }
+
