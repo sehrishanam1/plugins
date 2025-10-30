@@ -6,7 +6,28 @@
   color: #2563eb;
   letter-spacing: 1px;
 }
-
+#footer ul li a{
+  color: #00CC99;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+#footer ul li a:hover{
+  text-decoration: underline;
+  color: white;
+}
+#footer .widget-title{
+  margin-bottom: 40px;;
+}
+#footer ul li{
+  border: 0 none;
+}
+.video-posts-items{
+  padding: 0 5px;
+}
+.margin-top{
+  margin-top: 23px;
+}
 .match-time {
   text-align: center;
   font-size: 12px;
@@ -31,7 +52,7 @@
 .live-track {
   display: flex;
   gap: 14px;
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scrollbar-width: none;
   width: 1520px;
@@ -72,7 +93,12 @@
 
 /* --- CARD STYLES --- */
 .live-card {
-  flex: 0 0 290px;
+  flex: 0 0 calc(25% - 20px);
+  margin-right: 20px;
+  box-sizing: border-box;
+
+
+
   background: #fff;
   border: 1px solid #dfe3eb;
   border-radius: 10px;
@@ -638,7 +664,12 @@ table.rankings-table td {
   background-color: #043534;
   padding: 25px 10px;
   text-align: center;
+  max-width: 1540px;
+  margin: 0 auto;
   border-radius: 4px;
+  margin-bottom: -61px;
+  z-index: 8;
+  position: relative;
 }
 
 .newsletter-title {

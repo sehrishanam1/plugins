@@ -20,7 +20,8 @@ if (!defined('ABSPATH')) exit; // Prevent direct access
 
 // ✅ Helper functions (moved outside to avoid redeclaration)
 if (!function_exists('lcs_get_nested')) {
-    function lcs_get_nested(array $arr, $path, $default = null) {
+    function lcs_get_nested(array $arr, $path, $default = null)
+    {
         if (is_string($path)) $path = explode('.', $path);
         $cur = $arr;
         foreach ($path as $p) {
@@ -32,13 +33,15 @@ if (!function_exists('lcs_get_nested')) {
 }
 
 if (!function_exists('lcs_safe')) {
-    function lcs_safe($value) {
+    function lcs_safe($value)
+    {
         return htmlspecialchars((string)($value ?? ''), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
     }
 }
 
 if (!function_exists('lcs_format_score')) {
-    function lcs_format_score($match, $teamKey) {
+    function lcs_format_score($match, $teamKey)
+    {
         $scores_full = lcs_get_nested($match, "$teamKey.scores_full");
         $scores = lcs_get_nested($match, "$teamKey.scores");
         $overs = lcs_get_nested($match, "$teamKey.overs");
@@ -49,7 +52,8 @@ if (!function_exists('lcs_format_score')) {
 }
 
 // ✅ Enqueue CSS
-function lcs_enqueue_assets() {
+function lcs_enqueue_assets()
+{
     // Main stylesheet
     wp_enqueue_style(
         'lcs-styles',
@@ -72,7 +76,8 @@ function lcs_enqueue_assets() {
 add_action('wp_enqueue_scripts', 'lcs_enqueue_assets');
 
 
-function lcs_live_cricket_shortcode() {
+function lcs_live_cricket_shortcode()
+{
     // Only show on homepage/front page
     if (!(is_front_page() || is_home())) {
         return ''; // Empty output for other pages
@@ -108,20 +113,20 @@ function lcs_live_cricket_shortcode() {
     }
 
     $items = lcs_get_nested($data, 'response.items', []);
-    ?>
+?>
     <div class="live-slider">
         <button class="slider-btn prev">&#10094;</button>
         <div class="live-track">
             <?php if (!empty($items)): ?>
                 <?php foreach ($items as $match): ?>
                     <?php
-//                     $title = lcs_get_nested($match, 'status_str', 'LIVE') . ' | ' .
-//                              (lcs_get_nested($match, 'subtitle') ?: lcs_get_nested($match, 'match_number', '')) . ' | ' .
-//                              (lcs_get_nested($match, 'competition.abbr') ?: lcs_get_nested($match, 'competition.title', ''));
+                    //                     $title = lcs_get_nested($match, 'status_str', 'LIVE') . ' | ' .
+                    //                              (lcs_get_nested($match, 'subtitle') ?: lcs_get_nested($match, 'match_number', '')) . ' | ' .
+                    //                              (lcs_get_nested($match, 'competition.abbr') ?: lcs_get_nested($match, 'competition.title', ''));
 
-	$status_str = lcs_get_nested($match, 'status_str', 'LIVE');
-$subtitle   = lcs_get_nested($match, 'subtitle') ?: lcs_get_nested($match, 'match_number', '');
-$competition = lcs_get_nested($match, 'competition.abbr') ?: lcs_get_nested($match, 'competition.title', '');
+                    $status_str = lcs_get_nested($match, 'status_str', 'LIVE');
+                    $subtitle   = lcs_get_nested($match, 'subtitle') ?: lcs_get_nested($match, 'match_number', '');
+                    $competition = lcs_get_nested($match, 'competition.abbr') ?: lcs_get_nested($match, 'competition.title', '');
 
 
                     $teama = [
@@ -142,16 +147,16 @@ $competition = lcs_get_nested($match, 'competition.abbr') ?: lcs_get_nested($mat
                     $placeholderLogo = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"><rect width="100%" height="100%" fill="%23e6eef9"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23707b8a" font-size="10">No+Logo</text></svg>';
                     ?>
                     <div class="live-card">
-<!--                         <div class="live-header"><?= lcs_safe($title) ?></div> -->
-						<div class="live-header">
-    <span class="match-status"><?= lcs_safe($status_str) ?></span>
-    <?php if (!empty($subtitle)): ?>
-        <span class="match-subtitle"><?= lcs_safe($subtitle) ?></span>
-    <?php endif; ?>
-    <?php if (!empty($competition)): ?>
-        <span class="match-competition"><?= lcs_safe($competition) ?></span>
-    <?php endif; ?>
-</div>
+                        <!--                         <div class="live-header"><?= lcs_safe($title) ?></div> -->
+                        <div class="live-header">
+                            <span class="match-status"><?= lcs_safe($status_str) ?></span>
+                            <?php if (!empty($subtitle)): ?>
+                                <span class="match-subtitle"><?= lcs_safe($subtitle) ?></span>
+                            <?php endif; ?>
+                            <?php if (!empty($competition)): ?>
+                                <span class="match-competition"><?= lcs_safe($competition) ?></span>
+                            <?php endif; ?>
+                        </div>
 
                         <div class="live-body">
                             <div class="team-row">
@@ -185,42 +190,70 @@ $competition = lcs_get_nested($match, 'competition.abbr') ?: lcs_get_nested($mat
     </div>
 
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        function updateCountdown(elem) {
-            const startTime = new Date(elem.dataset.start).getTime();
-            const now = new Date().getTime();
-            const diff = startTime - now;
+        document.addEventListener("DOMContentLoaded", () => {
+            function updateCountdown(elem) {
+                const startTime = new Date(elem.dataset.start).getTime();
+                const now = new Date().getTime();
+                const diff = startTime - now;
 
-            if (diff <= 0) {
-                elem.textContent = "";
-                return;
+                if (diff <= 0) {
+                    elem.textContent = "";
+                    return;
+                }
+
+                const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                const m = Math.floor((diff / (1000 * 60)) % 60);
+                const s = Math.floor((diff / 1000) % 60);
+
+                elem.textContent = `${d.toString().padStart(2,'0')} D ${h.toString().padStart(2,'0')} H ${m.toString().padStart(2,'0')} M ${s.toString().padStart(2,'0')} S`;
             }
 
-            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
-            const m = Math.floor((diff / (1000 * 60)) % 60);
-            const s = Math.floor((diff / 1000) % 60);
+            document.querySelectorAll(".countdown-timer").forEach(timer => {
+                updateCountdown(timer);
+                setInterval(() => updateCountdown(timer), 1000);
+            });
 
-            elem.textContent = `${d.toString().padStart(2,'0')} D ${h.toString().padStart(2,'0')} H ${m.toString().padStart(2,'0')} M ${s.toString().padStart(2,'0')} S`;
-        }
+            const track = document.querySelector(".live-track");
+            const prev = document.querySelector(".slider-btn.prev");
+            const next = document.querySelector(".slider-btn.next");
 
-        document.querySelectorAll(".countdown-timer").forEach(timer => {
-            updateCountdown(timer);
-            setInterval(() => updateCountdown(timer), 1000);
+            if (track && prev && next) {
+                // const cardWidth = 310;
+                // next.addEventListener("click", () => track.scrollBy({
+                //     left: cardWidth,
+                //     behavior: "smooth"
+                // }));
+                // prev.addEventListener("click", () => track.scrollBy({
+                //     left: -cardWidth,
+                //     behavior: "smooth"
+                // }));
+                const cards = document.querySelectorAll(".live-card");
+                const visibleSlides = 4;
+                const cardWidth = cards[0].offsetWidth + 20; // include margin/gap
+                let currentIndex = 0;
+
+                function updateSlider() {
+                    track.scrollTo({
+                        left: currentIndex * cardWidth,
+                        behavior: "smooth"
+                    });
+                }
+
+                next.addEventListener("click", () => {
+                    if (currentIndex < cards.length - visibleSlides) currentIndex++;
+                    updateSlider();
+                });
+
+                prev.addEventListener("click", () => {
+                    if (currentIndex > 0) currentIndex--;
+                    updateSlider();
+                });
+
+            }
         });
-
-        const track = document.querySelector(".live-track");
-        const prev = document.querySelector(".slider-btn.prev");
-        const next = document.querySelector(".slider-btn.next");
-
-        if (track && prev && next) {
-            const cardWidth = 310;
-            next.addEventListener("click", () => track.scrollBy({ left: cardWidth, behavior: "smooth" }));
-            prev.addEventListener("click", () => track.scrollBy({ left: -cardWidth, behavior: "smooth" }));
-        }
-    });
     </script>
-    <?php
+<?php
     return ob_get_clean();
 }
 add_shortcode('live_cricket_score', 'lcs_live_cricket_shortcode');
