@@ -15,6 +15,8 @@ require_once plugin_dir_path(__FILE__) . 'templates/popular-posts.php';
 require_once plugin_dir_path(__FILE__) . 'templates/featured-pics.php';
 require_once plugin_dir_path(__FILE__) . 'templates/icc-rankings-widget.php';
 require_once plugin_dir_path(__FILE__) . 'templates/newsletter.php';
+require_once plugin_dir_path(__FILE__) . 'templates/live-score-slider.php';
+
 if (!defined('ABSPATH')) exit; // Prevent direct access
 
 // ✅ Helper functions (moved outside to avoid redeclaration)
@@ -70,17 +72,9 @@ function lcs_enqueue_assets()
         '1.3',
         'all'
     );
-
-    // Live Score JavaScript (auto-refresh logic)
-    wp_enqueue_script('lcs-live-js', plugin_dir_url(__FILE__) . 'assets/live-score.js', array('jquery'), '1.3', true);
-    wp_localize_script('lcs-live-js', 'lcs_ajax', [
-        'ajax_url' => admin_url('admin-ajax.php'),
-        'nonce'    => wp_create_nonce('lcs_nonce')
-    ]);
 }
 
 add_action('wp_enqueue_scripts', 'lcs_enqueue_assets');
-
 
 function lcs_live_cricket_shortcode()
 {
@@ -120,94 +114,91 @@ function lcs_live_cricket_shortcode()
 
     $items = lcs_get_nested($data, 'response.items', []);
 ?>
-    <div id="live-cricket-container">
-        <div class="live-slider">
-            <button class="slider-btn prev">&#10094;</button>
-            <div class="live-track">
-                <?php if (!empty($items)): ?>
-                    <?php foreach ($items as $match): ?>
-                        <?php
-                        //                     $title = lcs_get_nested($match, 'status_str', 'LIVE') . ' | ' .
-                        //                              (lcs_get_nested($match, 'subtitle') ?: lcs_get_nested($match, 'match_number', '')) . ' | ' .
-                        //                              (lcs_get_nested($match, 'competition.abbr') ?: lcs_get_nested($match, 'competition.title', ''));
+    <div class="live-slider">
+        <button class="slider-btn prev">&#10094;</button>
+        <div class="live-track">
+            <?php if (!empty($items)): ?>
+                <?php foreach ($items as $match): ?>
+                    <?php
+                    //                     $title = lcs_get_nested($match, 'status_str', 'LIVE') . ' | ' .
+                    //                              (lcs_get_nested($match, 'subtitle') ?: lcs_get_nested($match, 'match_number', '')) . ' | ' .
+                    //                              (lcs_get_nested($match, 'competition.abbr') ?: lcs_get_nested($match, 'competition.title', ''));
 
-                        $status_str = lcs_get_nested($match, 'status_str', 'LIVE');
-                        $subtitle   = lcs_get_nested($match, 'subtitle') ?: lcs_get_nested($match, 'match_number', '');
-                        $competition = lcs_get_nested($match, 'competition.abbr') ?: lcs_get_nested($match, 'competition.title', '');
-
-
-                        $teama = [
-                            'name' => lcs_get_nested($match, 'teama.name', 'Team A'),
-                            'logo' => lcs_get_nested($match, 'teama.logo_url'),
-                            'score' => lcs_format_score($match, 'teama'),
-                        ];
-                        $teamb = [
-                            'name' => lcs_get_nested($match, 'teamb.name', 'Team B'),
-                            'logo' => lcs_get_nested($match, 'teamb.logo_url'),
-                            'score' => lcs_format_score($match, 'teamb'),
-                        ];
-
-                        // $teama = [
-                        //     'name' => lcs_get_nested($match, 'teama.short_name', 'Team A'), // ✅ short code like BAN
-                        //     'logo' => lcs_get_nested($match, 'teama.logo_url'),
-                        //     'score' => lcs_format_score($match, 'teama'),
-                        // ];
-                        // $teamb = [
-                        //     'name' => lcs_get_nested($match, 'teamb.short_name', 'Team B'), // ✅ short code like WI
-                        //     'logo' => lcs_get_nested($match, 'teamb.logo_url'),
-                        //     'score' => lcs_format_score($match, 'teamb'),
-                        // ];
-
-                        $status_note = lcs_get_nested($match, 'status_note') ?: lcs_get_nested($match, 'live', '');
-                        $date_start = lcs_get_nested($match, 'date_start_ist') ?: lcs_get_nested($match, 'date_start');
-                        $countdown_id = uniqid('countdown_');
-                        $match_time = !empty($date_start) ? date('j M Y, g:i A', strtotime($date_start)) : '';
-                        $placeholderLogo = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"><rect width="100%" height="100%" fill="%23e6eef9"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23707b8a" font-size="10">No+Logo</text></svg>';
-                        ?>
-
-                        <div class="live-card">
-
-                            <div class="live-header">
-                                <span class="match-status match-status-<?= lcs_safe($status_str) ?>"><?= lcs_safe($status_str) ?></span>
-                                <?php if (!empty($subtitle)): ?>
-                                    <span class="match-subtitle"><?= lcs_safe($subtitle) ?></span>
-                                <?php endif; ?>
-                                <?php if (!empty($competition)): ?>
-                                    <span class="match-competition"><?= lcs_safe($competition) ?></span>
-                                <?php endif; ?>
-                            </div>
+                    $status_str = lcs_get_nested($match, 'status_str', 'LIVE');
+                    $subtitle   = lcs_get_nested($match, 'subtitle') ?: lcs_get_nested($match, 'match_number', '');
+                    $competition = lcs_get_nested($match, 'competition.abbr') ?: lcs_get_nested($match, 'competition.title', '');
 
 
-                            <div class="live-body">
-                                <div class="team-row">
-                                    <div class="team-info">
-                                        <img class="team-logo" src="<?= lcs_safe($teama['logo'] ?: $placeholderLogo) ?>" alt="<?= lcs_safe($teama['name']) ?>">
-                                        <div class="team-name"><?= lcs_safe($teama['name']) ?></div>
-                                    </div>
-                                    <div class="team-score"><?= lcs_safe($teama['score']) ?></div>
-                                </div>
-                                <div class="team-row">
-                                    <div class="team-info">
-                                        <img class="team-logo" src="<?= lcs_safe($teamb['logo'] ?: $placeholderLogo) ?>" alt="<?= lcs_safe($teamb['name']) ?>">
-                                        <div class="team-name"><?= lcs_safe($teamb['name']) ?></div>
-                                    </div>
-                                    <div class="team-score"><?= lcs_safe($teamb['score']) ?></div>
-                                </div>
-                                <?php if (!empty($status_note)): ?>
-                                    <div class="status-note"><?= lcs_safe($status_note) ?></div>
-                                <?php endif; ?>
-                            </div>
-                            <?php if (!empty($match_time)): ?>
-                                <div id="<?= $countdown_id ?>" class="countdown-timer" data-start="<?= lcs_safe($date_start) ?>"></div>
+                    // $teama = [
+                    //     'name' => lcs_get_nested($match, 'teama.name', 'Team A'),
+                    //     'logo' => lcs_get_nested($match, 'teama.logo_url'),
+                    //     'score' => lcs_format_score($match, 'teama'),
+                    // ];
+                    // $teamb = [
+                    //     'name' => lcs_get_nested($match, 'teamb.name', 'Team B'),
+                    //     'logo' => lcs_get_nested($match, 'teamb.logo_url'),
+                    //     'score' => lcs_format_score($match, 'teamb'),
+                    // ];
+
+                    $teama = [
+                        'name' => lcs_get_nested($match, 'teama.short_name', 'Team A'), // ✅ short code like BAN
+                        'logo' => lcs_get_nested($match, 'teama.logo_url'),
+                        'score' => lcs_format_score($match, 'teama'),
+                    ];
+                    $teamb = [
+                        'name' => lcs_get_nested($match, 'teamb.short_name', 'Team B'), // ✅ short code like WI
+                        'logo' => lcs_get_nested($match, 'teamb.logo_url'),
+                        'score' => lcs_format_score($match, 'teamb'),
+                    ];
+
+                    $status_note = lcs_get_nested($match, 'status_note') ?: lcs_get_nested($match, 'live', '');
+                    $date_start = lcs_get_nested($match, 'date_start_ist') ?: lcs_get_nested($match, 'date_start');
+                    $countdown_id = uniqid('countdown_');
+                    $match_time = !empty($date_start) ? date('j M Y, g:i A', strtotime($date_start)) : '';
+                    $placeholderLogo = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"><rect width="100%" height="100%" fill="%23e6eef9"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23707b8a" font-size="10">No+Logo</text></svg>';
+                    ?>
+                    <div class="live-card">
+
+                        <div class="live-header">
+                            <span class="match-status match-status-<?= lcs_safe($status_str) ?>"><?= lcs_safe($status_str) ?></span>
+                            <?php if (!empty($subtitle)): ?>
+                                <span class="match-subtitle"><?= lcs_safe($subtitle) ?></span>
+                            <?php endif; ?>
+                            <?php if (!empty($competition)): ?>
+                                <span class="match-competition"><?= lcs_safe($competition) ?></span>
                             <?php endif; ?>
                         </div>
-                    <?php endforeach; ?>
-                <?php else: ?>
-                    <div class="no-match">No live matches found.</div>
-                <?php endif; ?>
-            </div>
-            <button class="slider-btn next">&#10095;</button>
+
+
+                        <div class="live-body">
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img class="team-logo" src="<?= lcs_safe($teama['logo'] ?: $placeholderLogo) ?>" alt="<?= lcs_safe($teama['name']) ?>">
+                                    <div class="team-name"><?= lcs_safe($teama['name']) ?></div>
+                                </div>
+                                <div class="team-score"><?= lcs_safe($teama['score']) ?></div>
+                            </div>
+                            <div class="team-row">
+                                <div class="team-info">
+                                    <img class="team-logo" src="<?= lcs_safe($teamb['logo'] ?: $placeholderLogo) ?>" alt="<?= lcs_safe($teamb['name']) ?>">
+                                    <div class="team-name"><?= lcs_safe($teamb['name']) ?></div>
+                                </div>
+                                <div class="team-score"><?= lcs_safe($teamb['score']) ?></div>
+                            </div>
+                            <?php if (!empty($status_note)): ?>
+                                <div class="status-note"><?= lcs_safe($status_note) ?></div>
+                            <?php endif; ?>
+                        </div>
+                        <?php if (!empty($match_time)): ?>
+                            <div id="<?= $countdown_id ?>" class="countdown-timer" data-start="<?= lcs_safe($date_start) ?>"></div>
+                        <?php endif; ?>
+                    </div>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <div class="no-match">No live matches found.</div>
+            <?php endif; ?>
         </div>
+        <button class="slider-btn next">&#10095;</button>
     </div>
 
     <script>
@@ -264,7 +255,7 @@ function lcs_live_cricket_shortcode()
 
             }
         });
-
+    
         document.addEventListener("DOMContentLoaded", () => {
             const apiUrl = "https://bdcrictime.com/api/get-live-score-slider?filtered=1";
 
@@ -309,7 +300,7 @@ function lcs_live_cricket_shortcode()
                             <div class="team-row">
                                 <div class="team-info">
                                     <img class="team-logo" src="${teama.logo_url || placeholderLogo}" alt="${teama.short_name || 'Team A'}">
-                                    <div class="team-name"><?= lcs_safe($teama['name']) ?></div>
+                                    <div class="team-name">${teama.short_name || "Team A"}</div>
                                 </div>
                                 <div class="team-score">${teama.scores_full || teama.scores || ""}</div>
                             </div>
@@ -329,82 +320,18 @@ function lcs_live_cricket_shortcode()
                     });
                 } catch (err) {
                     console.error("Error fetching live scores:", err);
-                }
+                }alert("active");
             }
 
+            // Fetch immediately once
+            fetchLiveScores();
+
+            // 🔁 Refresh data every 2 seconds
+            setInterval(fetchLiveScores, 2000);
         });
     </script>
 
-    <?php
+<?php
     return ob_get_clean();
 }
 add_shortcode('live_cricket_score', 'lcs_live_cricket_shortcode');
-
-function lcs_get_live_cricket()
-{
-    check_ajax_referer('lcs_nonce', 'security');
-
-    $curl = curl_init();
-    curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://bdcrictime.com/api/get-live-score-slider?filtered=1',
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_TIMEOUT => 10,
-        CURLOPT_FOLLOWLOCATION => true,
-    ));
-    $response = curl_exec($curl);
-    if (curl_errno($curl)) {
-        wp_send_json_error(['error' => 'cURL Error: ' . curl_error($curl)]);
-    }
-    curl_close($curl);
-
-    $data = json_decode($response, true);
-    if (!is_array($data)) {
-        wp_send_json_error(['error' => 'Invalid API response']);
-    }
-
-    ob_start();
-    $items = isset($data['response']['items']) ? $data['response']['items'] : [];
-    if (empty($items)) {
-        echo '<div class="no-match">No live matches found.</div>';
-    } else {
-        foreach ($items as $match) {
-            $teama = $match['teama'] ?? [];
-            $teamb = $match['teamb'] ?? [];
-    ?>
-            <div class="live-card">
-                <div class="live-header">
-                    <span class="match-status match-status-<?= esc_html($match['status_str'] ?? 'LIVE') ?>"><?= esc_html($match['status_str'] ?? 'LIVE') ?></span>
-                    <span class="match-subtitle"><?= esc_html($match['subtitle'] ?? '') ?></span>
-                    <span class="match-competition"><?= esc_html($match['competition']['abbr'] ?? '') ?></span>
-                </div>
-                <div class="live-body">
-                    <div class="team-row">
-                        <div class="team-info">
-                            <img class="team-logo" src="<?= esc_url($teama['logo_url'] ?? '') ?>" alt="">
-                            <div class="team-name"><?= lcs_safe($teama['name']) ?></div>
-                        </div>
-                        <div class="team-score"><?= esc_html($teama['scores_full'] ?? '') ?></div>
-                    </div>
-                    <div class="team-row">
-                        <div class="team-info">
-                            <img class="team-logo" src="<?= esc_url($teamb['logo_url'] ?? '') ?>" alt="">
-                            <div class="team-name"><?= esc_html($teamb['name'] ?? '') ?></div>
-                        </div>
-                        <div class="team-score"><?= esc_html($teamb['scores_full'] ?? '') ?></div>
-                    </div>
-                    <div class="status-note"><?= esc_html($match['status_note'] ?? '') ?></div>
-                </div>
-            </div>
-<?php
-        }
-    }
-    $html = ob_get_clean();
-
-    echo $html;
-    wp_die(); // Required for AJAX
-}
-
-
-// AJAX Handler
-add_action('wp_ajax_lcs_get_live_cricket', 'lcs_get_live_cricket');
-add_action('wp_ajax_nopriv_lcs_get_live_cricket', 'lcs_get_live_cricket');

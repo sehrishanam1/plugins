@@ -48,7 +48,7 @@ function bdcrictime_icc_team_rankings_shortcode() {
                     <thead><tr><th>Pos</th><th>Team</th><th>Rating</th></tr></thead>
                     <tbody>
             `;
-            list.slice(0, 10).forEach(item => {
+            list.slice(0, 5).forEach(item => {
                 html += `
                     <tr>
                         <td>${item.rank}</td>

@@ -94,11 +94,8 @@
 /* --- CARD STYLES --- */
 .live-card {
   flex: 0 0 calc(25% - 20px);
-  margin-right: 20px;
+  margin-right: 7px;
   box-sizing: border-box;
-
-
-
   background: #fff;
   border: 1px solid #dfe3eb;
   border-radius: 10px;
@@ -498,7 +495,7 @@ table th:first-child {
 .photo-modal {
   display: none;
   position: fixed;
-  display: flex !important;
+  /* display: flex !important; */
   justify-content: center;
   align-items: center;
   z-index: 9999;

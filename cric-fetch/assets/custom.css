@@ -1,6 +1,17 @@
 body {
     background-color: #e6e6e6;
 }
+#live-cricket-container.loading {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.loading-text {
+  text-align: center;
+  color: #444;
+  padding: 20px;
+  font-weight: bold;
+}
 
 /* Slider UI Improvements */
 
@@ -18,25 +29,37 @@ body {
     width: 22px;
     height: 22px;
 }
-
+.video-posts-items{
+    padding: 0 5px;;
+}
+.video-posts, .trending-posts{
+    padding-right: 0!important;
+}
 .live-header {
 	background-color: transparent;
 	text-transform: initial;
 }
-
+.lcs-latest-news{
+    background: white;
+}
+.recent-series-widget{
+    margin-bottom: 23px;
+}
 .live-card {
 	position: relative;
 }
 
 .live-body {
-	padding: 0 12px 40px;
+	padding: 0 12px 23px;
 	border-bottom: none;
 }
-
+.match-status-Live{color: red!important;}
+.match-status-Completed{color: green!important;}
+.match-status-Scheduled{color: #B37220!important;}
 .match-subtitle,
 .match-competition {
 	position: relative;
-	font-size: 12px;
+	font-size: 11px;
 	padding-left: 20px;
 	color: #1a1a1a;
 }
@@ -220,9 +243,6 @@ body #wrapper {
     padding: 0;
 }
 
-.video-posts .section-content {
-    padding: 0 4px;
-}
 
 .video-posts .box-text {
     padding: 10px 4px 16px !important;

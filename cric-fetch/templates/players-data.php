@@ -28,7 +28,7 @@ function cric_fetch_players_data_widget($atts) {
     ob_start();
     ?>
     <div class="players-data-widget" style="background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);overflow:hidden;">
-        <div style="background:#006A4E;color:#fff;padding:10px 15px;font-weight:bold;border-top-left-radius:8px;border-top-right-radius:8px;">
+        <div style="background:#033C3D;color:#fff;padding:10px 15px;font-weight:bold;border-top-left-radius:8px;border-top-right-radius:8px;">
             Players Data
         </div>
 
