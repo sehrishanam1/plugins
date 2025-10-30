@@ -40,9 +40,9 @@ function bdcrictime_featured_photos_shortcode() {
                     listContainer.innerHTML = images.slice(0, 4).map((item, index) => `
                         <div class="photo-item">
                             <img src="${item.image}" alt="${item.caption}">
-                            <button class="expand-icon" data-index="${index}">&#x2922;</button>
+                            <button class="expand-icon" data-index="${index}"></button>
                             <div class="photo-caption">${item.caption}</div>
-                            <div class="photo-meta">📅 ${new Date(item.image_post_date).toDateString()}</div>
+                            <div class="photo-meta"> ${new Date(item.image_post_date).toDateString()}</div>
                         </div>
                     `).join('');
                 });

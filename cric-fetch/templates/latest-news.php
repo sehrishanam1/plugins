@@ -25,7 +25,7 @@ function lcs_latest_news_shortcode($atts) {
                     <li class="lcs-news-item">
                         <a href="<?php the_permalink(); ?>" class="lcs-news-title"><?php the_title(); ?></a>
                         <div class="lcs-news-time">
-                            <span class="lcs-clock-icon">🕒</span>
+                            <span class="lcs-clock-icon"></span>
                             <?php
                             $post_time = get_post_time('U', true);
                             $time_diff = current_time('timestamp') - $post_time;

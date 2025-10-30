@@ -67,14 +67,26 @@ body {
 	left: 0;
 	right: 0;
 	margin: auto;
-	background-image: url(http://cricketscore.art/wp-content/uploads/2025/10/play-button.png);
-	background-position: center;
-	background-repeat: no-repeat;
+    background-image: url(http://cricketscore.art/wp-content/uploads/2025/10/play-button.png);
+    background-repeat: no-repeat;
+    background-position: center;
 	background-size: 20px;
 	width: 50px;
 	height: 50px;
 	border: 3px solid white;
 	border-radius: 50%;
+}
+
+.lcs-clock-icon,.photo-meta {
+    background-image: url(http://cricketscore.art/wp-content/uploads/2025/10/time.png);
+	background-repeat: no-repeat;
+}
+
+.lcs-clock-icon {
+    width: 12px;
+    height: 12px;
+    background-position: center;
+    background-size: contain;
 }
 
 .live-slider {
@@ -171,7 +183,7 @@ body #wrapper {
 }
 
 
-.section-heading {
+.section-heading,.widget-header,.lcs-widget-header {
     font-size: 14px;
     color: white;
     background-color: rgb(3, 60, 61);
@@ -201,24 +213,31 @@ body #wrapper {
 }
 
 .video-posts-items .post-item {
-    padding: 0px 4px;
+    padding: 0px 4px 10px;
 }
 
 .post-item.col {
     padding: 0;
 }
 
+.video-posts .section-content {
+    padding: 0 4px;
+}
+
 .video-posts .box-text {
     padding: 10px 4px 16px !important;
 }
 
-.button.primary {
+.lcs-see-all-btn,
+.button.primary,.see-all-btn {
     font-size: 12px;
     color: rgb(255, 255, 255);
     font-weight: 500;
     max-width: 120px;
     min-width: 120px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     cursor: pointer;
     background: rgb(0, 204, 153);
@@ -230,6 +249,15 @@ body #wrapper {
     border-color: initial;
     border-image: initial;
     white-space: nowrap;
+    height: 28px;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    text-transform: initial;
+}
+
+.lcs-see-all-btn:hover {
+    box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .2);
+    color: white;
 }
 
 .post-widget .post-item:first-of-type .box-blog-post {
@@ -252,6 +280,7 @@ body #wrapper {
     transition: 0.3s ease-in-out;
 }
 
+.lcs-news-header,
 .recent-series-widget > div {
     background-color: rgb(3, 60, 61) !important;
 }
@@ -292,6 +321,26 @@ body #wrapper {
     border-top: 1px solid rgb(237, 238, 240);
 }
 
+.recent-series-widget table,
+.series-standings-widget table {
+    margin-bottom: 0 !important;
+}
+
+.trending-posts .box-blog-post,
+.flatsome-post-item,
+.recent-series-widget tr,
+.series-standings-widget tr {
+    transition: all .3s ease-in-out;
+}
+
+.trending-posts .box-blog-post:hover,
+.flatsome-post-item:hover,
+.recent-series-widget tr:hover,
+.series-standings-widget tr:hover {
+    background-color: hsla(0, 0%, 78%, .1);
+}
+
+
 .flatsome-widget-header a {
     color: rgb(0, 45, 46) !important;
     min-width: fit-content;
@@ -308,4 +357,70 @@ body #wrapper {
 .feature-posts {
     background-color: white;
     border-radius: 4px;
+}
+
+.widget-header h3 {
+    margin-bottom: 0;
+    color: white;
+    font-size: 14px;
+}
+
+.lcs-latest-news,.lcs-popular-widget,.featured-photos-widget {
+    margin-top: 20px;
+}
+
+.lcs-latest-news ul li,
+.lcs-post-list li {
+    margin: 0 !important;
+}
+
+.lcs-news-title,
+.lcs-news-time,
+.lcs-clock-icon {
+    transition: all .3s ease-in-out;
+}
+
+.lcs-news-item:hover .lcs-news-title {
+    color: #07888a;
+}
+
+.lcs-news-item:hover .lcs-clock-icon {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(21%) saturate(6113%) hue-rotate(119deg) brightness(93%) contrast(101%);
+}
+
+.lcs-news-item:hover .lcs-news-time {
+    color: #0c9;
+} 
+
+.lcs-news-item tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.lcs-post-list li {
+    border-top: 1px solid #edeef0;
+    padding: 10px;
+}
+
+.lcs-post-rank {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-right: 1px solid #1a1a1a;
+    padding-right: 5px;
+    display: inline-block;
+    font-size: 30px;
+    color: #1a1a1a;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+.lcs-post-title {
+    font-size: 12px;
+    color: #1a1a1a;
+    transition: all .3s ease-in-out;
+}
+
+.lcs-post-title:hover {
+    color: #0c9;
 }
