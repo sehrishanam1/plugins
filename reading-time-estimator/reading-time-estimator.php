@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Reading Time Estimator & Progress Bar
- * Plugin URI:        https://github.com/sehrishanam/reading-time-estimator
+ * Plugin URI:        https://github.com/sehrishanam1/plugins/tree/main/reading-time-estimator
  * Description:       A minimalist, accessible reading time estimator with a smooth scroll progress bar. Features AI-assisted reading time adjustment, per-post overrides, and full ARIA support. No tracking. No upsells.
  * Version:           1.0.0
  * Requires at least: 5.9
