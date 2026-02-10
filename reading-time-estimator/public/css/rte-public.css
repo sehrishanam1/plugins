@@ -1,0 +1,165 @@
+/*
+ * Reading Time Estimator – Public Styles
+ * Author: Sehrish Anam
+ *
+ * Design philosophy:
+ *   – CSS custom properties for easy theming
+ *   – Minimal footprint, no !important abuse
+ *   – Accessible: respects prefers-reduced-motion
+ *   – Zero external dependencies
+ * ================================================== */
+
+/* ── Custom Properties ───────────────────────────── */
+:root {
+	--rte-color:           #6366f1;
+	--rte-color-bg:        rgba(99, 102, 241, 0.12);
+	--rte-bar-height:      5px;
+	--rte-bar-z:           9999;
+	--rte-badge-gap:       6px;
+	--rte-badge-radius:    6px;
+	--rte-badge-font-size: 0.8125rem; /* 13px at 16px base */
+	--rte-badge-color:     currentColor;
+	--rte-badge-bg:        transparent;
+	--rte-transition-dur:  0.2s;
+}
+
+
+/* ── Progress Bar ────────────────────────────────── */
+#rte-progress-bar {
+	position:   fixed;
+	left:       0;
+	width:      100%;
+	height:     var(--rte-bar-height);
+	background: var(--rte-color-bg);
+	z-index:    var(--rte-bar-z);
+	/* JS sets data-position="top|bottom" */
+}
+
+/* Make hover area bigger for easier interaction */
+#rte-progress-bar::before {
+	content: '';
+	position: absolute;
+	top: -8px;
+	left: 0;
+	right: 0;
+	bottom: -8px;
+}
+
+#rte-progress-bar[data-position="top"] {
+	top: 0;
+}
+
+#rte-progress-bar[data-position="bottom"] {
+	bottom: 0;
+}
+
+#rte-progress-bar__fill {
+	height:     100%;
+	width:      var(--rte-progress, 0%);
+	background: var(--rte-color);
+	transition: width var(--rte-transition-dur) linear;
+	transform-origin: left center;
+	will-change: width;
+}
+
+/* Tooltip */
+#rte-progress-bar__tooltip {
+	position:        fixed;
+	background:      rgba(17, 24, 39, 0.95);
+	color:           #fff;
+	font-size:       0.6875rem;
+	padding:         4px 8px;
+	border-radius:   4px;
+	white-space:     nowrap;
+	pointer-events:  none;
+	opacity:         0;
+	transform:       translate(-50%, 0);
+	transition:      opacity 0.15s ease;
+	backdrop-filter: blur(4px);
+	z-index:         10001;
+	box-shadow:      0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ── Reading Time Badge ──────────────────────────── */
+.rte-badge {
+	display:     inline-flex;
+	align-items: center;
+	gap:         var(--rte-badge-gap);
+	font-size:   var(--rte-badge-font-size);
+	font-weight: 500;
+	color:       var(--rte-badge-color);
+	background:  var(--rte-badge-bg);
+	border-radius: var(--rte-badge-radius);
+	line-height: 1.4;
+	/* Create a full-width row between title and content */
+	display:     flex;
+	margin-bottom: 1.25em;
+	opacity:     0.75;
+	transition:  opacity var(--rte-transition-dur) ease;
+}
+
+.rte-badge:hover {
+	opacity: 1;
+}
+
+/* Badge after content */
+.rte-badge + * .rte-badge,
+* + .rte-badge {
+	margin-top:    1em;
+	margin-bottom: 0;
+}
+
+.rte-badge__icon {
+	display:     inline-flex;
+	align-items: center;
+	color:       var(--rte-color);
+	flex-shrink: 0;
+}
+
+.rte-badge__icon svg {
+	display: block;
+}
+
+.rte-badge__label {
+	letter-spacing: 0.01em;
+}
+
+/* AI-adjusted note */
+.rte-badge__ai-note {
+	font-size:     0.75em;
+	opacity:       0.6;
+	margin-left:   4px;
+	font-style:    italic;
+	font-weight:   400;
+	border:        1px solid currentColor;
+	border-radius: 3px;
+	padding:       0 4px;
+	line-height:   1.5;
+	align-self:    center;
+}
+
+/* ── Accessibility: Reduced Motion ───────────────── */
+@media (prefers-reduced-motion: reduce) {
+	#rte-progress-bar__fill {
+		transition: none;
+	}
+
+	#rte-progress-bar__tooltip {
+		transition: none;
+	}
+}
+
+/* ── Dark mode ───────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+	#rte-progress-bar__tooltip {
+		background: rgba(243, 244, 246, 0.9);
+		color:      #111827;
+	}
+}
+
+/* ── Print ───────────────────────────────────────── */
+@media print {
+	#rte-progress-bar {
+		display: none;
+	}
+}

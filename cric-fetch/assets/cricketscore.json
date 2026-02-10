@@ -1,0 +1,3744 @@
+{
+  "scraped_at": "2025-11-10T15:06:49.249654",
+  "series": [
+    {
+      "series_id": "129706",
+      "series_name": "ASIA CUP 2025",
+      "series_url": "https://bdcrictime.com/series/129706/asia-cup",
+      "overview": {
+        "completed_matches": [
+          {
+            "full_text": "IND\n-vs-\nPAK\nIndia won by 5 wickets",
+            "status": "completed",
+            "result": "India won by 5 wickets",
+            "team1": "IND",
+            "team2": "PAK",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FIND.webp&w=32&q=75",
+                "alt": "India"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FPAK.webp&w=32&q=75",
+                "alt": "Pakistan"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/91935/india-vs-pakistan"
+          },
+          {
+            "full_text": "IND\n-vs-\nSL\nIndia won by superover",
+            "status": "completed",
+            "result": "India won by superover",
+            "team1": "IND",
+            "team2": "SL",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FIND.webp&w=32&q=75",
+                "alt": "India"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FSri-lanka.png&w=32&q=75",
+                "alt": "Sri Lanka"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/91934/india-vs-sri-lanka"
+          },
+          {
+            "full_text": "PAK\n-vs-\nBAN\nPakistan won by 11 runs",
+            "status": "completed",
+            "result": "Pakistan won by 11 runs",
+            "team1": "PAK",
+            "team2": "BAN",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FPAK.webp&w=32&q=75",
+                "alt": "Pakistan"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/91933/pakistan-vs-bangladesh"
+          },
+          {
+            "full_text": "IND\n-vs-\nBAN\nIndia won by 41 runs",
+            "status": "completed",
+            "result": "India won by 41 runs",
+            "team1": "IND",
+            "team2": "BAN",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FIND.webp&w=32&q=75",
+                "alt": "India"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/91932/india-vs-bangladesh"
+          },
+          {
+            "full_text": "PAK\n-vs-\nSL\nPakistan won by 5 wickets",
+            "status": "completed",
+            "result": "Pakistan won by 5 wickets",
+            "team1": "PAK",
+            "team2": "SL",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FPAK.webp&w=32&q=75",
+                "alt": "Pakistan"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FSri-lanka.png&w=32&q=75",
+                "alt": "Sri Lanka"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/91931/pakistan-vs-sri-lanka"
+          }
+        ],
+        "live_matches": [],
+        "next_matches": [],
+        "players_on_top": {
+          "most_wickets": [
+            {
+              "position": "1",
+              "name": "Kuldeep Yadav",
+              "wickets": "17",
+              "player_id": "775",
+              "player_url": "https://bdcrictime.com/player/profile/775/Kuldeep%20Yadav",
+              "player_image": "https://api.bdcrictime.com/players/775.png"
+            },
+            {
+              "position": "2",
+              "name": "Shaheen Afridi",
+              "wickets": "10",
+              "player_id": "92991",
+              "player_url": "https://bdcrictime.com/player/profile/92991/Shaheen%20Afridi"
+            },
+            {
+              "position": "3",
+              "name": "Junaid Siddique",
+              "wickets": "9",
+              "player_id": "96311",
+              "player_url": "https://bdcrictime.com/player/profile/96311/Junaid%20Siddique"
+            },
+            {
+              "position": "4",
+              "name": "Mustafizur Rahman",
+              "wickets": "9",
+              "player_id": "1745",
+              "player_url": "https://bdcrictime.com/player/profile/1745/Mustafizur%20Rahman"
+            },
+            {
+              "position": "5",
+              "name": "Haris Rauf",
+              "wickets": "9",
+              "player_id": "92381",
+              "player_url": "https://bdcrictime.com/player/profile/92381/Haris%20Rauf"
+            }
+          ],
+          "most_runs": [
+            {
+              "position": "1",
+              "name": "Abhishek Sharma",
+              "runs": "314",
+              "player_id": "90738",
+              "player_url": "https://bdcrictime.com/player/profile/90738/Abhishek%20Sharma",
+              "player_image": "https://api.bdcrictime.com/players/90738.png"
+            },
+            {
+              "position": "2",
+              "name": "Pathum Nissanka",
+              "runs": "261",
+              "player_id": "84107",
+              "player_url": "https://bdcrictime.com/player/profile/84107/Pathum%20Nissanka"
+            },
+            {
+              "position": "3",
+              "name": "Sahibzada Farhan",
+              "runs": "217",
+              "player_id": "61727",
+              "player_url": "https://bdcrictime.com/player/profile/61727/Sahibzada%20Farhan"
+            },
+            {
+              "position": "4",
+              "name": "N. Tilak Varma",
+              "runs": "213",
+              "player_id": "94429",
+              "player_url": "https://bdcrictime.com/player/profile/94429/N.%20Tilak%20Varma"
+            },
+            {
+              "position": "5",
+              "name": "Fakhar Zaman",
+              "runs": "181",
+              "player_id": "43370",
+              "player_url": "https://bdcrictime.com/player/profile/43370/Fakhar%20Zaman"
+            }
+          ],
+          "most_sixes": [
+            {
+              "position": "1",
+              "name": "Abhishek Sharma",
+              "sixes": "19",
+              "player_id": "90738",
+              "player_url": "https://bdcrictime.com/player/profile/90738/Abhishek%20Sharma",
+              "player_image": "https://api.bdcrictime.com/players/90738.png"
+            },
+            {
+              "position": "2",
+              "name": "Saif Hassan",
+              "sixes": "12",
+              "player_id": "1014",
+              "player_url": "https://bdcrictime.com/player/profile/1014/Saif%20Hassan"
+            },
+            {
+              "position": "3",
+              "name": "Sahibzada Farhan",
+              "sixes": "11",
+              "player_id": "61727",
+              "player_url": "https://bdcrictime.com/player/profile/61727/Sahibzada%20Farhan"
+            },
+            {
+              "position": "4",
+              "name": "Pathum Nissanka",
+              "sixes": "11",
+              "player_id": "84107",
+              "player_url": "https://bdcrictime.com/player/profile/84107/Pathum%20Nissanka"
+            },
+            {
+              "position": "5",
+              "name": "N. Tilak Varma",
+              "sixes": "10",
+              "player_id": "94429",
+              "player_url": "https://bdcrictime.com/player/profile/94429/N.%20Tilak%20Varma"
+            }
+          ],
+          "highest_score": [
+            {
+              "position": "1",
+              "name": "Pathum Nissanka",
+              "score": "107",
+              "player_id": "84107",
+              "player_url": "https://bdcrictime.com/player/profile/84107/Pathum%20Nissanka",
+              "player_image": "https://api.bdcrictime.com/players/84107.png"
+            },
+            {
+              "position": "2",
+              "name": "Abhishek Sharma",
+              "score": "75",
+              "player_id": "90738",
+              "player_url": "https://bdcrictime.com/player/profile/90738/Abhishek%20Sharma"
+            },
+            {
+              "position": "3",
+              "name": "Abhishek Sharma",
+              "score": "74",
+              "player_id": "90738",
+              "player_url": "https://bdcrictime.com/player/profile/90738/Abhishek%20Sharma"
+            },
+            {
+              "position": "4",
+              "name": "Kusal Mendis",
+              "score": "74",
+              "player_id": "43953",
+              "player_url": "https://bdcrictime.com/player/profile/43953/Kusal%20Mendis"
+            },
+            {
+              "position": "5",
+              "name": "Sediqullah Atal",
+              "score": "73",
+              "player_id": "102259",
+              "player_url": "https://bdcrictime.com/player/profile/102259/Sediqullah%20Atal"
+            }
+          ],
+          "best_figures": [
+            {
+              "position": "1",
+              "name": "Kuldeep Yadav",
+              "figures": "4/7",
+              "player_id": "775",
+              "player_url": "https://bdcrictime.com/player/profile/775/Kuldeep%20Yadav",
+              "player_image": "https://api.bdcrictime.com/players/775.png"
+            },
+            {
+              "position": "2",
+              "name": "Junaid Siddique",
+              "figures": "4/18",
+              "player_id": "96311",
+              "player_url": "https://bdcrictime.com/player/profile/96311/Junaid%20Siddique"
+            },
+            {
+              "position": "3",
+              "name": "Nuwan Thushara",
+              "figures": "4/18",
+              "player_id": "43820",
+              "player_url": "https://bdcrictime.com/player/profile/43820/Nuwan%20Thushara"
+            },
+            {
+              "position": "4",
+              "name": "Shivam Dube",
+              "figures": "3/4",
+              "player_id": "58733",
+              "player_url": "https://bdcrictime.com/player/profile/58733/Shivam%20Dube"
+            },
+            {
+              "position": "5",
+              "name": "Shaheen Afridi",
+              "figures": "3/17",
+              "player_id": "92991",
+              "player_url": "https://bdcrictime.com/player/profile/92991/Shaheen%20Afridi"
+            }
+          ]
+        },
+        "points_table": [
+          {
+            "position": "1",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FIND.webp&w=64&q=75",
+            "team_flag_alt": "India",
+            "team": "India",
+            "team_url": "https://bdcrictime.com/team/25/india",
+            "matches": "3",
+            "won": "3",
+            "lost": "0",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "0.913",
+            "points": "6"
+          },
+          {
+            "position": "2",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FPAK.webp&w=64&q=75",
+            "team_flag_alt": "Pakistan",
+            "team": "Pakistan",
+            "team_url": "https://bdcrictime.com/team/13/pakistan",
+            "matches": "3",
+            "won": "2",
+            "lost": "1",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "0.329",
+            "points": "4"
+          },
+          {
+            "position": "3",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=64&q=75",
+            "team_flag_alt": "Bangladesh",
+            "team": "Bangladesh",
+            "team_url": "https://bdcrictime.com/team/23/bangladesh",
+            "matches": "3",
+            "won": "1",
+            "lost": "2",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "-0.831",
+            "points": "2"
+          },
+          {
+            "position": "4",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FSri-lanka.png&w=64&q=75",
+            "team_flag_alt": "Sri Lanka",
+            "team": "Sri Lanka",
+            "team_url": "https://bdcrictime.com/team/21/sri-lanka",
+            "matches": "3",
+            "won": "0",
+            "lost": "3",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "-0.418",
+            "points": "0"
+          }
+        ]
+      },
+      "fixtures": [],
+      "results": [],
+      "scraped_at": "2025-11-10T15:07:03.210552"
+    },
+    {
+      "series_id": "129817",
+      "series_name": "Ireland tour of Bangladesh\n10 Nov, 2025 - 02 Dec, 2025",
+      "series_url": "https://bdcrictime.com/series/129817/ireland-tour-of-bangladesh",
+      "overview": {
+        "completed_matches": [],
+        "live_matches": [],
+        "next_matches": [
+          {
+            "full_text": "BAN\n-vs-\nIRE\nStarts at December 2nd 2025, 5:00 PM",
+            "match_url": "https://bdcrictime.com/match/93860/bangladesh-vs-ireland",
+            "team1": "BAN",
+            "team2": "IRE",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FIRE.webp&w=32&q=75",
+                "alt": "Ireland",
+                "type": "team_image"
+              }
+            ],
+            "start_time": "Starts at December 2nd 2025, 5:00 PM",
+            "status": "upcoming"
+          },
+          {
+            "full_text": "BAN\n-vs-\nIRE\nStarts at November 29th 2025, 5:00 PM",
+            "match_url": "https://bdcrictime.com/match/93859/bangladesh-vs-ireland",
+            "team1": "BAN",
+            "team2": "IRE",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FIRE.webp&w=32&q=75",
+                "alt": "Ireland",
+                "type": "team_image"
+              }
+            ],
+            "start_time": "Starts at November 29th 2025, 5:00 PM",
+            "status": "upcoming"
+          },
+          {
+            "full_text": "BAN\n-vs-\nIRE\nStarts at November 27th 2025, 5:00 PM",
+            "match_url": "https://bdcrictime.com/match/93858/bangladesh-vs-ireland",
+            "team1": "BAN",
+            "team2": "IRE",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FIRE.webp&w=32&q=75",
+                "alt": "Ireland",
+                "type": "team_image"
+              }
+            ],
+            "start_time": "Starts at November 27th 2025, 5:00 PM",
+            "status": "upcoming"
+          },
+          {
+            "full_text": "BAN\n-vs-\nIRE\nStarts at November 18th 2025, 9:00 AM",
+            "match_url": "https://bdcrictime.com/match/93857/bangladesh-vs-ireland",
+            "team1": "BAN",
+            "team2": "IRE",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FIRE.webp&w=32&q=75",
+                "alt": "Ireland",
+                "type": "team_image"
+              }
+            ],
+            "start_time": "Starts at November 18th 2025, 9:00 AM",
+            "status": "upcoming"
+          },
+          {
+            "full_text": "BAN\n-vs-\nIRE\nStarts at November 11th 2025, 9:00 AM",
+            "match_url": "https://bdcrictime.com/match/93856/bangladesh-vs-ireland",
+            "team1": "BAN",
+            "team2": "IRE",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FIRE.webp&w=32&q=75",
+                "alt": "Ireland",
+                "type": "team_image"
+              }
+            ],
+            "start_time": "Starts at November 11th 2025, 9:00 AM",
+            "status": "upcoming"
+          }
+        ],
+        "players_on_top": null,
+        "points_table": null
+      },
+      "fixtures": [
+        {
+          "full_text": "Ireland tour of Bangladesh - BAN vs IRE\nTest\n|\n1st Test\nSylhet International Cricket Stadium\nBANGLADESH\nScheduled\n-vs-\nIRELAND\nNovember 11th, 2025\nStarts at November 11th 2025, 9:00 AM\nView Match Details",
+          "match_url": null,
+          "team1": "BANGLADESH",
+          "team2": "IRELAND",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=64&q=75",
+              "alt": "Bangladesh"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2025/09/IRE.webp",
+              "alt": "Ireland"
+            }
+          ],
+          "match_type": "1st Test",
+          "venue": "Sylhet International Cricket Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at November 11th 2025, 9:00 AM"
+        },
+        {
+          "full_text": "Ireland tour of Bangladesh - BAN vs IRE\nTest\n|\n2nd Test\nShere Bangla National Stadium, Mirpur\nBANGLADESH\nScheduled\n-vs-\nIRELAND\nNovember 18th, 2025\nStarts at November 18th 2025, 9:00 AM\nView Match Details",
+          "match_url": null,
+          "team1": "BANGLADESH",
+          "team2": "IRELAND",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=64&q=75",
+              "alt": "Bangladesh"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2025/09/IRE.webp",
+              "alt": "Ireland"
+            }
+          ],
+          "match_type": "2nd Test",
+          "venue": "Shere Bangla National Stadium, Mirpur",
+          "status": "scheduled",
+          "start_time": "Starts at November 18th 2025, 9:00 AM"
+        },
+        {
+          "full_text": "Ireland tour of Bangladesh - BAN vs IRE\nT20I\n|\n1st T20I\nBir Sreshtho Flight Lieutenant Matiur Rahman Stadium\nBANGLADESH\nScheduled\n-vs-\nIRELAND\nNovember 27th, 2025\nStarts at November 27th 2025, 5:00 PM\nView Match Details",
+          "match_url": null,
+          "team1": "BANGLADESH",
+          "team2": "IRELAND",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=64&q=75",
+              "alt": "Bangladesh"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2025/09/IRE.webp",
+              "alt": "Ireland"
+            }
+          ],
+          "match_type": "1st T20I",
+          "venue": "Bir Sreshtho Flight Lieutenant Matiur Rahman Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at November 27th 2025, 5:00 PM"
+        },
+        {
+          "full_text": "Ireland tour of Bangladesh - BAN vs IRE\nT20I\n|\n2nd T20I\nBir Sreshtho Flight Lieutenant Matiur Rahman Stadium\nBANGLADESH\nScheduled\n-vs-\nIRELAND\nNovember 29th, 2025\nStarts at November 29th 2025, 5:00 PM\nView Match Details",
+          "match_url": null,
+          "team1": "BANGLADESH",
+          "team2": "IRELAND",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=64&q=75",
+              "alt": "Bangladesh"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2025/09/IRE.webp",
+              "alt": "Ireland"
+            }
+          ],
+          "match_type": "2nd T20I",
+          "venue": "Bir Sreshtho Flight Lieutenant Matiur Rahman Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at November 29th 2025, 5:00 PM"
+        },
+        {
+          "full_text": "Ireland tour of Bangladesh - BAN vs IRE\nT20I\n|\n3rd T20I\nShere Bangla National Stadium, Mirpur\nBANGLADESH\nScheduled\n-vs-\nIRELAND\nDecember 2nd, 2025\nStarts at December 2nd 2025, 5:00 PM\nView Match Details",
+          "match_url": null,
+          "team1": "BANGLADESH",
+          "team2": "IRELAND",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=64&q=75",
+              "alt": "Bangladesh"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2025/09/IRE.webp",
+              "alt": "Ireland"
+            }
+          ],
+          "match_type": "3rd T20I",
+          "venue": "Shere Bangla National Stadium, Mirpur",
+          "status": "scheduled",
+          "start_time": "Starts at December 2nd 2025, 5:00 PM"
+        }
+      ],
+      "results": [],
+      "scraped_at": "2025-11-10T15:07:42.048281"
+    },
+    {
+      "series_id": "129815",
+      "series_name": "West Indies tour of Bangladesh\n18 Oct, 2025 - 31 Oct, 2025",
+      "series_url": "https://bdcrictime.com/series/129815/west-indies-tour-of-bangladesh",
+      "overview": {
+        "completed_matches": [
+          {
+            "full_text": "BAN\n-vs-\nWI\nWest Indies won by 5 wickets",
+            "status": "completed",
+            "result": "West Indies won by 5 wickets",
+            "team1": "BAN",
+            "team2": "WI",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FWest-Indies.png&w=32&q=75",
+                "alt": "West Indies"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/93850/bangladesh-vs-west-indies"
+          },
+          {
+            "full_text": "BAN\n-vs-\nWI\nWest Indies won by 14 runs",
+            "status": "completed",
+            "result": "West Indies won by 14 runs",
+            "team1": "BAN",
+            "team2": "WI",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FWest-Indies.png&w=32&q=75",
+                "alt": "West Indies"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/93849/bangladesh-vs-west-indies"
+          },
+          {
+            "full_text": "BAN\n-vs-\nWI\nWest Indies won by 16 runs",
+            "status": "completed",
+            "result": "West Indies won by 16 runs",
+            "team1": "BAN",
+            "team2": "WI",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FWest-Indies.png&w=32&q=75",
+                "alt": "West Indies"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/93848/bangladesh-vs-west-indies"
+          },
+          {
+            "full_text": "BAN\n-vs-\nWI\nBangladesh won by 179 runs",
+            "status": "completed",
+            "result": "Bangladesh won by 179 runs",
+            "team1": "BAN",
+            "team2": "WI",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FWest-Indies.png&w=32&q=75",
+                "alt": "West Indies"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/93847/bangladesh-vs-west-indies"
+          },
+          {
+            "full_text": "BAN\n-vs-\nWI\nWest Indies won by superover",
+            "status": "completed",
+            "result": "West Indies won by superover",
+            "team1": "BAN",
+            "team2": "WI",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FWest-Indies.png&w=32&q=75",
+                "alt": "West Indies"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/93846/bangladesh-vs-west-indies"
+          }
+        ],
+        "live_matches": [],
+        "next_matches": [],
+        "players_on_top": {
+          "most_wickets": [
+            {
+              "position": "1",
+              "name": "Rishad Hossain",
+              "wickets": "12",
+              "player_id": "94119",
+              "player_url": "https://bdcrictime.com/player/profile/94119/Rishad%20Hossain",
+              "player_image": "https://api.bdcrictime.com/players/94119.png"
+            },
+            {
+              "position": "2",
+              "name": "Akeal Hosein",
+              "wickets": "6",
+              "player_id": "50076",
+              "player_url": "https://bdcrictime.com/player/profile/50076/Akeal%20Hosein"
+            },
+            {
+              "position": "3",
+              "name": "Nasum Ahmed",
+              "wickets": "5",
+              "player_id": "37413",
+              "player_url": "https://bdcrictime.com/player/profile/37413/Nasum%20Ahmed"
+            },
+            {
+              "position": "4",
+              "name": "Tanvir Islam",
+              "wickets": "5",
+              "player_id": "90847",
+              "player_url": "https://bdcrictime.com/player/profile/90847/Tanvir%20Islam"
+            },
+            {
+              "position": "5",
+              "name": "Alick Athanaze",
+              "wickets": "4",
+              "player_id": "93141",
+              "player_url": "https://bdcrictime.com/player/profile/93141/Alick%20Athanaze"
+            }
+          ],
+          "most_runs": [
+            {
+              "position": "1",
+              "name": "Soumya Sarkar",
+              "runs": "140",
+              "player_id": "344",
+              "player_url": "https://bdcrictime.com/player/profile/344/Soumya%20Sarkar",
+              "player_image": "https://api.bdcrictime.com/players/344.png"
+            },
+            {
+              "position": "2",
+              "name": "Najmul Hossain Shanto",
+              "runs": "91",
+              "player_id": "1017",
+              "player_url": "https://bdcrictime.com/player/profile/1017/Najmul%20Hossain%20Shanto"
+            },
+            {
+              "position": "3",
+              "name": "Towhid Hridoy",
+              "runs": "91",
+              "player_id": "63743",
+              "player_url": "https://bdcrictime.com/player/profile/63743/Towhid%20Hridoy"
+            },
+            {
+              "position": "4",
+              "name": "Saif Hassan",
+              "runs": "89",
+              "player_id": "1014",
+              "player_url": "https://bdcrictime.com/player/profile/1014/Saif%20Hassan"
+            },
+            {
+              "position": "5",
+              "name": "Shai Hope",
+              "runs": "72",
+              "player_id": "46943",
+              "player_url": "https://bdcrictime.com/player/profile/46943/Shai%20Hope"
+            }
+          ],
+          "most_sixes": [
+            {
+              "position": "1",
+              "name": "Saif Hassan",
+              "sixes": "7",
+              "player_id": "1014",
+              "player_url": "https://bdcrictime.com/player/profile/1014/Saif%20Hassan",
+              "player_image": "https://api.bdcrictime.com/players/1014.png"
+            },
+            {
+              "position": "2",
+              "name": "Rishad Hossain",
+              "sixes": "5",
+              "player_id": "94119",
+              "player_url": "https://bdcrictime.com/player/profile/94119/Rishad%20Hossain"
+            },
+            {
+              "position": "3",
+              "name": "Soumya Sarkar",
+              "sixes": "5",
+              "player_id": "344",
+              "player_url": "https://bdcrictime.com/player/profile/344/Soumya%20Sarkar"
+            },
+            {
+              "position": "4",
+              "name": "Najmul Hossain Shanto",
+              "sixes": "3",
+              "player_id": "1017",
+              "player_url": "https://bdcrictime.com/player/profile/1017/Najmul%20Hossain%20Shanto"
+            },
+            {
+              "position": "5",
+              "name": "Akeal Hosein",
+              "sixes": "2",
+              "player_id": "50076",
+              "player_url": "https://bdcrictime.com/player/profile/50076/Akeal%20Hosein"
+            }
+          ],
+          "highest_score": [
+            {
+              "position": "1",
+              "name": "Soumya Sarkar",
+              "score": "91",
+              "player_id": "344",
+              "player_url": "https://bdcrictime.com/player/profile/344/Soumya%20Sarkar",
+              "player_image": "https://api.bdcrictime.com/players/344.png"
+            },
+            {
+              "position": "2",
+              "name": "Saif Hassan",
+              "score": "80",
+              "player_id": "1014",
+              "player_url": "https://bdcrictime.com/player/profile/1014/Saif%20Hassan"
+            },
+            {
+              "position": "3",
+              "name": "Shai Hope",
+              "score": "53",
+              "player_id": "46943",
+              "player_url": "https://bdcrictime.com/player/profile/46943/Shai%20Hope"
+            },
+            {
+              "position": "4",
+              "name": "Towhid Hridoy",
+              "score": "51",
+              "player_id": "63743",
+              "player_url": "https://bdcrictime.com/player/profile/63743/Towhid%20Hridoy"
+            },
+            {
+              "position": "5",
+              "name": "Mahidul Islam Ankon",
+              "score": "46",
+              "player_id": "93368",
+              "player_url": "https://bdcrictime.com/player/profile/93368/Mahidul%20Islam%20Ankon"
+            }
+          ],
+          "best_figures": [
+            {
+              "position": "1",
+              "name": "Rishad Hossain",
+              "figures": "6/35",
+              "player_id": "94119",
+              "player_url": "https://bdcrictime.com/player/profile/94119/Rishad%20Hossain",
+              "player_image": "https://api.bdcrictime.com/players/94119.png"
+            },
+            {
+              "position": "2",
+              "name": "Akeal Hosein",
+              "figures": "4/41",
+              "player_id": "50076",
+              "player_url": "https://bdcrictime.com/player/profile/50076/Akeal%20Hosein"
+            },
+            {
+              "position": "3",
+              "name": "Nasum Ahmed",
+              "figures": "3/11",
+              "player_id": "37413",
+              "player_url": "https://bdcrictime.com/player/profile/37413/Nasum%20Ahmed"
+            },
+            {
+              "position": "4",
+              "name": "Jayden Seales",
+              "figures": "3/48",
+              "player_id": "96398",
+              "player_url": "https://bdcrictime.com/player/profile/96398/Jayden%20Seales"
+            },
+            {
+              "position": "5",
+              "name": "Gudakesh Motie",
+              "figures": "3/65",
+              "player_id": "60812",
+              "player_url": "https://bdcrictime.com/player/profile/60812/Gudakesh%20Motie"
+            }
+          ]
+        },
+        "points_table": null
+      },
+      "fixtures": [],
+      "results": [],
+      "scraped_at": "2025-11-10T15:08:16.821259"
+    },
+    {
+      "series_id": "129725",
+      "series_name": "Netherlands tour of Bangladesh\n30 Aug, 2025 - 03 Sep, 2025",
+      "series_url": "https://bdcrictime.com/series/129725/netherlands-tour-of-bangladesh",
+      "overview": {
+        "completed_matches": [
+          {
+            "full_text": "BAN\n-vs-\nNED\nBangladesh won by 9 wickets",
+            "status": "completed",
+            "result": "Bangladesh won by 9 wickets",
+            "team1": "BAN",
+            "team2": "NED",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FNetherlands.png&w=32&q=75",
+                "alt": "Netherlands"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/92313/bangladesh-vs-netherlands"
+          },
+          {
+            "full_text": "BAN\n-vs-\nNED\nBangladesh won by 8 wickets",
+            "status": "completed",
+            "result": "Bangladesh won by 8 wickets",
+            "team1": "BAN",
+            "team2": "NED",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FNetherlands.png&w=32&q=75",
+                "alt": "Netherlands"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/92312/bangladesh-vs-netherlands"
+          }
+        ],
+        "live_matches": [],
+        "next_matches": [],
+        "players_on_top": {
+          "most_wickets": [
+            {
+              "position": "1",
+              "name": "Taskin Ahmed",
+              "wickets": "6",
+              "player_id": "360",
+              "player_url": "https://bdcrictime.com/player/profile/360/Taskin%20Ahmed",
+              "player_image": "https://api.bdcrictime.com/players/360.png"
+            },
+            {
+              "position": "2",
+              "name": "Kyle Klein",
+              "wickets": "4",
+              "player_id": "131221",
+              "player_url": "https://bdcrictime.com/player/profile/131221/Kyle%20Klein"
+            },
+            {
+              "position": "3",
+              "name": "Nasum Ahmed",
+              "wickets": "3",
+              "player_id": "37413",
+              "player_url": "https://bdcrictime.com/player/profile/37413/Nasum%20Ahmed"
+            },
+            {
+              "position": "4",
+              "name": "Mustafizur Rahman",
+              "wickets": "3",
+              "player_id": "1745",
+              "player_url": "https://bdcrictime.com/player/profile/1745/Mustafizur%20Rahman"
+            },
+            {
+              "position": "5",
+              "name": "Tim Pringle",
+              "wickets": "2",
+              "player_id": "95497",
+              "player_url": "https://bdcrictime.com/player/profile/95497/Tim%20Pringle"
+            }
+          ],
+          "most_runs": [
+            {
+              "position": "1",
+              "name": "Litton Das",
+              "runs": "145",
+              "player_id": "37360",
+              "player_url": "https://bdcrictime.com/player/profile/37360/Litton%20Das",
+              "player_image": "https://api.bdcrictime.com/players/37360.png"
+            },
+            {
+              "position": "2",
+              "name": "Tanzid Hasan",
+              "runs": "83",
+              "player_id": "63742",
+              "player_url": "https://bdcrictime.com/player/profile/63742/Tanzid%20Hasan"
+            },
+            {
+              "position": "3",
+              "name": "Saif Hassan",
+              "runs": "48",
+              "player_id": "1014",
+              "player_url": "https://bdcrictime.com/player/profile/1014/Saif%20Hassan"
+            },
+            {
+              "position": "4",
+              "name": "Aryan Dutt",
+              "runs": "43",
+              "player_id": "103092",
+              "player_url": "https://bdcrictime.com/player/profile/103092/Aryan%20Dutt"
+            },
+            {
+              "position": "5",
+              "name": "Parvez Hossain Emon",
+              "runs": "38",
+              "player_id": "94776",
+              "player_url": "https://bdcrictime.com/player/profile/94776/Parvez%20Hossain%20Emon"
+            }
+          ],
+          "most_sixes": [
+            {
+              "position": "1",
+              "name": "Litton Das",
+              "sixes": "6",
+              "player_id": "37360",
+              "player_url": "https://bdcrictime.com/player/profile/37360/Litton%20Das",
+              "player_image": "https://api.bdcrictime.com/players/37360.png"
+            },
+            {
+              "position": "2",
+              "name": "Saif Hassan",
+              "sixes": "3",
+              "player_id": "1014",
+              "player_url": "https://bdcrictime.com/player/profile/1014/Saif%20Hassan"
+            },
+            {
+              "position": "3",
+              "name": "Nurul Hasan",
+              "sixes": "2",
+              "player_id": "1743",
+              "player_url": "https://bdcrictime.com/player/profile/1743/Nurul%20Hasan"
+            },
+            {
+              "position": "4",
+              "name": "Tanzid Hasan",
+              "sixes": "2",
+              "player_id": "63742",
+              "player_url": "https://bdcrictime.com/player/profile/63742/Tanzid%20Hasan"
+            },
+            {
+              "position": "5",
+              "name": "Parvez Hossain Emon",
+              "sixes": "2",
+              "player_id": "94776",
+              "player_url": "https://bdcrictime.com/player/profile/94776/Parvez%20Hossain%20Emon"
+            }
+          ],
+          "highest_score": [
+            {
+              "position": "1",
+              "name": "Litton Das",
+              "score": "73",
+              "player_id": "37360",
+              "player_url": "https://bdcrictime.com/player/profile/37360/Litton%20Das",
+              "player_image": "https://api.bdcrictime.com/players/37360.png"
+            },
+            {
+              "position": "2",
+              "name": "Litton Das",
+              "score": "54",
+              "player_id": "37360",
+              "player_url": "https://bdcrictime.com/player/profile/37360/Litton%20Das"
+            },
+            {
+              "position": "3",
+              "name": "Tanzid Hasan",
+              "score": "54",
+              "player_id": "63742",
+              "player_url": "https://bdcrictime.com/player/profile/63742/Tanzid%20Hasan"
+            },
+            {
+              "position": "4",
+              "name": "Saif Hassan",
+              "score": "36",
+              "player_id": "1014",
+              "player_url": "https://bdcrictime.com/player/profile/1014/Saif%20Hassan"
+            },
+            {
+              "position": "5",
+              "name": "Aryan Dutt",
+              "score": "30",
+              "player_id": "103092",
+              "player_url": "https://bdcrictime.com/player/profile/103092/Aryan%20Dutt"
+            }
+          ],
+          "best_figures": [
+            {
+              "position": "1",
+              "name": "Taskin Ahmed",
+              "figures": "4/28",
+              "player_id": "360",
+              "player_url": "https://bdcrictime.com/player/profile/360/Taskin%20Ahmed",
+              "player_image": "https://api.bdcrictime.com/players/360.png"
+            },
+            {
+              "position": "2",
+              "name": "Nasum Ahmed",
+              "figures": "3/21",
+              "player_id": "37413",
+              "player_url": "https://bdcrictime.com/player/profile/37413/Nasum%20Ahmed"
+            },
+            {
+              "position": "3",
+              "name": "Kyle Klein",
+              "figures": "3/53",
+              "player_id": "131221",
+              "player_url": "https://bdcrictime.com/player/profile/131221/Kyle%20Klein"
+            },
+            {
+              "position": "4",
+              "name": "Saif Hassan",
+              "figures": "2/18",
+              "player_id": "1014",
+              "player_url": "https://bdcrictime.com/player/profile/1014/Saif%20Hassan"
+            },
+            {
+              "position": "5",
+              "name": "Mustafizur Rahman",
+              "figures": "2/18",
+              "player_id": "1745",
+              "player_url": "https://bdcrictime.com/player/profile/1745/Mustafizur%20Rahman"
+            }
+          ]
+        },
+        "points_table": null
+      },
+      "fixtures": [],
+      "results": [],
+      "scraped_at": "2025-11-10T15:08:52.209831"
+    },
+    {
+      "series_id": "129499",
+      "series_name": "Zimbabwe tour of Bangladesh\n20 Apr, 2025 - 02 May, 2025",
+      "series_url": "https://bdcrictime.com/series/129499/zimbabwe-tour-of-bangladesh",
+      "overview": {
+        "completed_matches": [
+          {
+            "full_text": "BAN\n-vs-\nZIM\nBangladesh won by an innings and 106 runs",
+            "status": "completed",
+            "result": "Bangladesh won by an innings and 106 runs",
+            "team1": "BAN",
+            "team2": "ZIM",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FZimbawe.png&w=32&q=75",
+                "alt": "Zimbabwe"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/88520/bangladesh-vs-zimbabwe"
+          },
+          {
+            "full_text": "BAN\n-vs-\nZIM\nZimbabwe won by 3 wickets",
+            "status": "completed",
+            "result": "Zimbabwe won by 3 wickets",
+            "team1": "BAN",
+            "team2": "ZIM",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FZimbawe.png&w=32&q=75",
+                "alt": "Zimbabwe"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/88519/bangladesh-vs-zimbabwe"
+          }
+        ],
+        "live_matches": [],
+        "next_matches": [],
+        "players_on_top": {
+          "most_wickets": [
+            {
+              "position": "1",
+              "name": "Mehidy Hasan Miraz",
+              "wickets": "15",
+              "player_id": "1018",
+              "player_url": "https://bdcrictime.com/player/profile/1018/Mehidy%20Hasan%20Miraz",
+              "player_image": "https://api.bdcrictime.com/players/1018.png"
+            },
+            {
+              "position": "2",
+              "name": "Taijul Islam",
+              "wickets": "11",
+              "player_id": "400",
+              "player_url": "https://bdcrictime.com/player/profile/400/Taijul%20Islam"
+            },
+            {
+              "position": "3",
+              "name": "Blessing Muzarabani",
+              "wickets": "10",
+              "player_id": "93462",
+              "player_url": "https://bdcrictime.com/player/profile/93462/Blessing%20Muzarabani"
+            },
+            {
+              "position": "4",
+              "name": "Wellington Masakadza",
+              "wickets": "6",
+              "player_id": "1812",
+              "player_url": "https://bdcrictime.com/player/profile/1812/Wellington%20Masakadza"
+            },
+            {
+              "position": "5",
+              "name": "Vincent Masekesa",
+              "wickets": "5",
+              "player_id": "144780",
+              "player_url": "https://bdcrictime.com/player/profile/144780/Vincent%20Masekesa"
+            }
+          ],
+          "most_runs": [
+            {
+              "position": "1",
+              "name": "Sean Williams",
+              "runs": "142",
+              "player_id": "189",
+              "player_url": "https://bdcrictime.com/player/profile/189/Sean%20Williams",
+              "player_image": "https://api.bdcrictime.com/players/189.png"
+            },
+            {
+              "position": "2",
+              "name": "Brian Bennett",
+              "runs": "138",
+              "player_id": "109548",
+              "player_url": "https://bdcrictime.com/player/profile/109548/Brian%20Bennett"
+            },
+            {
+              "position": "3",
+              "name": "Shadman Islam",
+              "runs": "136",
+              "player_id": "43309",
+              "player_url": "https://bdcrictime.com/player/profile/43309/Shadman%20Islam"
+            },
+            {
+              "position": "4",
+              "name": "Mominul Haque",
+              "runs": "136",
+              "player_id": "356",
+              "player_url": "https://bdcrictime.com/player/profile/356/Mominul%20Haque"
+            },
+            {
+              "position": "5",
+              "name": "Ben Curran",
+              "runs": "129",
+              "player_id": "51097",
+              "player_url": "https://bdcrictime.com/player/profile/51097/Ben%20Curran"
+            }
+          ],
+          "most_sixes": [
+            {
+              "position": "1",
+              "name": "Sean Williams",
+              "sixes": "4",
+              "player_id": "189",
+              "player_url": "https://bdcrictime.com/player/profile/189/Sean%20Williams",
+              "player_image": "https://api.bdcrictime.com/players/189.png"
+            },
+            {
+              "position": "2",
+              "name": "Wellington Masakadza",
+              "sixes": "3",
+              "player_id": "1812",
+              "player_url": "https://bdcrictime.com/player/profile/1812/Wellington%20Masakadza"
+            },
+            {
+              "position": "3",
+              "name": "Blessing Muzarabani",
+              "sixes": "2",
+              "player_id": "93462",
+              "player_url": "https://bdcrictime.com/player/profile/93462/Blessing%20Muzarabani"
+            },
+            {
+              "position": "4",
+              "name": "Mehidy Hasan Miraz",
+              "sixes": "2",
+              "player_id": "1018",
+              "player_url": "https://bdcrictime.com/player/profile/1018/Mehidy%20Hasan%20Miraz"
+            },
+            {
+              "position": "5",
+              "name": "Mominul Haque",
+              "sixes": "2",
+              "player_id": "356",
+              "player_url": "https://bdcrictime.com/player/profile/356/Mominul%20Haque"
+            }
+          ],
+          "highest_score": [
+            {
+              "position": "1",
+              "name": "Shadman Islam",
+              "score": "120",
+              "player_id": "43309",
+              "player_url": "https://bdcrictime.com/player/profile/43309/Shadman%20Islam",
+              "player_image": "https://api.bdcrictime.com/players/43309.png"
+            },
+            {
+              "position": "2",
+              "name": "Mehidy Hasan Miraz",
+              "score": "104",
+              "player_id": "1018",
+              "player_url": "https://bdcrictime.com/player/profile/1018/Mehidy%20Hasan%20Miraz"
+            },
+            {
+              "position": "3",
+              "name": "Sean Williams",
+              "score": "67",
+              "player_id": "189",
+              "player_url": "https://bdcrictime.com/player/profile/189/Sean%20Williams"
+            },
+            {
+              "position": "4",
+              "name": "Najmul Hossain Shanto",
+              "score": "60",
+              "player_id": "1017",
+              "player_url": "https://bdcrictime.com/player/profile/1017/Najmul%20Hossain%20Shanto"
+            },
+            {
+              "position": "5",
+              "name": "Sean Williams",
+              "score": "59",
+              "player_id": "189",
+              "player_url": "https://bdcrictime.com/player/profile/189/Sean%20Williams"
+            }
+          ],
+          "best_figures": [
+            {
+              "position": "1",
+              "name": "Taijul Islam",
+              "figures": "6/60",
+              "player_id": "400",
+              "player_url": "https://bdcrictime.com/player/profile/400/Taijul%20Islam",
+              "player_image": "https://api.bdcrictime.com/players/400.png"
+            },
+            {
+              "position": "2",
+              "name": "Blessing Muzarabani",
+              "figures": "6/72",
+              "player_id": "93462",
+              "player_url": "https://bdcrictime.com/player/profile/93462/Blessing%20Muzarabani"
+            },
+            {
+              "position": "3",
+              "name": "Mehidy Hasan Miraz",
+              "figures": "5/32",
+              "player_id": "1018",
+              "player_url": "https://bdcrictime.com/player/profile/1018/Mehidy%20Hasan%20Miraz"
+            },
+            {
+              "position": "4",
+              "name": "Vincent Masekesa",
+              "figures": "5/115",
+              "player_id": "144780",
+              "player_url": "https://bdcrictime.com/player/profile/144780/Vincent%20Masekesa"
+            },
+            {
+              "position": "5",
+              "name": "Wellington Masakadza",
+              "figures": "3/21",
+              "player_id": "1812",
+              "player_url": "https://bdcrictime.com/player/profile/1812/Wellington%20Masakadza"
+            }
+          ]
+        },
+        "points_table": null
+      },
+      "fixtures": [],
+      "results": [],
+      "scraped_at": "2025-11-10T15:09:49.248236"
+    },
+    {
+      "series_id": "128515",
+      "series_name": "Zimbabwe tour of Bangladesh\n03 May, 2024 - 12 May, 2024",
+      "series_url": "https://bdcrictime.com/series/128515/zimbabwe-tour-of-bangladesh",
+      "overview": {
+        "completed_matches": [
+          {
+            "full_text": "BAN\n-vs-\nZIM\nZimbabwe won by 8 wickets",
+            "status": "completed",
+            "result": "Zimbabwe won by 8 wickets",
+            "team1": "BAN",
+            "team2": "ZIM",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FZimbawe.png&w=32&q=75",
+                "alt": "Zimbabwe"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/74537/bangladesh-vs-zimbabwe"
+          },
+          {
+            "full_text": "BAN\n-vs-\nZIM\nBangladesh won by 5 runs.",
+            "status": "completed",
+            "result": "Bangladesh won by 5 runs.",
+            "team1": "BAN",
+            "team2": "ZIM",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FZimbawe.png&w=32&q=75",
+                "alt": "Zimbabwe"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/74536/bangladesh-vs-zimbabwe"
+          },
+          {
+            "full_text": "BAN\n-vs-\nZIM\nBangladesh won by 9 runs.",
+            "status": "completed",
+            "result": "Bangladesh won by 9 runs.",
+            "team1": "BAN",
+            "team2": "ZIM",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FZimbawe.png&w=32&q=75",
+                "alt": "Zimbabwe"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/74535/bangladesh-vs-zimbabwe"
+          },
+          {
+            "full_text": "BAN\n-vs-\nZIM\nBangladesh won by 6 wickets",
+            "status": "completed",
+            "result": "Bangladesh won by 6 wickets",
+            "team1": "BAN",
+            "team2": "ZIM",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FZimbawe.png&w=32&q=75",
+                "alt": "Zimbabwe"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/74534/bangladesh-vs-zimbabwe"
+          },
+          {
+            "full_text": "BAN\n-vs-\nZIM\nBangladesh won by 8 wickets",
+            "status": "completed",
+            "result": "Bangladesh won by 8 wickets",
+            "team1": "BAN",
+            "team2": "ZIM",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FBAN.webp&w=32&q=75",
+                "alt": "Bangladesh"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F05%2FZimbawe.png&w=32&q=75",
+                "alt": "Zimbabwe"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/74533/bangladesh-vs-zimbabwe"
+          }
+        ],
+        "live_matches": [],
+        "next_matches": [],
+        "players_on_top": {
+          "most_wickets": [
+            {
+              "position": "1",
+              "name": "Taskin Ahmed",
+              "wickets": "8",
+              "player_id": "360",
+              "player_url": "https://bdcrictime.com/player/profile/360/Taskin%20Ahmed",
+              "player_image": "https://api.bdcrictime.com/players/360.png"
+            },
+            {
+              "position": "2",
+              "name": "Mohammad Saifuddin",
+              "wickets": "8",
+              "player_id": "1021",
+              "player_url": "https://bdcrictime.com/player/profile/1021/Mohammad%20Saifuddin"
+            },
+            {
+              "position": "3",
+              "name": "Blessing Muzarabani",
+              "wickets": "7",
+              "player_id": "93462",
+              "player_url": "https://bdcrictime.com/player/profile/93462/Blessing%20Muzarabani"
+            },
+            {
+              "position": "4",
+              "name": "Luke Jongwe",
+              "wickets": "7",
+              "player_id": "44108",
+              "player_url": "https://bdcrictime.com/player/profile/44108/Luke%20Jongwe"
+            },
+            {
+              "position": "5",
+              "name": "Shakib Al Hasan",
+              "wickets": "5",
+              "player_id": "348",
+              "player_url": "https://bdcrictime.com/player/profile/348/Shakib%20Al%20Hasan"
+            }
+          ],
+          "most_runs": [
+            {
+              "position": "1",
+              "name": "Tanzid Hasan",
+              "runs": "160",
+              "player_id": "63742",
+              "player_url": "https://bdcrictime.com/player/profile/63742/Tanzid%20Hasan",
+              "player_image": "https://api.bdcrictime.com/players/63742.png"
+            },
+            {
+              "position": "2",
+              "name": "Towhid Hridoy",
+              "runs": "140",
+              "player_id": "63743",
+              "player_url": "https://bdcrictime.com/player/profile/63743/Towhid%20Hridoy"
+            },
+            {
+              "position": "3",
+              "name": "Brian Bennett",
+              "runs": "135",
+              "player_id": "109548",
+              "player_url": "https://bdcrictime.com/player/profile/109548/Brian%20Bennett"
+            },
+            {
+              "position": "4",
+              "name": "Johnathan Campbell",
+              "runs": "105",
+              "player_id": "96219",
+              "player_url": "https://bdcrictime.com/player/profile/96219/Johnathan%20Campbell"
+            },
+            {
+              "position": "5",
+              "name": "Sikandar Raza",
+              "runs": "93",
+              "player_id": "183",
+              "player_url": "https://bdcrictime.com/player/profile/183/Sikandar%20Raza"
+            }
+          ],
+          "most_sixes": [
+            {
+              "position": "1",
+              "name": "Brian Bennett",
+              "sixes": "8",
+              "player_id": "109548",
+              "player_url": "https://bdcrictime.com/player/profile/109548/Brian%20Bennett",
+              "player_image": "https://api.bdcrictime.com/players/109548.png"
+            },
+            {
+              "position": "2",
+              "name": "Johnathan Campbell",
+              "sixes": "7",
+              "player_id": "96219",
+              "player_url": "https://bdcrictime.com/player/profile/96219/Johnathan%20Campbell"
+            },
+            {
+              "position": "3",
+              "name": "Jaker Ali Anik",
+              "sixes": "5",
+              "player_id": "1410",
+              "player_url": "https://bdcrictime.com/player/profile/1410/Jaker%20Ali%20Anik"
+            },
+            {
+              "position": "4",
+              "name": "Tanzid Hasan",
+              "sixes": "5",
+              "player_id": "63742",
+              "player_url": "https://bdcrictime.com/player/profile/63742/Tanzid%20Hasan"
+            },
+            {
+              "position": "5",
+              "name": "Towhid Hridoy",
+              "sixes": "5",
+              "player_id": "63743",
+              "player_url": "https://bdcrictime.com/player/profile/63743/Towhid%20Hridoy"
+            }
+          ],
+          "highest_score": [
+            {
+              "position": "1",
+              "name": "Sikandar Raza",
+              "score": "72",
+              "player_id": "183",
+              "player_url": "https://bdcrictime.com/player/profile/183/Sikandar%20Raza",
+              "player_image": "https://api.bdcrictime.com/players/183.png"
+            },
+            {
+              "position": "2",
+              "name": "Brian Bennett",
+              "score": "70",
+              "player_id": "109548",
+              "player_url": "https://bdcrictime.com/player/profile/109548/Brian%20Bennett"
+            },
+            {
+              "position": "3",
+              "name": "Tanzid Hasan",
+              "score": "67",
+              "player_id": "63742",
+              "player_url": "https://bdcrictime.com/player/profile/63742/Tanzid%20Hasan"
+            },
+            {
+              "position": "4",
+              "name": "Towhid Hridoy",
+              "score": "57",
+              "player_id": "63743",
+              "player_url": "https://bdcrictime.com/player/profile/63743/Towhid%20Hridoy"
+            },
+            {
+              "position": "5",
+              "name": "Mahmudullah",
+              "score": "54",
+              "player_id": "346",
+              "player_url": "https://bdcrictime.com/player/profile/346/Mahmudullah"
+            }
+          ],
+          "best_figures": [
+            {
+              "position": "1",
+              "name": "Shakib Al Hasan",
+              "figures": "4/35",
+              "player_id": "348",
+              "player_url": "https://bdcrictime.com/player/profile/348/Shakib%20Al%20Hasan",
+              "player_image": "https://api.bdcrictime.com/players/348.png"
+            },
+            {
+              "position": "2",
+              "name": "Taskin Ahmed",
+              "figures": "3/14",
+              "player_id": "360",
+              "player_url": "https://bdcrictime.com/player/profile/360/Taskin%20Ahmed"
+            },
+            {
+              "position": "3",
+              "name": "Blessing Muzarabani",
+              "figures": "3/14",
+              "player_id": "93462",
+              "player_url": "https://bdcrictime.com/player/profile/93462/Blessing%20Muzarabani"
+            },
+            {
+              "position": "4",
+              "name": "Mohammad Saifuddin",
+              "figures": "3/15",
+              "player_id": "1021",
+              "player_url": "https://bdcrictime.com/player/profile/1021/Mohammad%20Saifuddin"
+            },
+            {
+              "position": "5",
+              "name": "Mustafizur Rahman",
+              "figures": "3/19",
+              "player_id": "1745",
+              "player_url": "https://bdcrictime.com/player/profile/1745/Mustafizur%20Rahman"
+            }
+          ]
+        },
+        "points_table": null
+      },
+      "fixtures": [],
+      "results": [],
+      "scraped_at": "2025-11-10T15:10:24.151207"
+    },
+    {
+      "series_id": "129850",
+      "series_name": "National Cricket League Bangladesh (4-Day)\n23 Oct, 2025 - 07 Dec, 2025",
+      "series_url": "https://bdcrictime.com/series/129850/national-cricket-league-bangladesh-4-day",
+      "overview": {
+        "completed_matches": [
+          {
+            "full_text": "KD\n-vs-\nRAD\nRajshahi Division won by 7 wickets",
+            "status": "completed",
+            "result": "Rajshahi Division won by 7 wickets",
+            "team1": "KD",
+            "team2": "RAD",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FKhulna-Division.png&w=32&q=75",
+                "alt": "Khulna Division"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FRajshahi-Division-png.png&w=32&q=75",
+                "alt": "Rajshahi Division"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/94323/khulna-division-vs-rajshahi-division"
+          }
+        ],
+        "live_matches": [],
+        "next_matches": [
+          {
+            "full_text": "RGD\n-vs-\nCGD\nStarts at 10:00 local time",
+            "match_url": "https://bdcrictime.com/match/94531/rangpur-division-vs-chattogram-division",
+            "team1": "RGD",
+            "team2": "CGD",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FRGD.webp&w=32&q=75",
+                "alt": "Rangpur Division",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FChittagong-Division.png&w=32&q=75",
+                "alt": "Chittogram Division",
+                "type": "team_image"
+              }
+            ],
+            "start_time": "Starts at 10:00 local time",
+            "status": "upcoming"
+          },
+          {
+            "full_text": "DD\n-vs-\nKD\nStarts at 10:00 local time",
+            "match_url": "https://bdcrictime.com/match/94530/dhaka-division-vs-khulna-division",
+            "team1": "DD",
+            "team2": "KD",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDHD.webp&w=32&q=75",
+                "alt": "Dhaka Division",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FKhulna-Division.png&w=32&q=75",
+                "alt": "Khulna Division",
+                "type": "team_image"
+              }
+            ],
+            "start_time": "Starts at 10:00 local time",
+            "status": "upcoming"
+          },
+          {
+            "full_text": "MD\n-vs-\nBAD\nStarts at 10:00 local time",
+            "match_url": "https://bdcrictime.com/match/94529/mymensingh-division-vs-barishal-division",
+            "team1": "MD",
+            "team2": "BAD",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDAM.webp&w=32&q=75",
+                "alt": "Mymensingh Division",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FBarishal-Division.png&w=32&q=75",
+                "alt": "Barishal Division",
+                "type": "team_image"
+              }
+            ],
+            "start_time": "Starts at 10:00 local time",
+            "status": "upcoming"
+          },
+          {
+            "full_text": "SD\n-vs-\nRAD\nStarts at 10:00 local time",
+            "match_url": "https://bdcrictime.com/match/94528/sylhet-division-vs-rajshahi-division",
+            "team1": "SD",
+            "team2": "RAD",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FSylhet-Division-png.jpg&w=32&q=75",
+                "alt": "Sylhet Division",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FRajshahi-Division-png.png&w=32&q=75",
+                "alt": "Rajshahi Division",
+                "type": "team_image"
+              }
+            ],
+            "start_time": "Starts at 10:00 local time",
+            "status": "upcoming"
+          },
+          {
+            "full_text": "RGD\n-vs-\nRAD\nStarts at 10:00 local time",
+            "match_url": "https://bdcrictime.com/match/94527/rangpur-division-vs-rajshahi-division",
+            "team1": "RGD",
+            "team2": "RAD",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FRGD.webp&w=32&q=75",
+                "alt": "Rangpur Division",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FRajshahi-Division-png.png&w=32&q=75",
+                "alt": "Rajshahi Division",
+                "type": "team_image"
+              }
+            ],
+            "start_time": "Starts at 10:00 local time",
+            "status": "upcoming"
+          },
+          {
+            "full_text": "MD\n-vs-\nRGD\nMatch drawn",
+            "match_url": "https://bdcrictime.com/match/94328/mymensingh-division-vs-rangpur-division",
+            "team1": "MD",
+            "team2": "RGD",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDAM.webp&w=32&q=75",
+                "alt": "Mymensingh Division",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FRGD.webp&w=32&q=75",
+                "alt": "Rangpur Division",
+                "type": "team_image"
+              }
+            ],
+            "status": "upcoming"
+          },
+          {
+            "full_text": "CGD\n-vs-\nBAD\nMatch drawn",
+            "match_url": "https://bdcrictime.com/match/94324/chattogram-division-vs-barishal-division",
+            "team1": "CGD",
+            "team2": "BAD",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FChittagong-Division.png&w=32&q=75",
+                "alt": "Chittogram Division",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FBarishal-Division.png&w=32&q=75",
+                "alt": "Barishal Division",
+                "type": "team_image"
+              }
+            ],
+            "status": "upcoming"
+          },
+          {
+            "full_text": "SD\n-vs-\nDD\nMatch drawn",
+            "match_url": "https://bdcrictime.com/match/94322/sylhet-division-vs-dhaka-division",
+            "team1": "SD",
+            "team2": "DD",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FSylhet-Division-png.jpg&w=32&q=75",
+                "alt": "Sylhet Division",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDHD.webp&w=32&q=75",
+                "alt": "Dhaka Division",
+                "type": "team_image"
+              }
+            ],
+            "status": "upcoming"
+          },
+          {
+            "full_text": "SD\n-vs-\nMD\nMatch Drawn",
+            "match_url": "https://bdcrictime.com/match/94327/sylhet-division-vs-mymensingh-division",
+            "team1": "SD",
+            "team2": "MD",
+            "team_flags": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FSylhet-Division-png.jpg&w=32&q=75",
+                "alt": "Sylhet Division",
+                "type": "team_image"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDAM.webp&w=32&q=75",
+                "alt": "Mymensingh Division",
+                "type": "team_image"
+              }
+            ],
+            "status": "upcoming"
+          }
+        ],
+        "players_on_top": {
+          "most_wickets": [
+            {
+              "position": "1",
+              "name": "Hasan Murad",
+              "wickets": "11",
+              "player_id": "63349",
+              "player_url": "https://bdcrictime.com/player/profile/63349/Hasan%20Murad",
+              "player_image": "https://api.bdcrictime.com/players/63349.png"
+            },
+            {
+              "position": "2",
+              "name": "Tanvir Islam",
+              "wickets": "10",
+              "player_id": "90847",
+              "player_url": "https://bdcrictime.com/player/profile/90847/Tanvir%20Islam"
+            },
+            {
+              "position": "3",
+              "name": "Rakibul Hasan",
+              "wickets": "10",
+              "player_id": "8180",
+              "player_url": "https://bdcrictime.com/player/profile/8180/Rakibul%20Hasan"
+            },
+            {
+              "position": "4",
+              "name": "Ripon Mondol",
+              "wickets": "9",
+              "player_id": "112605",
+              "player_url": "https://bdcrictime.com/player/profile/112605/Ripon%20Mondol"
+            },
+            {
+              "position": "5",
+              "name": "Afif Hossain",
+              "wickets": "8",
+              "player_id": "90539",
+              "player_url": "https://bdcrictime.com/player/profile/90539/Afif%20Hossain"
+            }
+          ],
+          "most_runs": [
+            {
+              "position": "1",
+              "name": "Jishan Alam",
+              "runs": "282",
+              "player_id": "112606",
+              "player_url": "https://bdcrictime.com/player/profile/112606/Jishan%20Alam",
+              "player_image": "https://api.bdcrictime.com/players/112606.png"
+            },
+            {
+              "position": "2",
+              "name": "Mohammad Naim Sheikh",
+              "runs": "266",
+              "player_id": "63352",
+              "player_url": "https://bdcrictime.com/player/profile/63352/Mohammad%20Naim%20Sheikh"
+            },
+            {
+              "position": "3",
+              "name": "Mahmudul Hasan Joy",
+              "runs": "238",
+              "player_id": "94214",
+              "player_url": "https://bdcrictime.com/player/profile/94214/Mahmudul%20Hasan%20Joy"
+            },
+            {
+              "position": "4",
+              "name": "Abdul Mazid",
+              "runs": "234",
+              "player_id": "49642",
+              "player_url": "https://bdcrictime.com/player/profile/49642/Abdul%20Mazid"
+            },
+            {
+              "position": "5",
+              "name": "Yasir Ali Chowdhury",
+              "runs": "229",
+              "player_id": "37415",
+              "player_url": "https://bdcrictime.com/player/profile/37415/Yasir%20Ali%20Chowdhury"
+            }
+          ],
+          "most_sixes": [
+            {
+              "position": "1",
+              "name": "Abu Hider",
+              "sixes": "11",
+              "player_id": "1767",
+              "player_url": "https://bdcrictime.com/player/profile/1767/Abu%20Hider",
+              "player_image": "https://api.bdcrictime.com/players/1767.png"
+            },
+            {
+              "position": "2",
+              "name": "Shykat Ali",
+              "sixes": "8",
+              "player_id": "43307",
+              "player_url": "https://bdcrictime.com/player/profile/43307/Shykat%20Ali"
+            },
+            {
+              "position": "3",
+              "name": "Yasir Ali Chowdhury",
+              "sixes": "8",
+              "player_id": "37415",
+              "player_url": "https://bdcrictime.com/player/profile/37415/Yasir%20Ali%20Chowdhury"
+            },
+            {
+              "position": "4",
+              "name": "Ziaur Rahman",
+              "sixes": "8",
+              "player_id": "37420",
+              "player_url": "https://bdcrictime.com/player/profile/37420/Ziaur%20Rahman"
+            },
+            {
+              "position": "5",
+              "name": "Shohidul Islam",
+              "sixes": "7",
+              "player_id": "49657",
+              "player_url": "https://bdcrictime.com/player/profile/49657/Shohidul%20Islam"
+            }
+          ],
+          "highest_score": [
+            {
+              "position": "1",
+              "name": "Shykat Ali",
+              "score": "175",
+              "player_id": "43307",
+              "player_url": "https://bdcrictime.com/player/profile/43307/Shykat%20Ali",
+              "player_image": "https://api.bdcrictime.com/players/43307.png"
+            },
+            {
+              "position": "2",
+              "name": "Naeem Islam",
+              "score": "137",
+              "player_id": "43305",
+              "player_url": "https://bdcrictime.com/player/profile/43305/Naeem%20Islam"
+            },
+            {
+              "position": "3",
+              "name": "Yasir Ali Chowdhury",
+              "score": "129",
+              "player_id": "37415",
+              "player_url": "https://bdcrictime.com/player/profile/37415/Yasir%20Ali%20Chowdhury"
+            },
+            {
+              "position": "4",
+              "name": "Mahmudul Hasan Joy",
+              "score": "127",
+              "player_id": "94214",
+              "player_url": "https://bdcrictime.com/player/profile/94214/Mahmudul%20Hasan%20Joy"
+            },
+            {
+              "position": "5",
+              "name": "Mahfijul Islam",
+              "score": "127",
+              "player_id": "63191",
+              "player_url": "https://bdcrictime.com/player/profile/63191/Mahfijul%20Islam"
+            }
+          ],
+          "best_figures": [
+            {
+              "position": "1",
+              "name": "Nahidul Islam",
+              "figures": "4/48",
+              "player_id": "55312",
+              "player_url": "https://bdcrictime.com/player/profile/55312/Nahidul%20Islam",
+              "player_image": "https://api.bdcrictime.com/players/55312.png"
+            },
+            {
+              "position": "2",
+              "name": "Mehidy Hasan Miraz",
+              "figures": "4/97",
+              "player_id": "1018",
+              "player_url": "https://bdcrictime.com/player/profile/1018/Mehidy%20Hasan%20Miraz"
+            },
+            {
+              "position": "3",
+              "name": "Meherob Hasan",
+              "figures": "3/5",
+              "player_id": "63125",
+              "player_url": "https://bdcrictime.com/player/profile/63125/Meherob%20Hasan"
+            },
+            {
+              "position": "4",
+              "name": "Ali Mohammad Walid",
+              "figures": "3/29",
+              "player_id": "137592",
+              "player_url": "https://bdcrictime.com/player/profile/137592/Ali%20Mohammad%20Walid"
+            },
+            {
+              "position": "5",
+              "name": "Nihaduzzaman",
+              "figures": "3/30",
+              "player_id": "52889",
+              "player_url": "https://bdcrictime.com/player/profile/52889/Nihaduzzaman"
+            }
+          ]
+        },
+        "points_table": [
+          {
+            "position": "1",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FChittagong-Division.png&w=64&q=75",
+            "team_flag_alt": "Chittogram Division",
+            "team": "Chittogram Division",
+            "team_url": "https://bdcrictime.com/team/11293/chittogram-division",
+            "matches": "2",
+            "won": "1",
+            "lost": "0",
+            "nr": "0",
+            "tied": "1",
+            "net_rr": "0.000",
+            "points": "10"
+          },
+          {
+            "position": "2",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FRajshahi-Division-png.png&w=64&q=75",
+            "team_flag_alt": "Rajshahi Division",
+            "team": "Rajshahi Division",
+            "team_url": "https://bdcrictime.com/team/11283/rajshahi-division",
+            "matches": "2",
+            "won": "1",
+            "lost": "1",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "0.000",
+            "points": "8"
+          },
+          {
+            "position": "3",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FKhulna-Division.png&w=64&q=75",
+            "team_flag_alt": "Khulna Division",
+            "team": "Khulna Division",
+            "team_url": "https://bdcrictime.com/team/11286/khulna-division",
+            "matches": "2",
+            "won": "1",
+            "lost": "1",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "0.000",
+            "points": "8"
+          },
+          {
+            "position": "4",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDHD.webp&w=64&q=75",
+            "team_flag_alt": "Dhaka Division",
+            "team": "Dhaka Division",
+            "team_url": "https://bdcrictime.com/team/11287/dhaka-division",
+            "matches": "2",
+            "won": "0",
+            "lost": "0",
+            "nr": "0",
+            "tied": "2",
+            "net_rr": "0.000",
+            "points": "4"
+          },
+          {
+            "position": "5",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FRGD.webp&w=64&q=75",
+            "team_flag_alt": "Rangpur Division",
+            "team": "Rangpur Division",
+            "team_url": "https://bdcrictime.com/team/11291/rangpur-division",
+            "matches": "2",
+            "won": "0",
+            "lost": "0",
+            "nr": "0",
+            "tied": "2",
+            "net_rr": "0.000",
+            "points": "4"
+          },
+          {
+            "position": "6",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDAM.webp&w=64&q=75",
+            "team_flag_alt": "Mymensingh Division",
+            "team": "Mymensingh Division",
+            "team_url": "https://bdcrictime.com/team/11290/mymensingh-division",
+            "matches": "2",
+            "won": "0",
+            "lost": "0",
+            "nr": "0",
+            "tied": "2",
+            "net_rr": "0.000",
+            "points": "4"
+          },
+          {
+            "position": "7",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FSylhet-Division-png.jpg&w=64&q=75",
+            "team_flag_alt": "Sylhet Division",
+            "team": "Sylhet Division",
+            "team_url": "https://bdcrictime.com/team/11294/sylhet-division",
+            "matches": "2",
+            "won": "0",
+            "lost": "0",
+            "nr": "0",
+            "tied": "2",
+            "net_rr": "0.000",
+            "points": "4"
+          },
+          {
+            "position": "8",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FBarishal-Division.png&w=64&q=75",
+            "team_flag_alt": "Barishal Division",
+            "team": "Barishal Division",
+            "team_url": "https://bdcrictime.com/team/11282/barishal-division",
+            "matches": "2",
+            "won": "0",
+            "lost": "1",
+            "nr": "0",
+            "tied": "1",
+            "net_rr": "0.000",
+            "points": "2"
+          }
+        ]
+      },
+      "fixtures": [
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - CGD vs KD\nFirst Class\n|\n11th Match\nZahur Ahmed Chowdhury Stadium\nCHITTOGRAM DIVISION\n351/10 (89.3 ov)\nLive\n-vs-\nKHULNA DIVISION\n*249/8 (71.4 ov)\nNovember 8th, 2025\nDay 3 - Khulna Division trail by 102 runs.\nView Match Details",
+          "match_url": null,
+          "team1": "CHITTOGRAM DIVISION",
+          "team2": "KHULNA DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FChittagong-Division.png&w=64&q=75",
+              "alt": "Chittogram Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Khulna-Division.png",
+              "alt": "Khulna Division"
+            }
+          ],
+          "venue": "Zahur Ahmed Chowdhury Stadium",
+          "start_time": "November 8th, 2025"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - BAD vs RAD\nFirst Class\n|\n12th Match\nSheikh Abu Naser Stadium\nBARISHAL DIVISION\n212/10 (77 ov) & *22/1 (11 ov)\nLive\n-vs-\nRAJSHAHI DIVISION\n235/10 (72.4 ov)\nNovember 8th, 2025\nDay 3 - Barishal Division trail by 1 runs.\nView Match Details",
+          "match_url": null,
+          "team1": "BARISHAL DIVISION",
+          "team2": "RAJSHAHI DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FBarishal-Division.png&w=64&q=75",
+              "alt": "Barishal Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Rajshahi-Division-png.png",
+              "alt": "Rajshahi Division"
+            }
+          ],
+          "venue": "Sheikh Abu Naser Stadium",
+          "start_time": "November 8th, 2025"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - SD vs RGD\nFirst Class\n|\n9th Match\nSheikh Kamal International Cricket Stadium\nSYLHET DIVISION\n199/10 (58.3 ov)\nLive\n-vs-\nRANGPUR DIVISION\n*187/8 (64 ov)\nNovember 8th, 2025\nDay 3 - Rangpur Division trail by 12 runs.\nView Match Details",
+          "match_url": null,
+          "team1": "SYLHET DIVISION",
+          "team2": "RANGPUR DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FSylhet-Division-png.jpg&w=64&q=75",
+              "alt": "Sylhet Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2025/09/RGD.webp",
+              "alt": "Rangpur Division"
+            }
+          ],
+          "venue": "Sheikh Kamal International Cricket Stadium",
+          "start_time": "November 8th, 2025"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - MD vs DD\nFirst Class\n|\n10th Match\nSheikh Kamal International Cricket Stadium Academy Ground\nMYMENSINGH DIVISION\n336/10 (102.1 ov)\nLive\n-vs-\nDHAKA DIVISION\n*17/0 (12.1 ov)\nNovember 8th, 2025\nDay 3 - Dhaka Division trail by 319 runs.\nView Match Details",
+          "match_url": null,
+          "team1": "MYMENSINGH DIVISION",
+          "team2": "DHAKA DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDAM.webp&w=64&q=75",
+              "alt": "Mymensingh Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2025/09/DHD.webp",
+              "alt": "Dhaka Division"
+            }
+          ],
+          "venue": "Sheikh Kamal International Cricket Stadium Academy Ground",
+          "start_time": "November 8th, 2025"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - SD vs KD\nFirst Class\n|\n13th Match\nSylhet International Cricket Stadium, Academy Ground\nSYLHET DIVISION\nScheduled\n-vs-\nKHULNA DIVISION\nNovember 15th, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "SYLHET DIVISION",
+          "team2": "KHULNA DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FSylhet-Division-png.jpg&w=64&q=75",
+              "alt": "Sylhet Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Khulna-Division.png",
+              "alt": "Khulna Division"
+            }
+          ],
+          "venue": "Sylhet International Cricket Stadium, Academy Ground",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - MD vs CGD\nFirst Class\n|\n14th Match\nSheikh Kamal International Cricket Stadium Academy Ground\nMYMENSINGH DIVISION\nScheduled\n-vs-\nCHITTOGRAM DIVISION\nNovember 15th, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "MYMENSINGH DIVISION",
+          "team2": "CHITTOGRAM DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDAM.webp&w=64&q=75",
+              "alt": "Mymensingh Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Chittagong-Division.png",
+              "alt": "Chittogram Division"
+            }
+          ],
+          "venue": "Sheikh Kamal International Cricket Stadium Academy Ground",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - DD vs RAD\nFirst Class\n|\n15th Match\nShahid Kamruzzaman Stadium\nDHAKA DIVISION\nScheduled\n-vs-\nRAJSHAHI DIVISION\nNovember 15th, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "DHAKA DIVISION",
+          "team2": "RAJSHAHI DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDHD.webp&w=64&q=75",
+              "alt": "Dhaka Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Rajshahi-Division-png.png",
+              "alt": "Rajshahi Division"
+            }
+          ],
+          "venue": "Shahid Kamruzzaman Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - RGD vs BAD\nFirst Class\n|\n16th Match\nShaheed Chandu Stadium\nRANGPUR DIVISION\nScheduled\n-vs-\nBARISHAL DIVISION\nNovember 15th, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "RANGPUR DIVISION",
+          "team2": "BARISHAL DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FRGD.webp&w=64&q=75",
+              "alt": "Rangpur Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Barishal-Division.png",
+              "alt": "Barishal Division"
+            }
+          ],
+          "venue": "Shaheed Chandu Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - SD vs CGD\nFirst Class\n|\n17th Match\nShaheed Chandu Stadium\nSYLHET DIVISION\nScheduled\n-vs-\nCHITTOGRAM DIVISION\nNovember 22nd, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "SYLHET DIVISION",
+          "team2": "CHITTOGRAM DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FSylhet-Division-png.jpg&w=64&q=75",
+              "alt": "Sylhet Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Chittagong-Division.png",
+              "alt": "Chittogram Division"
+            }
+          ],
+          "venue": "Shaheed Chandu Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - MD vs KD\nFirst Class\n|\n18th Match\nShahid Kamruzzaman Stadium\nMYMENSINGH DIVISION\nScheduled\n-vs-\nKHULNA DIVISION\nNovember 22nd, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "MYMENSINGH DIVISION",
+          "team2": "KHULNA DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDAM.webp&w=64&q=75",
+              "alt": "Mymensingh Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Khulna-Division.png",
+              "alt": "Khulna Division"
+            }
+          ],
+          "venue": "Shahid Kamruzzaman Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - DD vs BAD\nFirst Class\n|\n19th Match\nSheikh Kamal International Cricket Stadium\nDHAKA DIVISION\nScheduled\n-vs-\nBARISHAL DIVISION\nNovember 22nd, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "DHAKA DIVISION",
+          "team2": "BARISHAL DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDHD.webp&w=64&q=75",
+              "alt": "Dhaka Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Barishal-Division.png",
+              "alt": "Barishal Division"
+            }
+          ],
+          "venue": "Sheikh Kamal International Cricket Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - RGD vs RAD\nFirst Class\n|\n20th Match\nShahid Kamruzzaman Stadium\nRANGPUR DIVISION\nScheduled\n-vs-\nRAJSHAHI DIVISION\nNovember 22nd, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "RANGPUR DIVISION",
+          "team2": "RAJSHAHI DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FRGD.webp&w=64&q=75",
+              "alt": "Rangpur Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Rajshahi-Division-png.png",
+              "alt": "Rajshahi Division"
+            }
+          ],
+          "venue": "Shahid Kamruzzaman Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - SD vs RAD\nFirst Class\n|\n21st Match\nSylhet International Cricket Stadium\nSYLHET DIVISION\nScheduled\n-vs-\nRAJSHAHI DIVISION\nNovember 29th, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "SYLHET DIVISION",
+          "team2": "RAJSHAHI DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FSylhet-Division-png.jpg&w=64&q=75",
+              "alt": "Sylhet Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Rajshahi-Division-png.png",
+              "alt": "Rajshahi Division"
+            }
+          ],
+          "venue": "Sylhet International Cricket Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - MD vs BAD\nFirst Class\n|\n22nd Match\nSylhet International Cricket Stadium, Academy Ground\nMYMENSINGH DIVISION\nScheduled\n-vs-\nBARISHAL DIVISION\nNovember 29th, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "MYMENSINGH DIVISION",
+          "team2": "BARISHAL DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDAM.webp&w=64&q=75",
+              "alt": "Mymensingh Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Barishal-Division.png",
+              "alt": "Barishal Division"
+            }
+          ],
+          "venue": "Sylhet International Cricket Stadium, Academy Ground",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - DD vs KD\nFirst Class\n|\n23rd Match\nSheikh Abu Naser Stadium\nDHAKA DIVISION\nScheduled\n-vs-\nKHULNA DIVISION\nNovember 29th, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "DHAKA DIVISION",
+          "team2": "KHULNA DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDHD.webp&w=64&q=75",
+              "alt": "Dhaka Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Khulna-Division.png",
+              "alt": "Khulna Division"
+            }
+          ],
+          "venue": "Sheikh Abu Naser Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        },
+        {
+          "full_text": "National Cricket League Bangladesh (4-Day) - RGD vs CGD\nFirst Class\n|\n24th Match\nSheikh Kamal International Cricket Stadium\nRANGPUR DIVISION\nScheduled\n-vs-\nCHITTOGRAM DIVISION\nNovember 29th, 2025\nStarts at 10:00 local time\nView Match Details",
+          "match_url": null,
+          "team1": "RANGPUR DIVISION",
+          "team2": "CHITTOGRAM DIVISION",
+          "team_images": [
+            {
+              "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FRGD.webp&w=64&q=75",
+              "alt": "Rangpur Division"
+            },
+            {
+              "src": "https://gcdnimages.entitysport.com/assets/uploads/2024/02/Chittagong-Division.png",
+              "alt": "Chittogram Division"
+            }
+          ],
+          "venue": "Sheikh Kamal International Cricket Stadium",
+          "status": "scheduled",
+          "start_time": "Starts at 10:00 local time"
+        }
+      ],
+      "results": [],
+      "scraped_at": "2025-11-10T15:10:59.423467"
+    },
+    {
+      "series_id": "129772",
+      "series_name": "National Cricket League\n14 Sep, 2025 - 12 Oct, 2025",
+      "series_url": "https://bdcrictime.com/series/129772/national-cricket-league",
+      "overview": {
+        "completed_matches": [
+          {
+            "full_text": "KD\n-vs-\nRGD\nRangpur Division won by 8 wickets",
+            "status": "completed",
+            "result": "Rangpur Division won by 8 wickets",
+            "team1": "KD",
+            "team2": "RGD",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FKhulna-Division.png&w=32&q=75",
+                "alt": "Khulna Division"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FRGD.webp&w=32&q=75",
+                "alt": "Rangpur Division"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/93748/khulna-division-vs-rangpur-division"
+          },
+          {
+            "full_text": "RGD\n-vs-\nCGD\nRangpur Division won by 4 wickets",
+            "status": "completed",
+            "result": "Rangpur Division won by 4 wickets",
+            "team1": "RGD",
+            "team2": "CGD",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FRGD.webp&w=32&q=75",
+                "alt": "Rangpur Division"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FChittagong-Division.png&w=32&q=75",
+                "alt": "Chittogram Division"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/93747/rangpur-division-vs-chittogram-division"
+          },
+          {
+            "full_text": "CGD\n-vs-\nKD\nKhulna Division won by 4 wickets (DLS Method)",
+            "status": "completed",
+            "result": "Khulna Division won by 4 wickets (DLS Method)",
+            "team1": "CGD",
+            "team2": "KD",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FChittagong-Division.png&w=32&q=75",
+                "alt": "Chittogram Division"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FKhulna-Division.png&w=32&q=75",
+                "alt": "Khulna Division"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/93746/chittogram-division-vs-khulna-division"
+          },
+          {
+            "full_text": "DD\n-vs-\nRGD\nRangpur Division won by 1 wicket",
+            "status": "completed",
+            "result": "Rangpur Division won by 1 wicket",
+            "team1": "DD",
+            "team2": "RGD",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDHD.webp&w=32&q=75",
+                "alt": "Dhaka Division"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FRGD.webp&w=32&q=75",
+                "alt": "Rangpur Division"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/93745/dhaka-division-vs-rangpur-division"
+          },
+          {
+            "full_text": "KD\n-vs-\nSD\nKhulna Division won by 11 runs (DLS METHOD)",
+            "status": "completed",
+            "result": "Khulna Division won by 11 runs (DLS METHOD)",
+            "team1": "KD",
+            "team2": "SD",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FKhulna-Division.png&w=32&q=75",
+                "alt": "Khulna Division"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FSylhet-Division-png.jpg&w=32&q=75",
+                "alt": "Sylhet Division"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/93744/khulna-division-vs-sylhet-division"
+          }
+        ],
+        "live_matches": [],
+        "next_matches": [],
+        "players_on_top": {
+          "most_wickets": [
+            {
+              "position": "1",
+              "name": "Hasan Murad",
+              "wickets": "14",
+              "player_id": "63349",
+              "player_url": "https://bdcrictime.com/player/profile/63349/Hasan%20Murad",
+              "player_image": "https://api.bdcrictime.com/players/63349.png"
+            },
+            {
+              "position": "2",
+              "name": "Abu Hasim",
+              "wickets": "12",
+              "player_id": "120513",
+              "player_url": "https://bdcrictime.com/player/profile/120513/Abu%20Hasim"
+            },
+            {
+              "position": "3",
+              "name": "Sheikh Paevez Jibon",
+              "wickets": "11",
+              "player_id": "124914",
+              "player_url": "https://bdcrictime.com/player/profile/124914/Sheikh%20Paevez%20Jibon"
+            },
+            {
+              "position": "4",
+              "name": "Alauddin Babu",
+              "wickets": "11",
+              "player_id": "54665",
+              "player_url": "https://bdcrictime.com/player/profile/54665/Alauddin%20Babu"
+            },
+            {
+              "position": "5",
+              "name": "Rubel Hossain",
+              "wickets": "10",
+              "player_id": "358",
+              "player_url": "https://bdcrictime.com/player/profile/358/Rubel%20Hossain"
+            }
+          ],
+          "most_runs": [
+            {
+              "position": "1",
+              "name": "Mahmudul Hasan Joy",
+              "runs": "323",
+              "player_id": "94214",
+              "player_url": "https://bdcrictime.com/player/profile/94214/Mahmudul%20Hasan%20Joy",
+              "player_image": "https://api.bdcrictime.com/players/94214.png"
+            },
+            {
+              "position": "2",
+              "name": "Akbar Ali",
+              "runs": "222",
+              "player_id": "94112",
+              "player_url": "https://bdcrictime.com/player/profile/94112/Akbar%20Ali"
+            },
+            {
+              "position": "3",
+              "name": "Habibur Rahman",
+              "runs": "216",
+              "player_id": "55135",
+              "player_url": "https://bdcrictime.com/player/profile/55135/Habibur%20Rahman"
+            },
+            {
+              "position": "4",
+              "name": "Anamul Haque Bijoy",
+              "runs": "209",
+              "player_id": "108433",
+              "player_url": "https://bdcrictime.com/player/profile/108433/Anamul%20Haque%20Bijoy"
+            },
+            {
+              "position": "5",
+              "name": "Fazle Mahmud",
+              "runs": "200",
+              "player_id": "54628",
+              "player_url": "https://bdcrictime.com/player/profile/54628/Fazle%20Mahmud"
+            }
+          ],
+          "most_sixes": [
+            {
+              "position": "1",
+              "name": "Mahmudul Hasan Joy",
+              "sixes": "21",
+              "player_id": "94214",
+              "player_url": "https://bdcrictime.com/player/profile/94214/Mahmudul%20Hasan%20Joy",
+              "player_image": "https://api.bdcrictime.com/players/94214.png"
+            },
+            {
+              "position": "2",
+              "name": "Habibur Rahman",
+              "sixes": "15",
+              "player_id": "55135",
+              "player_url": "https://bdcrictime.com/player/profile/55135/Habibur%20Rahman"
+            },
+            {
+              "position": "3",
+              "name": "Mosaddek Hossain",
+              "sixes": "11",
+              "player_id": "37352",
+              "player_url": "https://bdcrictime.com/player/profile/37352/Mosaddek%20Hossain"
+            },
+            {
+              "position": "4",
+              "name": "Afif Hossain",
+              "sixes": "11",
+              "player_id": "90539",
+              "player_url": "https://bdcrictime.com/player/profile/90539/Afif%20Hossain"
+            },
+            {
+              "position": "5",
+              "name": "Soumya Sarkar",
+              "sixes": "10",
+              "player_id": "344",
+              "player_url": "https://bdcrictime.com/player/profile/344/Soumya%20Sarkar"
+            }
+          ],
+          "highest_score": [
+            {
+              "position": "1",
+              "name": "Mahmudul Hasan Joy",
+              "score": "110",
+              "player_id": "94214",
+              "player_url": "https://bdcrictime.com/player/profile/94214/Mahmudul%20Hasan%20Joy",
+              "player_image": "https://api.bdcrictime.com/players/94214.png"
+            },
+            {
+              "position": "2",
+              "name": "Shadman Islam",
+              "score": "101",
+              "player_id": "43309",
+              "player_url": "https://bdcrictime.com/player/profile/43309/Shadman%20Islam"
+            },
+            {
+              "position": "3",
+              "name": "Habibur Rahman",
+              "score": "94",
+              "player_id": "55135",
+              "player_url": "https://bdcrictime.com/player/profile/55135/Habibur%20Rahman"
+            },
+            {
+              "position": "4",
+              "name": "Mahfijul Islam",
+              "score": "79",
+              "player_id": "63191",
+              "player_url": "https://bdcrictime.com/player/profile/63191/Mahfijul%20Islam"
+            },
+            {
+              "position": "5",
+              "name": "Mahmudul Hasan Joy",
+              "score": "78",
+              "player_id": "94214",
+              "player_url": "https://bdcrictime.com/player/profile/94214/Mahmudul%20Hasan%20Joy"
+            }
+          ],
+          "best_figures": [
+            {
+              "position": "1",
+              "name": "Alauddin Babu",
+              "figures": "5/16",
+              "player_id": "54665",
+              "player_url": "https://bdcrictime.com/player/profile/54665/Alauddin%20Babu",
+              "player_image": "https://api.bdcrictime.com/players/54665.png"
+            },
+            {
+              "position": "2",
+              "name": "Abu Hasim",
+              "figures": "4/7",
+              "player_id": "120513",
+              "player_url": "https://bdcrictime.com/player/profile/120513/Abu%20Hasim"
+            },
+            {
+              "position": "3",
+              "name": "Iftakhar Hossain Ifti",
+              "figures": "4/10",
+              "player_id": "121327",
+              "player_url": "https://bdcrictime.com/player/profile/121327/Iftakhar%20Hossain%20Ifti"
+            },
+            {
+              "position": "4",
+              "name": "Sheikh Paevez Jibon",
+              "figures": "4/16",
+              "player_id": "124914",
+              "player_url": "https://bdcrictime.com/player/profile/124914/Sheikh%20Paevez%20Jibon"
+            },
+            {
+              "position": "5",
+              "name": "Ziaur Rahman",
+              "figures": "4/28",
+              "player_id": "37420",
+              "player_url": "https://bdcrictime.com/player/profile/37420/Ziaur%20Rahman"
+            }
+          ]
+        },
+        "points_table": [
+          {
+            "position": "1",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FChittagong-Division.png&w=64&q=75",
+            "team_flag_alt": "Chittogram Division",
+            "team": "Chittogram Division",
+            "team_url": "https://bdcrictime.com/team/11293/chittogram-division",
+            "matches": "7",
+            "won": "5",
+            "lost": "1",
+            "nr": "1",
+            "tied": "0",
+            "net_rr": "1.657",
+            "points": "11"
+          },
+          {
+            "position": "2",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FKhulna-Division.png&w=64&q=75",
+            "team_flag_alt": "Khulna Division",
+            "team": "Khulna Division",
+            "team_url": "https://bdcrictime.com/team/11286/khulna-division",
+            "matches": "7",
+            "won": "5",
+            "lost": "1",
+            "nr": "1",
+            "tied": "0",
+            "net_rr": "0.407",
+            "points": "11"
+          },
+          {
+            "position": "3",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDHD.webp&w=64&q=75",
+            "team_flag_alt": "Dhaka Division",
+            "team": "Dhaka Division",
+            "team_url": "https://bdcrictime.com/team/11287/dhaka-division",
+            "matches": "7",
+            "won": "3",
+            "lost": "2",
+            "nr": "2",
+            "tied": "0",
+            "net_rr": "1.065",
+            "points": "8"
+          },
+          {
+            "position": "4",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FRGD.webp&w=64&q=75",
+            "team_flag_alt": "Rangpur Division",
+            "team": "Rangpur Division",
+            "team_url": "https://bdcrictime.com/team/11291/rangpur-division",
+            "matches": "7",
+            "won": "3",
+            "lost": "3",
+            "nr": "1",
+            "tied": "0",
+            "net_rr": "0.473",
+            "points": "7"
+          },
+          {
+            "position": "5",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F09%2FDAM.webp&w=64&q=75",
+            "team_flag_alt": "Mymensingh Division",
+            "team": "Mymensingh Division",
+            "team_url": "https://bdcrictime.com/team/11290/mymensingh-division",
+            "matches": "7",
+            "won": "3",
+            "lost": "3",
+            "nr": "1",
+            "tied": "0",
+            "net_rr": "-0.001",
+            "points": "7"
+          },
+          {
+            "position": "6",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FRajshahi-Division-png.png&w=64&q=75",
+            "team_flag_alt": "Rajshahi Division",
+            "team": "Rajshahi Division",
+            "team_url": "https://bdcrictime.com/team/11283/rajshahi-division",
+            "matches": "7",
+            "won": "2",
+            "lost": "3",
+            "nr": "2",
+            "tied": "0",
+            "net_rr": "0.601",
+            "points": "6"
+          },
+          {
+            "position": "7",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FSylhet-Division-png.jpg&w=64&q=75",
+            "team_flag_alt": "Sylhet Division",
+            "team": "Sylhet Division",
+            "team_url": "https://bdcrictime.com/team/11294/sylhet-division",
+            "matches": "7",
+            "won": "1",
+            "lost": "4",
+            "nr": "2",
+            "tied": "0",
+            "net_rr": "-2.597",
+            "points": "4"
+          },
+          {
+            "position": "8",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FBarishal-Division.png&w=64&q=75",
+            "team_flag_alt": "Barishal Division",
+            "team": "Barishal Division",
+            "team_url": "https://bdcrictime.com/team/11282/barishal-division",
+            "matches": "7",
+            "won": "0",
+            "lost": "5",
+            "nr": "2",
+            "tied": "0",
+            "net_rr": "-1.994",
+            "points": "2"
+          }
+        ]
+      },
+      "fixtures": [],
+      "results": [],
+      "scraped_at": "2025-11-10T15:11:42.696112"
+    },
+    {
+      "series_id": "129493",
+      "series_name": "Dhaka Premier Division Cricket League\n03 Mar, 2025 - 16 May, 2025",
+      "series_url": "https://bdcrictime.com/series/129493/dhaka-premier-division-cricket-league",
+      "overview": {
+        "completed_matches": [
+          {
+            "full_text": "LOR\n-vs-\nABL\nAbahani Limited won by 7 wickets",
+            "status": "completed",
+            "result": "Abahani Limited won by 7 wickets",
+            "team1": "LOR",
+            "team2": "ABL",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F07%2FRectangle-3363-1.png&w=32&q=75",
+                "alt": "Legends of Rupganj"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F07%2FRectangle-3363-4.png&w=32&q=75",
+                "alt": "Abahani Limited"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/90275/legends-of-rupganj-vs-abahani-limited"
+          },
+          {
+            "full_text": "GGC\n-vs-\nMSC\nMohammedan Sporting Club won by 4 wickets",
+            "status": "completed",
+            "result": "Mohammedan Sporting Club won by 4 wickets",
+            "team1": "GGC",
+            "team2": "MSC",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FGazi-Group-Cricketers-png.jpeg&w=32&q=75",
+                "alt": "Gazi Group Cricketers"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F03%2FMohammedan-Sporting-Club.png&w=32&q=75",
+                "alt": "Mohammedan Sporting Club"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/90274/gazi-group-cricketers-vs-mohammedan-sporting-club"
+          },
+          {
+            "full_text": "PSC\n-vs-\nBU\nBrothers won by 113 runs",
+            "status": "completed",
+            "result": "Brothers won by 113 runs",
+            "team1": "PSC",
+            "team2": "BU",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F03%2FPSCx.jpg&w=32&q=75",
+                "alt": "Partex Sporting Club"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F07%2FRectangle-3363-3.png&w=32&q=75",
+                "alt": "Brothers Union"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/89344/partex-sporting-club-vs-brothers-union"
+          },
+          {
+            "full_text": "LOR\n-vs-\nAGRAN\nL Rupganj won by 103 runs",
+            "status": "completed",
+            "result": "L Rupganj won by 103 runs",
+            "team1": "LOR",
+            "team2": "AGRAN",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F07%2FRectangle-3363-1.png&w=32&q=75",
+                "alt": "Legends of Rupganj"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FAgrani-Bank-Cricket-Club-png.png&w=32&q=75",
+                "alt": "Agrani Bank Cricket Club"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/89335/legends-of-rupganj-vs-agrani-bank-cricket-club"
+          },
+          {
+            "full_text": "ABL\n-vs-\nGGC\nAbahani Ltd won by 10 runs",
+            "status": "completed",
+            "result": "Abahani Ltd won by 10 runs",
+            "team1": "ABL",
+            "team2": "GGC",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F07%2FRectangle-3363-4.png&w=32&q=75",
+                "alt": "Abahani Limited"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FGazi-Group-Cricketers-png.jpeg&w=32&q=75",
+                "alt": "Gazi Group Cricketers"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/89334/abahani-limited-vs-gazi-group-cricketers"
+          }
+        ],
+        "live_matches": [],
+        "next_matches": [],
+        "players_on_top": {
+          "most_wickets": [
+            {
+              "position": "1",
+              "name": "Rakibul Hasan",
+              "wickets": "30",
+              "player_id": "8180",
+              "player_url": "https://bdcrictime.com/player/profile/8180/Rakibul%20Hasan",
+              "player_image": "https://api.bdcrictime.com/players/8180.png"
+            },
+            {
+              "position": "2",
+              "name": "Mosaddek Hossain",
+              "wickets": "30",
+              "player_id": "37352",
+              "player_url": "https://bdcrictime.com/player/profile/37352/Mosaddek%20Hossain"
+            },
+            {
+              "position": "3",
+              "name": "Mohammad Saifuddin",
+              "wickets": "24",
+              "player_id": "1021",
+              "player_url": "https://bdcrictime.com/player/profile/1021/Mohammad%20Saifuddin"
+            },
+            {
+              "position": "4",
+              "name": "Arif Ahmed-1",
+              "wickets": "23",
+              "player_id": "115237",
+              "player_url": "https://bdcrictime.com/player/profile/115237/Arif%20Ahmed-1"
+            },
+            {
+              "position": "5",
+              "name": "Taijul Islam",
+              "wickets": "23",
+              "player_id": "400",
+              "player_url": "https://bdcrictime.com/player/profile/400/Taijul%20Islam"
+            }
+          ],
+          "most_runs": [
+            {
+              "position": "1",
+              "name": "Anamul Haque Bijoy",
+              "runs": "874",
+              "player_id": "108433",
+              "player_url": "https://bdcrictime.com/player/profile/108433/Anamul%20Haque%20Bijoy",
+              "player_image": "https://api.bdcrictime.com/players/108433.png"
+            },
+            {
+              "position": "2",
+              "name": "Parvez Hossain Emon",
+              "runs": "798",
+              "player_id": "94776",
+              "player_url": "https://bdcrictime.com/player/profile/94776/Parvez%20Hossain%20Emon"
+            },
+            {
+              "position": "3",
+              "name": "Mohammad Naim",
+              "runs": "618",
+              "player_id": "63352",
+              "player_url": "https://bdcrictime.com/player/profile/63352/Mohammad%20Naim"
+            },
+            {
+              "position": "4",
+              "name": "Amite Hasan",
+              "runs": "614",
+              "player_id": "94113",
+              "player_url": "https://bdcrictime.com/player/profile/94113/Amite%20Hasan"
+            },
+            {
+              "position": "5",
+              "name": "Imrul Kayes",
+              "runs": "569",
+              "player_id": "450",
+              "player_url": "https://bdcrictime.com/player/profile/450/Imrul%20Kayes"
+            }
+          ],
+          "most_sixes": [
+            {
+              "position": "1",
+              "name": "Parvez Hossain Emon",
+              "sixes": "39",
+              "player_id": "94776",
+              "player_url": "https://bdcrictime.com/player/profile/94776/Parvez%20Hossain%20Emon",
+              "player_image": "https://api.bdcrictime.com/players/94776.png"
+            },
+            {
+              "position": "2",
+              "name": "Mohammad Naim",
+              "sixes": "27",
+              "player_id": "63352",
+              "player_url": "https://bdcrictime.com/player/profile/63352/Mohammad%20Naim"
+            },
+            {
+              "position": "3",
+              "name": "Mosaddek Hossain",
+              "sixes": "26",
+              "player_id": "37352",
+              "player_url": "https://bdcrictime.com/player/profile/37352/Mosaddek%20Hossain"
+            },
+            {
+              "position": "4",
+              "name": "Imrul Kayes",
+              "sixes": "26",
+              "player_id": "450",
+              "player_url": "https://bdcrictime.com/player/profile/450/Imrul%20Kayes"
+            },
+            {
+              "position": "5",
+              "name": "Tanzid Hasan",
+              "sixes": "23",
+              "player_id": "63742",
+              "player_url": "https://bdcrictime.com/player/profile/63742/Tanzid%20Hasan"
+            }
+          ],
+          "highest_score": [
+            {
+              "position": "1",
+              "name": "Mohammad Naim",
+              "score": "176",
+              "player_id": "63352",
+              "player_url": "https://bdcrictime.com/player/profile/63352/Mohammad%20Naim",
+              "player_image": "https://api.bdcrictime.com/players/63352.png"
+            },
+            {
+              "position": "2",
+              "name": "Soumya Sarkar",
+              "score": "153",
+              "player_id": "344",
+              "player_url": "https://bdcrictime.com/player/profile/344/Soumya%20Sarkar"
+            },
+            {
+              "position": "3",
+              "name": "Anamul Haque Bijoy",
+              "score": "149",
+              "player_id": "108433",
+              "player_url": "https://bdcrictime.com/player/profile/108433/Anamul%20Haque%20Bijoy"
+            },
+            {
+              "position": "4",
+              "name": "Anamul Haque Bijoy",
+              "score": "144",
+              "player_id": "108433",
+              "player_url": "https://bdcrictime.com/player/profile/108433/Anamul%20Haque%20Bijoy"
+            },
+            {
+              "position": "5",
+              "name": "Yasir Ali Chowdhury",
+              "score": "143",
+              "player_id": "37415",
+              "player_url": "https://bdcrictime.com/player/profile/37415/Yasir%20Ali%20Chowdhury"
+            }
+          ],
+          "best_figures": [
+            {
+              "position": "1",
+              "name": "Mahfuzur Rahman Rabby",
+              "figures": "5/18",
+              "player_id": "63205",
+              "player_url": "https://bdcrictime.com/player/profile/63205/Mahfuzur%20Rahman%20Rabby",
+              "player_image": "https://api.bdcrictime.com/players/63205.png"
+            },
+            {
+              "position": "2",
+              "name": "Robiul Hoque-1",
+              "figures": "4/14",
+              "player_id": "63341",
+              "player_url": "https://bdcrictime.com/player/profile/63341/Robiul%20Hoque-1"
+            },
+            {
+              "position": "3",
+              "name": "Rakibul Hasan",
+              "figures": "4/16",
+              "player_id": "8180",
+              "player_url": "https://bdcrictime.com/player/profile/8180/Rakibul%20Hasan"
+            },
+            {
+              "position": "4",
+              "name": "Taijul Islam",
+              "figures": "4/31",
+              "player_id": "400",
+              "player_url": "https://bdcrictime.com/player/profile/400/Taijul%20Islam"
+            },
+            {
+              "position": "5",
+              "name": "Saif Hassan",
+              "figures": "4/37",
+              "player_id": "1014",
+              "player_url": "https://bdcrictime.com/player/profile/1014/Saif%20Hassan"
+            }
+          ]
+        },
+        "points_table": [
+          {
+            "position": "1",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F07%2FRectangle-3363-4.png&w=64&q=75",
+            "team_flag_alt": "Abahani Limited",
+            "team": "Abahani Limited",
+            "team_url": "https://bdcrictime.com/team/23723/abahani-limited",
+            "matches": "16",
+            "won": "14",
+            "lost": "2",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "1.013",
+            "points": "28"
+          },
+          {
+            "position": "2",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F03%2FMohammedan-Sporting-Club.png&w=64&q=75",
+            "team_flag_alt": "Mohammedan Sporting Club",
+            "team": "Mohammedan Sporting Club",
+            "team_url": "https://bdcrictime.com/team/23724/mohammedan-sporting-club",
+            "matches": "16",
+            "won": "12",
+            "lost": "4",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "0.244",
+            "points": "24"
+          },
+          {
+            "position": "3",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FGazi-Group-Cricketers-png.jpeg&w=64&q=75",
+            "team_flag_alt": "Gazi Group Cricketers",
+            "team": "Gazi Group Cricketers",
+            "team_url": "https://bdcrictime.com/team/86848/gazi-group-cricketers",
+            "matches": "16",
+            "won": "10",
+            "lost": "6",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "0.197",
+            "points": "20"
+          },
+          {
+            "position": "4",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F07%2FRectangle-3363-1.png&w=64&q=75",
+            "team_flag_alt": "Legends of Rupganj",
+            "team": "Legends of Rupganj",
+            "team_url": "https://bdcrictime.com/team/23708/legends-of-rupganj",
+            "matches": "16",
+            "won": "9",
+            "lost": "6",
+            "nr": "1",
+            "tied": "0",
+            "net_rr": "0.909",
+            "points": "19"
+          },
+          {
+            "position": "5",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F03%2FGulshan-Cricket-Club.png&w=64&q=75",
+            "team_flag_alt": "Gulshan Cricket Club",
+            "team": "Gulshan Cricket Club",
+            "team_url": "https://bdcrictime.com/team/128854/gulshan-cricket-club",
+            "matches": "16",
+            "won": "8",
+            "lost": "7",
+            "nr": "1",
+            "tied": "0",
+            "net_rr": "-0.073",
+            "points": "17"
+          },
+          {
+            "position": "6",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F02%2FAgrani-Bank-Cricket-Club-png.png&w=64&q=75",
+            "team_flag_alt": "Agrani Bank Cricket Club",
+            "team": "Agrani Bank Cricket Club",
+            "team_url": "https://bdcrictime.com/team/111104/agrani-bank-cricket-club",
+            "matches": "16",
+            "won": "8",
+            "lost": "8",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "-0.023",
+            "points": "16"
+          },
+          {
+            "position": "7",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F07%2FRectangle-3363-2.png&w=64&q=75",
+            "team_flag_alt": "Prime Bank Cricket Club",
+            "team": "Prime Bank Cricket Club",
+            "team_url": "https://bdcrictime.com/team/23714/prime-bank-cricket-club",
+            "matches": "11",
+            "won": "5",
+            "lost": "6",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "0.727",
+            "points": "10"
+          },
+          {
+            "position": "8",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F07%2FRectangle-3363-3.png&w=64&q=75",
+            "team_flag_alt": "Brothers Union",
+            "team": "Brothers Union",
+            "team_url": "https://bdcrictime.com/team/23718/brothers-union",
+            "matches": "13",
+            "won": "4",
+            "lost": "8",
+            "nr": "1",
+            "tied": "0",
+            "net_rr": "-0.472",
+            "points": "9"
+          },
+          {
+            "position": "9",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F07%2FRectangle-3363.png&w=64&q=75",
+            "team_flag_alt": "Sheikh Jamal Dhanmondi Club",
+            "team": "Sheikh Jamal Dhanmondi Club",
+            "team_url": "https://bdcrictime.com/team/23703/sheikh-jamal-dhanmondi-club",
+            "matches": "11",
+            "won": "4",
+            "lost": "7",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "-0.129",
+            "points": "8"
+          },
+          {
+            "position": "10",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2024%2F03%2FPSCx.jpg&w=64&q=75",
+            "team_flag_alt": "Partex Sporting Club",
+            "team": "Partex Sporting Club",
+            "team_url": "https://bdcrictime.com/team/23702/partex-sporting-club",
+            "matches": "13",
+            "won": "4",
+            "lost": "9",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "-0.742",
+            "points": "8"
+          },
+          {
+            "position": "11",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F03%2FRupganj-Tigers-Cricket-Club.png&w=64&q=75",
+            "team_flag_alt": "Rupganj Tigers Cricket Club",
+            "team": "Rupganj Tigers Cricket Club",
+            "team_url": "https://bdcrictime.com/team/123619/rupganj-tigers-cricket-club",
+            "matches": "11",
+            "won": "3",
+            "lost": "7",
+            "nr": "1",
+            "tied": "0",
+            "net_rr": "-0.639",
+            "points": "7"
+          },
+          {
+            "position": "12",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F08%2Fshine.png&w=64&q=75",
+            "team_flag_alt": "Shinepukur Cricket Club",
+            "team": "Shinepukur Cricket Club",
+            "team_url": "https://bdcrictime.com/team/111103/shinepukur-cricket-club",
+            "matches": "13",
+            "won": "1",
+            "lost": "12",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "-1.248",
+            "points": "2"
+          }
+        ]
+      },
+      "fixtures": [],
+      "results": [],
+      "scraped_at": "2025-11-10T15:12:19.153229"
+    },
+    {
+      "series_id": "129388",
+      "series_name": "Bangladesh Premier League\n30 Dec, 2024 - 07 Feb, 2025",
+      "series_url": "https://bdcrictime.com/series/129388/bangladesh-premier-league",
+      "overview": {
+        "completed_matches": [
+          {
+            "full_text": "FB\n-vs-\nCK\nFortune Barishal won by 3 wickets",
+            "status": "completed",
+            "result": "Fortune Barishal won by 3 wickets",
+            "team1": "FB",
+            "team2": "CK",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2022%2F01%2Fdownload.jpg&w=32&q=75",
+                "alt": "Fortune Barishal"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F09%2FChittagong-Kings.png&w=32&q=75",
+                "alt": "Chittagong Kings"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/85837/fortune-barishal-vs-chittagong-kings"
+          },
+          {
+            "full_text": "CK\n-vs-\nKT\nChittagong Kings won by 2 wickets",
+            "status": "completed",
+            "result": "Chittagong Kings won by 2 wickets",
+            "team1": "CK",
+            "team2": "KT",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F09%2FChittagong-Kings.png&w=32&q=75",
+                "alt": "Chittagong Kings"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2022%2F01%2FKhulna_Tigers.png&w=32&q=75",
+                "alt": "Khulna Tigers"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/85836/chittagong-kings-vs-khulna-tigers"
+          },
+          {
+            "full_text": "FB\n-vs-\nCK\nFortune Barishal won by 9 wickets",
+            "status": "completed",
+            "result": "Fortune Barishal won by 9 wickets",
+            "team1": "FB",
+            "team2": "CK",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2022%2F01%2Fdownload.jpg&w=32&q=75",
+                "alt": "Fortune Barishal"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F09%2FChittagong-Kings.png&w=32&q=75",
+                "alt": "Chittagong Kings"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/85835/fortune-barisal-vs-chittagong-kings"
+          },
+          {
+            "full_text": "RR\n-vs-\nKT\nKhulna Tigers won by 9 wickets",
+            "status": "completed",
+            "result": "Khulna Tigers won by 9 wickets",
+            "team1": "RR",
+            "team2": "KT",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F10%2FRangpur-Riders.webp&w=32&q=75",
+                "alt": "Rangpur Riders"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2022%2F01%2FKhulna_Tigers.png&w=32&q=75",
+                "alt": "Khulna Tigers"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/85834/rangpur-riders-vs-khulna-tigers"
+          },
+          {
+            "full_text": "FB\n-vs-\nCK\nChittagong Kings won by 24 runs.",
+            "status": "completed",
+            "result": "Chittagong Kings won by 24 runs.",
+            "team1": "FB",
+            "team2": "CK",
+            "team_images": [
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2022%2F01%2Fdownload.jpg&w=32&q=75",
+                "alt": "Fortune Barishal"
+              },
+              {
+                "src": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F09%2FChittagong-Kings.png&w=32&q=75",
+                "alt": "Chittagong Kings"
+              }
+            ],
+            "match_url": "https://bdcrictime.com/match/85833/fortune-barisal-vs-chittagong-kings"
+          }
+        ],
+        "live_matches": [],
+        "next_matches": [],
+        "players_on_top": {
+          "most_wickets": [
+            {
+              "position": "1",
+              "name": "Taskin Ahmed",
+              "wickets": "25",
+              "player_id": "360",
+              "player_url": "https://bdcrictime.com/player/profile/360/Taskin%20Ahmed",
+              "player_image": "https://api.bdcrictime.com/players/360.png"
+            },
+            {
+              "position": "2",
+              "name": "Akif Javed",
+              "wickets": "20",
+              "player_id": "59510",
+              "player_url": "https://bdcrictime.com/player/profile/59510/Akif%20Javed"
+            },
+            {
+              "position": "3",
+              "name": "Faheem Ashraf",
+              "wickets": "20",
+              "player_id": "53425",
+              "player_url": "https://bdcrictime.com/player/profile/53425/Faheem%20Ashraf"
+            },
+            {
+              "position": "4",
+              "name": "Khaled Ahmed",
+              "wickets": "20",
+              "player_id": "90589",
+              "player_url": "https://bdcrictime.com/player/profile/90589/Khaled%20Ahmed"
+            },
+            {
+              "position": "5",
+              "name": "Khushdil Shah",
+              "wickets": "17",
+              "player_id": "45384",
+              "player_url": "https://bdcrictime.com/player/profile/45384/Khushdil%20Shah"
+            }
+          ],
+          "most_runs": [
+            {
+              "position": "1",
+              "name": "Mohammad Naim",
+              "runs": "511",
+              "player_id": "63352",
+              "player_url": "https://bdcrictime.com/player/profile/63352/Mohammad%20Naim",
+              "player_image": "https://api.bdcrictime.com/players/63352.png"
+            },
+            {
+              "position": "2",
+              "name": "Tanzid Hasan",
+              "runs": "485",
+              "player_id": "63742",
+              "player_url": "https://bdcrictime.com/player/profile/63742/Tanzid%20Hasan"
+            },
+            {
+              "position": "3",
+              "name": "Graham Clark",
+              "runs": "431",
+              "player_id": "49725",
+              "player_url": "https://bdcrictime.com/player/profile/49725/Graham%20Clark"
+            },
+            {
+              "position": "4",
+              "name": "Tamim Iqbal",
+              "runs": "413",
+              "player_id": "342",
+              "player_url": "https://bdcrictime.com/player/profile/342/Tamim%20Iqbal"
+            },
+            {
+              "position": "5",
+              "name": "Anamul Haque Bijoy",
+              "runs": "392",
+              "player_id": "108433",
+              "player_url": "https://bdcrictime.com/player/profile/108433/Anamul%20Haque%20Bijoy"
+            }
+          ],
+          "most_sixes": [
+            {
+              "position": "1",
+              "name": "Tanzid Hasan",
+              "sixes": "36",
+              "player_id": "63742",
+              "player_url": "https://bdcrictime.com/player/profile/63742/Tanzid%20Hasan",
+              "player_image": "https://api.bdcrictime.com/players/63742.png"
+            },
+            {
+              "position": "2",
+              "name": "Mohammad Naim",
+              "sixes": "30",
+              "player_id": "63352",
+              "player_url": "https://bdcrictime.com/player/profile/63352/Mohammad%20Naim"
+            },
+            {
+              "position": "3",
+              "name": "Parvez Hossain Emon",
+              "sixes": "25",
+              "player_id": "94776",
+              "player_url": "https://bdcrictime.com/player/profile/94776/Parvez%20Hossain%20Emon"
+            },
+            {
+              "position": "4",
+              "name": "Khushdil Shah",
+              "sixes": "24",
+              "player_id": "45384",
+              "player_url": "https://bdcrictime.com/player/profile/45384/Khushdil%20Shah"
+            },
+            {
+              "position": "5",
+              "name": "Yasir Ali Chowdhury",
+              "sixes": "24",
+              "player_id": "37415",
+              "player_url": "https://bdcrictime.com/player/profile/37415/Yasir%20Ali%20Chowdhury"
+            }
+          ],
+          "highest_score": [
+            {
+              "position": "1",
+              "name": "Litton Das",
+              "score": "125",
+              "player_id": "37360",
+              "player_url": "https://bdcrictime.com/player/profile/37360/Litton%20Das",
+              "player_image": "https://api.bdcrictime.com/players/37360.png"
+            },
+            {
+              "position": "2",
+              "name": "Usman Khan",
+              "score": "123",
+              "player_id": "105336",
+              "player_url": "https://bdcrictime.com/player/profile/105336/Usman%20Khan"
+            },
+            {
+              "position": "3",
+              "name": "Alex Hales",
+              "score": "113",
+              "player_id": "452",
+              "player_url": "https://bdcrictime.com/player/profile/452/Alex%20Hales"
+            },
+            {
+              "position": "4",
+              "name": "Mohammad Naim",
+              "score": "111",
+              "player_id": "63352",
+              "player_url": "https://bdcrictime.com/player/profile/63352/Mohammad%20Naim"
+            },
+            {
+              "position": "5",
+              "name": "Tanzid Hasan",
+              "score": "108",
+              "player_id": "63742",
+              "player_url": "https://bdcrictime.com/player/profile/63742/Tanzid%20Hasan"
+            }
+          ],
+          "best_figures": [
+            {
+              "position": "1",
+              "name": "Taskin Ahmed",
+              "figures": "7/19",
+              "player_id": "360",
+              "player_url": "https://bdcrictime.com/player/profile/360/Taskin%20Ahmed",
+              "player_image": "https://api.bdcrictime.com/players/360.png"
+            },
+            {
+              "position": "2",
+              "name": "Faheem Ashraf",
+              "figures": "5/7",
+              "player_id": "53425",
+              "player_url": "https://bdcrictime.com/player/profile/53425/Faheem%20Ashraf"
+            },
+            {
+              "position": "3",
+              "name": "Mohammad Ali",
+              "figures": "5/24",
+              "player_id": "104241",
+              "player_url": "https://bdcrictime.com/player/profile/104241/Mohammad%20Ali"
+            },
+            {
+              "position": "4",
+              "name": "Shoriful Islam",
+              "figures": "4/5",
+              "player_id": "63752",
+              "player_url": "https://bdcrictime.com/player/profile/63752/Shoriful%20Islam"
+            },
+            {
+              "position": "5",
+              "name": "Meherob Hasan",
+              "figures": "4/15",
+              "player_id": "63125",
+              "player_url": "https://bdcrictime.com/player/profile/63125/Meherob%20Hasan"
+            }
+          ]
+        },
+        "points_table": [
+          {
+            "position": "1",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2022%2F01%2Fdownload.jpg&w=64&q=75",
+            "team_flag_alt": "Fortune Barishal",
+            "team": "Fortune Barishal",
+            "team_url": "https://bdcrictime.com/team/117033/fortune-barishal",
+            "matches": "12",
+            "won": "9",
+            "lost": "3",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "1.302",
+            "points": "18"
+          },
+          {
+            "position": "2",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F09%2FChittagong-Kings.png&w=64&q=75",
+            "team_flag_alt": "Chittagong Kings",
+            "team": "Chittagong Kings",
+            "team_url": "https://bdcrictime.com/team/65162/chittagong-kings",
+            "matches": "12",
+            "won": "8",
+            "lost": "4",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "1.395",
+            "points": "16"
+          },
+          {
+            "position": "3",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2025%2F10%2FRangpur-Riders.webp&w=64&q=75",
+            "team_flag_alt": "Rangpur Riders",
+            "team": "Rangpur Riders",
+            "team_url": "https://bdcrictime.com/team/14090/rangpur-riders",
+            "matches": "12",
+            "won": "8",
+            "lost": "4",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "0.596",
+            "points": "16"
+          },
+          {
+            "position": "4",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2022%2F01%2FKhulna_Tigers.png&w=64&q=75",
+            "team_flag_alt": "Khulna Tigers",
+            "team": "Khulna Tigers",
+            "team_url": "https://bdcrictime.com/team/90438/khulna-tigers",
+            "matches": "12",
+            "won": "6",
+            "lost": "6",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "0.184",
+            "points": "12"
+          },
+          {
+            "position": "5",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F07%2Frajshahi-royal.png&w=64&q=75",
+            "team_flag_alt": "Durbar Rajshahi",
+            "team": "Durbar Rajshahi",
+            "team_url": "https://bdcrictime.com/team/65163/durbar-rajshahi",
+            "matches": "12",
+            "won": "6",
+            "lost": "6",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "-1.030",
+            "points": "12"
+          },
+          {
+            "position": "6",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F2023%2F12%2F1111111111.png&w=64&q=75",
+            "team_flag_alt": "Dhaka Capitals",
+            "team": "Dhaka Capitals",
+            "team_url": "https://bdcrictime.com/team/128225/dhaka-capitals",
+            "matches": "12",
+            "won": "3",
+            "lost": "9",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "-0.779",
+            "points": "6"
+          },
+          {
+            "position": "7",
+            "team_flag": "https://bdcrictime.com/_next/image?url=https%3A%2F%2Fgcdnimages.entitysport.com%2Fassets%2Fuploads%2F%2F2023%2F01%2Fsylht.png&w=64&q=75",
+            "team_flag_alt": "Sylhet Strikers",
+            "team": "Sylhet Strikers",
+            "team_url": "https://bdcrictime.com/team/107369/sylhet-strikers",
+            "matches": "12",
+            "won": "2",
+            "lost": "10",
+            "nr": "0",
+            "tied": "0",
+            "net_rr": "-1.634",
+            "points": "4"
+          }
+        ]
+      },
+      "fixtures": [],
+      "results": [],
+      "scraped_at": "2025-11-10T15:13:02.755696"
+    }
+  ]
+}

@@ -7,6 +7,43 @@
   letter-spacing: 1px;
 }
 
+#footer ul li a {
+  color: #00CC99;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.series-matches-wrapper{
+  display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+}
+#footer ul li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+#footer .widget-title {
+  margin-bottom: 40px;
+  ;
+}
+
+#footer ul li {
+  border: 0 none;
+}
+
+.video-posts-items {
+  padding: 0 5px;
+}
+
+.margin-top {
+  margin-top: 23px;
+}
+.team-logo2{
+  height: 50px!important;
+  width: 50px!important;
+}
 .match-time {
   text-align: center;
   font-size: 12px;
@@ -15,72 +52,101 @@
   font-style: italic;
 }
 
+.video-posts .col {
+  padding: 0 !important;
+}
+
+#playersTable tr:last-child td {
+  border-bottom: 0 none;
+}
+
 /* --- SLIDER LAYOUT --- */
-.live-slider {
+
+#live-cricket-container {
   position: relative;
-  width: 100%;
   overflow: hidden;
-  padding: 10px 64px;
+  max-width: 1450px;
+  width: 100%;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .live-track {
-  display: flex;
-  gap: 14px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  width:1520px;
+  padding: 0px 31px;
+  margin-top: 10px;
+}
+
+.live-track .slick-slide {
+  margin: 0 10px;
+}
+
+.live-track .slick-list {
+  margin: 0 -10px;
 }
 
 .live-track::-webkit-scrollbar {
   display: none;
 }
 
-/* --- ARROW BUTTONS --- */
-.slider-btn {
-    position: absolute;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 100%;
-    border: none;
-    background: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    font-size: 22px;
-    border-radius: 4px;
-    cursor: pointer;
-    z-index: 10;
-    transition: background 0.3s;
-    top: 48%;
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  font-size: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+  top: 48%;
+  margin: 0;
 }
 
 .slider-btn:hover {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.slider-btn.prev {
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-prev {
+  background: rgba(0, 0, 0, 0.4) url('../assets/image/slider-arrow.png') no-repeat center;
+  background-size: 18px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
   left: 0;
 }
 
-.slider-btn.next {
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-next {
+  background: rgba(0, 0, 0, 0.4) url('../assets/image/slider-arrow-right.png') no-repeat center;
+  background-size: 18px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
   right: 0;
 }
 
 /* --- CARD STYLES --- */
 .live-card {
-  flex: 0 0 290px;
+  flex: 0 0 calc(25% - 20px);
+  margin: 0 5px;
+  box-sizing: border-box;
   background: #fff;
   border: 1px solid #dfe3eb;
   border-radius: 10px;
   font-family: Arial, sans-serif;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 167px !important;
 }
 
 .live-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 .live-header {
@@ -145,33 +211,1108 @@
   background: #fff;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   color: #6b7280;
 }
 
 
 
-// videos category
+/* // videos category */
 .video-thumbnail-wrapper {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .video-icon-overlay {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 50%;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .video-icon-overlay img {
-    width: 20px;
-    height: 20px;
-    filter: invert(1);
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+
+/* recent series */
+
+.recent-series-widget table tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: 0.2s;
+}
+
+.series-standings-widget {
+  background: #f7f7f7;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.series-standings-widget table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+table td:last-child,
+table th:last-child {
+  padding-right: 10px;
+}
+
+table td,
+table th {
+  text-transform: initial;
+}
+
+table td:first-child,
+table th:first-child {
+  padding-left: 10px;
+}
+
+.series-standings-widget th,
+.series-standings-widget td {
+  text-align: center;
+  padding: 10px 10px 10px 5px;
+  font-size: 13px;
+  border-bottom: 1px solid #eee;
+  color: #1a1a1a;
+}
+
+.series-standings-widget th {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.series-standings-widget .team-cell {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+}
+
+.series-standings-widget .team-cell img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.see-all-container {
+  text-align: center;
+  padding: 12px;
+}
+
+.see-all-btn {
+  background: #00a676;
+  color: #fff;
+  padding: 6px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.see-all-btn:hover {
+  background: #00795f;
+}
+
+/* latest news */
+.lcs-latest-news {
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+}
+
+.lcs-news-header {
+  background: #004c46;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.lcs-news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lcs-news-item {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 15px;
+}
+
+.lcs-news-item:last-child {
+  border-bottom: none;
+}
+
+.lcs-news-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.lcs-news-title:hover {
+  color: #007f73;
+}
+
+.lcs-news-time {
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 5px 10px;
+}
+
+.lcs-clock-icon {
+  font-size: 12px;
+  position: relative;
+  top: -2px;
+}
+
+.lcs-see-all {
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* popular posts */
+
+.lcs-popular-widget {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-family: sans-serif;
+}
+
+.lcs-tabs {
+  display: flex;
+  margin: 0 12px 10px;
+}
+
+.lcs-tab {
+  width: 33.33%;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  color: #444;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  padding: 10px 15px 0;
+  text-transform: initial;
+}
+
+.lcs-tab.active {
+  background: #fff;
+  color: #002d2e;
+  border-bottom: 1px solid #002d2e;
+}
+
+.lcs-tab-content {
+  display: none;
+}
+
+.lcs-tab-content.active {
+  display: block;
+}
+
+.lcs-post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lcs-post-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+}
+
+.lcs-post-rank {
+  font-weight: bold;
+  color: #2e8b57;
+}
+
+/* featured pics */
+
+.featured-photos-widget {
+  background: #fff;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+
+.photos-list {
+  margin-top: 10px;
+}
+
+.photo-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #edeef0;
+}
+
+.photo-item:last-child {
+  margin-bottom: 0px;
+  border-bottom: 0 none;
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 320/170;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.expand-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 99;
+  width: 28px;
+  height: 28px;
+  max-height: 28px;
+  box-sizing: border-box;
+  background-color: #033c3d;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  margin: 0;
+  cursor: pointer;
+  background-image: url(http://cricketscore.art/wp-content/uploads/2025/10/expand-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  font-size: 0;
+}
+
+.photo-caption {
+  padding: 6px 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+.photo-meta {
+  padding: 0 10px 0 32px;
+  font-size: 12px;
+  color: #1a1a1a;
+  background-position: left 10px center;
+  background-size: 12px;
+}
+
+.see-all-btn {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background: #00aa6c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Modal styles */
+.photo-modal {
+  display: none;
+  position: fixed;
+  /* display: flex !important; */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding-top: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  max-width: 1100px;
+}
+
+#slider-container {
+  height: 88vh;
+}
+
+#slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.close {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 12px;
+  color: #fff;
+  font-size: 22px;
+  border: none;
+  background: transparent;
+  transform: translateY(-50%);
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+/* ICC rankings widget */
+
+
+.icc-rankings-widget {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: system-ui, sans-serif;
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab-btn {
+  font-size: 12px;
+  flex: 1;
+  padding: 8px 0;
+  margin: 0;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s;
+  background: #07888a;
+}
+
+.tab-btn.active {
+  background: rgb(255, 255, 255);
+  color: rgb(68, 68, 68);
+  display: inline-block;
+  text-align: center;
+}
+
+table.rankings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table.rankings-table th,
+table.rankings-table td {
+  padding: 10px;
+  color: #1a1a1a;
+}
+
+table.rankings-table th:first-child,
+table.rankings-table td:first-child,
+table.rankings-table th:last-child,
+table.rankings-table td:last-child {
+  text-align: center;
+}
+
+table.rankings-table th {
+  text-align: left;
+  font-weight: 400;
+}
+
+table.rankings-table th:nth-child(2),
+table.rankings-table td:nth-child(2) {
+  font-weight: 700;
+}
+
+table.rankings-table td {
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.table.rankings-table tr {
+  padding: 0 10px;
+}
+
+.rankings-table thead {
+  border-top: 1px solid #eee;
+}
+
+.team-flag {
+  width: 20px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+.view-all {
+  display: block;
+  text-align: center;
+  color: #00aa6c;
+  font-weight: 500;
+  padding: 10px 0;
+  text-decoration: none;
+  border-top: 1px solid #eee;
+  transition: color 0.3s;
+}
+
+.view-all:hover {
+  color: #00885a;
+}
+
+/* shortcode newsletter */
+
+.newsletter-section {
+  background-color: #043534;
+  padding: 25px 10px;
+  text-align: center;
+  max-width: 1540px;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-bottom: -61px;
+  z-index: 8;
+  position: relative;
+}
+
+.newsletter-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.newsletter-title span {
+  font-weight: 700;
+}
+
+.newsletter-input-wrap {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.newsletter-input-wrap input[type="email"] {
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  width: 250px;
+  border-radius: 2px 0 0 2px;
+}
+
+.newsletter-input-wrap button {
+  background: #6e7c82;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 0 2px 2px 0;
+  transition: background 0.3s;
+}
+
+.newsletter-input-wrap button:hover {
+  background: #5c6a70;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .newsletter-input-wrap {
+    flex-direction: column;
+  }
+
+  .newsletter-input-wrap input[type="email"],
+  .newsletter-input-wrap button {
+    width: 100%;
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+}
+
+.section {
+  padding-top: 0;
+}
+
+#section_1067147683 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* bangladesh cricket ranking page */
+
+
+
+.bd-cricket-series-grid-wrap {
+  padding: 24px;
+  background: #f1f2f3;
+  border-radius: 8px;
+}
+
+.bd-cricket-series-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: flex-start;
+}
+
+.bd-cricket-series-card {
+  display: block;
+  width: calc(33.333% - 12px);
+  min-width: 180px;
+  background: #fff;
+  border: 1px solid #e3e7e8;
+  border-radius: 8px;
+  padding: 16px;
+  text-decoration: none;
+  color: #0a3b3b;
+  box-sizing: border-box;
+  transition: all .18s ease;
+  text-align: center;
+}
+
+.bd-cricket-series-card:hover, .bd-cricket-series-card.active-series {
+  border-color: #033C3D;
+  background: #e6e6e6;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(10, 167, 199, 0.06);
+}
+.bd-cricket-series-single {
+	height: 120px;
+	overflow-y: auto;
+  margin-bottom: 20px;
+}
+/* width */
+.bd-cricket-series-single::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+.bd-cricket-series-single::-webkit-scrollbar-track {
+  background: #fff;
+}
+/* Handle */
+.bd-cricket-series-single::-webkit-scrollbar-thumb {
+  background: #666;
+}
+.bd-series-name {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 8px;
+  line-height: 1.15;
+}
+
+.bd-series-dates {
+  font-size: 13px;
+  color: #556;
+}
+
+@media (max-width: 900px) {
+  .bd-cricket-series-card {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 520px) {
+  .bd-cricket-series-card {
+    width: 100%;
+  }
+}
+
+
+/* Single series page */
+.site-main {
+  margin: 30px 0;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.cricket-series-detail {
+  margin: 0;
+
+}
+
+.series-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.matches-section {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  padding: 0;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.section-title {
+  font-size: 20px;
+  color: #0c9;
+  margin-bottom: 10px;
+}
+
+.match-row {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  /* Center horizontally */
+  padding: 10px 10px;
+}
+
+.match-content {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  /* space between elements */
+}
+
+.separator {
+  display: inline-block;
+  color: #ddd;
+}
+
+.match-row:last-child {
+  border-bottom: none;
+}
+
+.teams {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+
+.match-result,
+.match-time {
+  font-size: 13px;
+  color: #666;
+}
+
+.match-status.live {
+  color: #d00;
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 14px;
+  color: #999999;
+}
+
+/* players on top */
+
+.players-on-top-section {
+  margin-top: 40px;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.player-list span {
+  color: #1a1a1a;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.player-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+
+.player-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.player-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.player-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+  font-size: 14px;
+}
+
+.player-top {
+  position: relative;
+  display: grid;
+  background-color: #002D2E;
+  color: #fff;
+  border-radius: 8px;
+  padding: 2px 7px 2px 90px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  grid-template-columns: auto auto;
+  min-height: 54px;
+}
+
+.player-top .player-img {
+  position: absolute;
+  left: 10px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  border: 2px solid #fff;
+  background: white;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.player-info p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.title-win {
+  font-size: 11px;
+}
+
+.player-info strong {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.player-stat {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.stat-value {
+  font-weight: 700;
+  margin-left: 6px;
+  color: #fff;
+}
+
+/* points table */
+
+
+.points-table-section {
+  margin-top: 40px;
+}
+
+.points-table-wrapper {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.points-league-header {
+  background: #eaeaea;
+  text-align: center;
+  font-weight: 600;
+  padding: 8px 10px;
+  font-size: 13px;
+  color: #1a1a1a;
+  border-bottom: 1px solid #ddd;
+}
+
+.points-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.points-table th,
+.points-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+
+.bd-cricket-tabs { width: 100%; }
+        .bd-tabs-header { display: flex; margin-bottom: 15px; background: #033C3D; border-radius: 11px;}
+        .bd-tab-btn { padding: 10px 20px; cursor: pointer; color: white; margin: 0; }
+        .bd-tab-btn.active { color: #00CC99; }
+        .bd-tab-content { display: none; }
+        .bd-tab-content.active { display: block; }
+
+
+.points-table th {
+  background: #f9f9f9;
+  font-weight: bolder;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+.points-table .team-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  padding-left: 15px;
+}
+.pos-title, .name-title, .val-title{color: grey!important;}
+.points-table .team-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 0%;
+  object-fit: cover;
+}
+
+.points-table .team-name {
+  color: #0c9;
+  font-weight: 700;
+}
+
+.points-table .points-cell {
+  font-weight: 700;
+  color: black;
+}
+
+.team-cell .team-name {
+  font-size: 14px;
+}
+
+.points-table th,
+.points-table td {
+  color: #1a1a1a;
+}
+
+.points-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/*Cric Match Schedule*/
+
+.cric-matches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  background-color: white;
+  padding: 20px;
+}
+
+.cric-match-head {
+  background-color: #07888a;
+  padding: 5px 17px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #fff;
+}
+
+.cric-match-card {
+  border-radius: 13px;
+  border: 1px solid #edeef0;
+  text-align: center;
+}
+
+.cric-match-date,
+.cric-match-link,.cric-match-head {
+  font-size: 13px;
+}
+
+.cric-match-teams {
+  padding: 10px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cric-match-status {
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 3px 7px;
+  color: #fff;
+  font-size: 10px;
+}
+
+
+.upcoming {
+  background: #033c3d;
+}
+
+.live {
+  background: #dc3545;
+}
+.completed {
+  background: #0c9
+;
+}
+
+.vs {
+  font-size: 26px;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.cric-match-date {
+  padding: 10px 20px 0;
+  color: #1a1a1a;
+}
+
+.cric-match-link {
+  padding: 0 20px 10px;
+}
+
+.cric-match-link a {
+  text-decoration: underline;
+  color: #1a1a1a;
+}
+
+.cric-match-teams .team {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  #live-cricket-container {
+    max-width: 100%;
+    overflow: visible;
+  }
+
+  .live-track {
+    max-width: 268px;
+    padding: 10px 0;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev {
+    left: -32px;
+  }
+
+  .owl-carousel .owl-nav button.owl-next {
+    right: -32px;
+  }
+
+  .points-table img.team-logo {
+    width: 21px;
+    height: 21px;
+  }
+
+  .team-cell span.team-name {
+    font-size: 12px;
+  }
+
+  .points-table th:nth-child(2),
+  .points-table td:nth-child(2) {
+    width: 150px;
+  }
+
+  table.points-table th,
+  table.points-table td {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .points-table-ctn {
+    overflow-x: auto;
+  }
+  
+  .match-row {
+    justify-content: space-between;
+  }
+
+  div.match-content {
+    gap: 15px;
+  }
+
+  .site-main,
+  .match-content {
+    width: 100%;
+  }
+
+  .points-table-inner {
+    width: 180%;
+  }
+  
+  .matches-section {
+    max-width: 100%;
+  }
+    .teams {
+    width: 55%;
+  }
+
+  .match-result {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .live-track {
+    max-width: 720px;
+  }
+
+  .site-main {
+    width: 60%;
+  }
 }

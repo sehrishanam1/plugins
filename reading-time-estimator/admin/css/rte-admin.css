@@ -1,0 +1,133 @@
+/* Reading Time Estimator – Admin Styles
+   Author: Sehrish Anam
+   ================================================== */
+
+.rte-admin-wrap h1 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.rte-admin-icon svg {
+	vertical-align: middle;
+	color: #6366f1;
+	flex-shrink: 0;
+}
+
+.rte-admin-wrap .form-table th {
+	width: 220px;
+	font-weight: 600;
+}
+
+.rte-admin-wrap h2 {
+	border-top: 1px solid #e5e7eb;
+	padding-top: 20px;
+	margin-top: 30px;
+	font-size: 1rem;
+	color: #374151;
+}
+
+.rte-admin-footer {
+	margin-top: 40px;
+	padding-top: 20px;
+	border-top: 1px solid #e5e7eb;
+	color: #6b7280;
+	font-size: 0.875rem;
+}
+
+.rte-admin-footer a {
+	color: #6366f1;
+	text-decoration: none;
+}
+
+.rte-admin-footer a:hover {
+	text-decoration: underline;
+}
+
+/* ── Form actions row (Save + Reset) ─────────── */
+.rte-form-actions {
+	margin-top: 10px;
+}
+
+.rte-reset-section {
+	display:     flex;
+	align-items: center;
+	gap:         12px;
+	padding:     16px 0 8px;
+	border-top:  1px solid #e5e7eb;
+	margin-top:  6px;
+}
+
+.rte-reset-btn {
+	color:        #b91c1c !important;
+	border-color: #fca5a5 !important;
+	background:   #fff5f5 !important;
+	display:      inline-flex;
+	align-items:  center;
+	gap:          5px;
+	white-space:  nowrap;
+	transition:   background 0.15s ease, border-color 0.15s ease;
+}
+
+.rte-reset-btn:hover,
+.rte-reset-btn:focus {
+	background:   #fee2e2 !important;
+	border-color: #f87171 !important;
+	color:        #991b1b !important;
+}
+
+.rte-reset-hint {
+	font-size:  0.8125rem;
+	color:      #9ca3af;
+	font-style: italic;
+}
+
+/* Meta box styles */
+.rte-meta-box label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 600;
+	font-size: 12px;
+	color: #1d2327;
+}
+
+.rte-meta-box input[type="number"] {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.rte-meta-box .description {
+	display: block;
+	margin-top: 4px;
+	font-size: 11px;
+	color: #646970;
+}
+
+.rte-meta-box__auto-info {
+	background: #f0f0f1;
+	border-radius: 4px;
+	padding: 8px 10px;
+	font-size: 12px;
+	margin-bottom: 12px;
+}
+
+.rte-meta-box hr {
+	border: none;
+	border-top: 1px solid #dcdcde;
+	margin: 12px 0;
+}
+
+.rte-meta-box fieldset legend {
+	margin-bottom: 6px;
+}
+
+.rte-meta-box fieldset p {
+	margin: 0 0 6px;
+}
+
+.rte-meta-box fieldset label {
+	font-weight: normal;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
