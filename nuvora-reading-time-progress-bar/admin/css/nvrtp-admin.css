@@ -2,24 +2,24 @@
    Author: Sehrish Anam
    ================================================== */
 
-.rte-admin-wrap h1 {
+.nvrtp-admin-wrap h1 {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 }
 
-.rte-admin-icon svg {
+.nvrtp-admin-icon svg {
 	vertical-align: middle;
 	color: #6366f1;
 	flex-shrink: 0;
 }
 
-.rte-admin-wrap .form-table th {
+.nvrtp-admin-wrap .form-table th {
 	width: 220px;
 	font-weight: 600;
 }
 
-.rte-admin-wrap h2 {
+.nvrtp-admin-wrap h2 {
 	border-top: 1px solid #e5e7eb;
 	padding-top: 20px;
 	margin-top: 30px;
@@ -27,7 +27,7 @@
 	color: #374151;
 }
 
-.rte-admin-footer {
+.nvrtp-admin-footer {
 	margin-top: 40px;
 	padding-top: 20px;
 	border-top: 1px solid #e5e7eb;
@@ -35,21 +35,21 @@
 	font-size: 0.875rem;
 }
 
-.rte-admin-footer a {
+.nvrtp-admin-footer a {
 	color: #6366f1;
 	text-decoration: none;
 }
 
-.rte-admin-footer a:hover {
+.nvrtp-admin-footer a:hover {
 	text-decoration: underline;
 }
 
 /* ── Form actions row (Save + Reset) ─────────── */
-.rte-form-actions {
+.nvrtp-form-actions {
 	margin-top: 10px;
 }
 
-.rte-reset-section {
+.nvrtp-reset-section {
 	display:     flex;
 	align-items: center;
 	gap:         12px;
@@ -58,7 +58,7 @@
 	margin-top:  6px;
 }
 
-.rte-reset-btn {
+.nvrtp-reset-btn {
 	color:        #b91c1c !important;
 	border-color: #fca5a5 !important;
 	background:   #fff5f5 !important;
@@ -69,21 +69,21 @@
 	transition:   background 0.15s ease, border-color 0.15s ease;
 }
 
-.rte-reset-btn:hover,
-.rte-reset-btn:focus {
+.nvrtp-reset-btn:hover,
+.nvrtp-reset-btn:focus {
 	background:   #fee2e2 !important;
 	border-color: #f87171 !important;
 	color:        #991b1b !important;
 }
 
-.rte-reset-hint {
+.nvrtp-reset-hint {
 	font-size:  0.8125rem;
 	color:      #9ca3af;
 	font-style: italic;
 }
 
 /* Meta box styles */
-.rte-meta-box label {
+.nvrtp-meta-box label {
 	display: block;
 	margin-bottom: 5px;
 	font-weight: 600;
@@ -91,19 +91,19 @@
 	color: #1d2327;
 }
 
-.rte-meta-box input[type="number"] {
+.nvrtp-meta-box input[type="number"] {
 	width: 100%;
 	box-sizing: border-box;
 }
 
-.rte-meta-box .description {
+.nvrtp-meta-box .description {
 	display: block;
 	margin-top: 4px;
 	font-size: 11px;
 	color: #646970;
 }
 
-.rte-meta-box__auto-info {
+.nvrtp-meta-box__auto-info {
 	background: #f0f0f1;
 	border-radius: 4px;
 	padding: 8px 10px;
@@ -111,21 +111,21 @@
 	margin-bottom: 12px;
 }
 
-.rte-meta-box hr {
+.nvrtp-meta-box hr {
 	border: none;
 	border-top: 1px solid #dcdcde;
 	margin: 12px 0;
 }
 
-.rte-meta-box fieldset legend {
+.nvrtp-meta-box fieldset legend {
 	margin-bottom: 6px;
 }
 
-.rte-meta-box fieldset p {
+.nvrtp-meta-box fieldset p {
 	margin: 0 0 6px;
 }
 
-.rte-meta-box fieldset label {
+.nvrtp-meta-box fieldset label {
 	font-weight: normal;
 	display: flex;
 	align-items: center;

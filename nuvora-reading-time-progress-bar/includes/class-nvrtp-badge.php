@@ -5,7 +5,7 @@
  * Injects the reading-time badge into post/page content
  * via the_content filter, fully accessible with ARIA attributes.
  *
- * @package ReadingTimeEstimator
+ * @package NuvoraReadingTime
  * @since   1.0.0
  */
 
@@ -14,9 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Class RTE_Badge
+ * Class Nvrtp_Badge
  */
-class RTE_Badge {
+class Nvrtp_Badge {
 
 	/**
 	 * Plugin settings.
@@ -28,9 +28,9 @@ class RTE_Badge {
 	/**
 	 * Calculator instance.
 	 *
-	 * @var RTE_Calculator
+	 * @var Nvrtp_Calculator
 	 */
-	private RTE_Calculator $calculator;
+	private Nvrtp_Calculator $calculator;
 
 	/**
 	 * Constructor.
@@ -39,7 +39,7 @@ class RTE_Badge {
 	 */
 	public function __construct( array $settings ) {
 		$this->settings   = $settings;
-		$this->calculator = new RTE_Calculator( $settings );
+		$this->calculator = new Nvrtp_Calculator( $settings );
 		$this->init();
 	}
 
@@ -95,24 +95,24 @@ class RTE_Badge {
 		$ai_attr = '';
 		$ai_note = '';
 		if ( $adjusted ) {
-			$ai_attr = ' data-rte-ai-adjusted="true"';
+			$ai_attr = ' data-nvrtp-ai-adjusted="true"';
 			$ai_note = sprintf(
-				'<span class="rte-badge__ai-note" aria-hidden="true">%s</span>',
-				esc_html__( 'AI-adjusted', 'reading-time-estimator' )
+				'<span class="nvrtp-badge__ai-note" aria-hidden="true">%s</span>',
+				esc_html__( 'AI-adjusted', 'nuvora-reading-time-progress-bar' )
 			);
 		}
 
 		$word_note = ( $words > 0 )
 			? sprintf(
 				/* translators: %s: word count */
-				_n( '%s word', '%s words', $words, 'reading-time-estimator' ),
+				_n( '%s word', '%s words', $words, 'nuvora-reading-time-progress-bar' ),
 				number_format_i18n( $words )
 			)
 			: '';
 
 		$aria_label = sprintf(
 			/* translators: %1$d: minutes, %2$s: word count note */
-			__( 'Estimated reading time: %1$d minute(s). %2$s.', 'reading-time-estimator' ),
+			__( 'Estimated reading time: %1$d minute(s). %2$s.', 'nuvora-reading-time-progress-bar' ),
 			$minutes,
 			$word_note
 		);
@@ -120,7 +120,7 @@ class RTE_Badge {
 		$icon_html = '';
 		if ( $show_icon ) {
 			// Inline SVG clock icon — no external dependency.
-			$icon_html = '<span class="rte-badge__icon" aria-hidden="true">'
+			$icon_html = '<span class="nvrtp-badge__icon" aria-hidden="true">'
 				. '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">'
 				. '<circle cx="12" cy="12" r="10"/>'
 				. '<polyline points="12 6 12 12 16 14"/>'
@@ -128,13 +128,13 @@ class RTE_Badge {
 		}
 
 		$badge = sprintf(
-			'<div class="rte-badge" role="note" aria-label="%s"%s data-rte-minutes="%d">',
+			'<div class="nvrtp-badge" role="note" aria-label="%s"%s data-nvrtp-minutes="%d">',
 			esc_attr( $aria_label ),
 			$ai_attr,
 			$minutes
 		);
 		$badge .= $icon_html;
-		$badge .= sprintf( '<span class="rte-badge__label">%s</span>', $label );
+		$badge .= sprintf( '<span class="nvrtp-badge__label">%s</span>', $label );
 		$badge .= $ai_note;
 		$badge .= '</div>';
 
@@ -144,7 +144,7 @@ class RTE_Badge {
 		 * @param string $badge  HTML output.
 		 * @param array  $result Calculator result array.
 		 */
-		return apply_filters( 'rte_badge_html', $badge, $result );
+		return apply_filters( 'nvrtp_badge_html', $badge, $result );
 	}
 
 	/**
@@ -166,7 +166,7 @@ class RTE_Badge {
 		}
 
 		// Allow per-post opt-out.
-		$disabled = get_post_meta( get_the_ID(), '_rte_disable_badge', true );
+		$disabled = get_post_meta( get_the_ID(), '_nvrtp_disable_badge', true );
 		if ( '1' === $disabled ) {
 			return false;
 		}
@@ -176,7 +176,7 @@ class RTE_Badge {
 		 *
 		 * @param bool $show Whether to show the badge.
 		 */
-		return (bool) apply_filters( 'rte_show_badge', true );
+		return (bool) apply_filters( 'nvrtp_show_badge', true );
 	}
 
 	/**
@@ -197,10 +197,10 @@ class RTE_Badge {
  * @param int|\WP_Post|null $post Post ID, object, or null for current post.
  * @return array
  */
-function rte_get_reading_time( $post = null ): array {
+function nvrtp_get_reading_time( $post = null ): array {
 	$post     = get_post( $post );
-	$settings = get_option( 'rte_settings', array() );
-	$calc     = new RTE_Calculator( $settings );
+	$settings = get_option( 'nvrtp_settings', array() );
+	$calc     = new Nvrtp_Calculator( $settings );
 	return $calc->calculate( $post );
 }
 
@@ -209,7 +209,7 @@ function rte_get_reading_time( $post = null ): array {
  *
  * @param int|\WP_Post|null $post Post ID, object, or null for current post.
  */
-function rte_the_reading_time( $post = null ): void {
-	$data = rte_get_reading_time( $post );
+function nvrtp_the_reading_time( $post = null ): void {
+	$data = nvrtp_get_reading_time( $post );
 	echo esc_html( $data['label'] ?? '' );
 }

@@ -13,16 +13,16 @@
 	'use strict';
 
 	/* ── Guard ─────────────────────────────────────────── */
-	var config = window.rteConfig || {};
+	var config = window.nvrtpConfig || {};
 
 	if ( ! config.showProgress ) {
 		return;
 	}
 
 	/* ── DOM refs ───────────────────────────────────────── */
-	var bar     = document.getElementById( 'rte-progress-bar' );
-	var fill    = document.getElementById( 'rte-progress-bar__fill' );
-	var tooltip = document.getElementById( 'rte-progress-bar__tooltip' );
+	var bar     = document.getElementById( 'nvrtp-progress-bar' );
+	var fill    = document.getElementById( 'nvrtp-progress-bar__fill' );
+	var tooltip = document.getElementById( 'nvrtp-progress-bar__tooltip' );
 
 	if ( ! bar || ! fill ) {
 		return;
@@ -32,13 +32,13 @@
 	var root = document.documentElement;
 
 	if ( config.progressColor ) {
-		root.style.setProperty( '--rte-color', config.progressColor );
+		root.style.setProperty( '--nvrtp-color', config.progressColor );
 	}
 	if ( config.progressBgColor ) {
-		root.style.setProperty( '--rte-color-bg', config.progressBgColor );
+		root.style.setProperty( '--nvrtp-color-bg', config.progressBgColor );
 	}
 	if ( config.progressHeight ) {
-		root.style.setProperty( '--rte-bar-height', config.progressHeight + 'px' );
+		root.style.setProperty( '--nvrtp-bar-height', config.progressHeight + 'px' );
 	}
 
 	/* ── Reduce-motion support ──────────────────────────── */
@@ -119,7 +119,7 @@
 		lastPercent = pct;
 
 		// CSS custom property drives the fill width.
-		bar.style.setProperty( '--rte-progress', pct + '%' );
+		bar.style.setProperty( '--nvrtp-progress', pct + '%' );
 
 		// ARIA.
 		bar.setAttribute( 'aria-valuenow', pct );

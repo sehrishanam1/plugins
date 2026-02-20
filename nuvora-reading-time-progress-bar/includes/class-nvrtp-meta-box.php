@@ -6,7 +6,7 @@
  *   1. Manually override the computed reading time.
  *   2. Disable the badge and/or progress bar for individual posts.
  *
- * @package ReadingTimeEstimator
+ * @package NuvoraReadingTime
  * @since   1.0.0
  */
 
@@ -15,9 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Class RTE_Meta_Box
+ * Class Nvrtp_Meta_Box
  */
-class RTE_Meta_Box {
+class Nvrtp_Meta_Box {
 
 	/**
 	 * Plugin settings.
@@ -31,14 +31,14 @@ class RTE_Meta_Box {
 	 *
 	 * @var string
 	 */
-	private const NONCE_ACTION = 'rte_meta_box_save';
+	private const NONCE_ACTION = 'nvrtp_meta_box_save';
 
 	/**
 	 * Nonce field name.
 	 *
 	 * @var string
 	 */
-	private const NONCE_FIELD = 'rte_meta_box_nonce';
+	private const NONCE_FIELD = 'nvrtp_meta_box_nonce';
 
 	/**
 	 * Constructor.
@@ -64,8 +64,8 @@ class RTE_Meta_Box {
 
 		foreach ( $post_types as $post_type ) {
 			add_meta_box(
-				'rte-reading-time',
-				__( 'Reading Time', 'reading-time-estimator' ),
+				'nvrtp-reading-time',
+				__( 'Reading Time', 'nuvora-reading-time-progress-bar' ),
 				array( $this, 'render' ),
 				$post_type,
 				'side',
@@ -82,56 +82,56 @@ class RTE_Meta_Box {
 	public function render( \WP_Post $post ): void {
 		wp_nonce_field( self::NONCE_ACTION, self::NONCE_FIELD );
 
-		$override         = get_post_meta( $post->ID, '_rte_reading_time_override', true );
-		$disable_badge    = get_post_meta( $post->ID, '_rte_disable_badge', true );
-		$disable_progress = get_post_meta( $post->ID, '_rte_disable_progress', true );
+		$override         = get_post_meta( $post->ID, '_nvrtp_reading_time_override', true );
+		$disable_badge    = get_post_meta( $post->ID, '_nvrtp_disable_badge', true );
+		$disable_progress = get_post_meta( $post->ID, '_nvrtp_disable_progress', true );
 
 		// Show auto-calculated value as hint.
-		$calc    = new RTE_Calculator( $this->settings );
+		$calc    = new Nvrtp_Calculator( $this->settings );
 		$result  = $calc->calculate( $post );
 		$auto    = $result['minutes'] ?? 0;
 		$words   = $result['words'] ?? 0;
 		$adjusted = ! empty( $result['adjusted'] );
 		?>
-		<div class="rte-meta-box">
+		<div class="nvrtp-meta-box">
 
-			<p class="rte-meta-box__auto-info">
+			<p class="nvrtp-meta-box__auto-info">
 				<?php if ( $auto > 0 ) : ?>
-					<strong><?php esc_html_e( 'Auto-calculated:', 'reading-time-estimator' ); ?></strong>
+					<strong><?php esc_html_e( 'Auto-calculated:', 'nuvora-reading-time-progress-bar' ); ?></strong>
 					<?php
 					printf(
 						/* translators: 1: minutes, 2: word count */
-						esc_html__( '%1$d min (%2$s words)', 'reading-time-estimator' ),
+						esc_html__( '%1$d min (%2$s words)', 'nuvora-reading-time-progress-bar' ),
 						(int) $auto,
-						number_format_i18n( $words )
+						esc_html( number_format_i18n( $words ) )
 					);
 					if ( $adjusted ) {
-						echo ' <em>(' . esc_html__( 'AI-adjusted', 'reading-time-estimator' ) . ')</em>';
+						echo ' <em>(' . esc_html__( 'AI-adjusted', 'nuvora-reading-time-progress-bar' ) . ')</em>';
 					}
 					?>
 				<?php else : ?>
-					<em><?php esc_html_e( 'Save the post to see an estimate.', 'reading-time-estimator' ); ?></em>
+					<em><?php esc_html_e( 'Save the post to see an estimate.', 'nuvora-reading-time-progress-bar' ); ?></em>
 				<?php endif; ?>
 			</p>
 
 			<p>
-				<label for="rte_override">
-					<?php esc_html_e( 'Override reading time (minutes):', 'reading-time-estimator' ); ?>
+				<label for="nvrtp_override">
+					<?php esc_html_e( 'Override reading time (minutes):', 'nuvora-reading-time-progress-bar' ); ?>
 				</label>
 				<input
 					type="number"
-					id="rte_override"
-					name="rte_reading_time_override"
+					id="nvrtp_override"
+					name="nvrtp_reading_time_override"
 					value="<?php echo esc_attr( $override ); ?>"
 					min="1"
 					max="999"
 					step="1"
 					class="widefat"
 					placeholder="<?php echo esc_attr( $auto > 0 ? $auto : '' ); ?>"
-					aria-describedby="rte-override-hint"
+					aria-describedby="nvrtp-override-hint"
 				/>
-				<span id="rte-override-hint" class="description">
-					<?php esc_html_e( 'Leave empty to use the auto-calculated value.', 'reading-time-estimator' ); ?>
+				<span id="nvrtp-override-hint" class="description">
+					<?php esc_html_e( 'Leave empty to use the auto-calculated value.', 'nuvora-reading-time-progress-bar' ); ?>
 				</span>
 			</p>
 
@@ -139,18 +139,18 @@ class RTE_Meta_Box {
 
 			<fieldset>
 				<legend class="screen-reader-text">
-					<?php esc_html_e( 'Visibility options', 'reading-time-estimator' ); ?>
+					<?php esc_html_e( 'Visibility options', 'nuvora-reading-time-progress-bar' ); ?>
 				</legend>
 
 				<p>
 					<label>
 						<input
 							type="checkbox"
-							name="rte_disable_badge"
+							name="nvrtp_disable_badge"
 							value="1"
 							<?php checked( '1', $disable_badge ); ?>
 						/>
-						<?php esc_html_e( 'Hide reading time badge', 'reading-time-estimator' ); ?>
+						<?php esc_html_e( 'Hide reading time badge', 'nuvora-reading-time-progress-bar' ); ?>
 					</label>
 				</p>
 
@@ -158,11 +158,11 @@ class RTE_Meta_Box {
 					<label>
 						<input
 							type="checkbox"
-							name="rte_disable_progress"
+							name="nvrtp_disable_progress"
 							value="1"
 							<?php checked( '1', $disable_progress ); ?>
 						/>
-						<?php esc_html_e( 'Hide scroll progress bar', 'reading-time-estimator' ); ?>
+						<?php esc_html_e( 'Hide scroll progress bar', 'nuvora-reading-time-progress-bar' ); ?>
 					</label>
 				</p>
 			</fieldset>
@@ -200,29 +200,29 @@ class RTE_Meta_Box {
 		}
 
 		// -- Override value.
-		if ( isset( $_POST['rte_reading_time_override'] ) ) {
-			$override = sanitize_text_field( wp_unslash( $_POST['rte_reading_time_override'] ) );
+		if ( isset( $_POST['nvrtp_reading_time_override'] ) ) {
+			$override = sanitize_text_field( wp_unslash( $_POST['nvrtp_reading_time_override'] ) );
 			if ( '' === $override ) {
-				delete_post_meta( $post_id, '_rte_reading_time_override' );
+				delete_post_meta( $post_id, '_nvrtp_reading_time_override' );
 			} else {
-				update_post_meta( $post_id, '_rte_reading_time_override', absint( $override ) );
+				update_post_meta( $post_id, '_nvrtp_reading_time_override', absint( $override ) );
 			}
 		}
 
 		// -- Badge disable flag.
-		$disable_badge = isset( $_POST['rte_disable_badge'] ) && '1' === $_POST['rte_disable_badge'];
+		$disable_badge = isset( $_POST['nvrtp_disable_badge'] ) && '1' === $_POST['nvrtp_disable_badge'];
 		if ( $disable_badge ) {
-			update_post_meta( $post_id, '_rte_disable_badge', '1' );
+			update_post_meta( $post_id, '_nvrtp_disable_badge', '1' );
 		} else {
-			delete_post_meta( $post_id, '_rte_disable_badge' );
+			delete_post_meta( $post_id, '_nvrtp_disable_badge' );
 		}
 
 		// -- Progress bar disable flag.
-		$disable_progress = isset( $_POST['rte_disable_progress'] ) && '1' === $_POST['rte_disable_progress'];
+		$disable_progress = isset( $_POST['nvrtp_disable_progress'] ) && '1' === $_POST['nvrtp_disable_progress'];
 		if ( $disable_progress ) {
-			update_post_meta( $post_id, '_rte_disable_progress', '1' );
+			update_post_meta( $post_id, '_nvrtp_disable_progress', '1' );
 		} else {
-			delete_post_meta( $post_id, '_rte_disable_progress' );
+			delete_post_meta( $post_id, '_nvrtp_disable_progress' );
 		}
 	}
 }

@@ -5,7 +5,7 @@
  * Handles all word-count and time-estimation logic,
  * including the AI-assisted adjustment for structured content.
  *
- * @package ReadingTimeEstimator
+ * @package NuvoraReadingTime
  * @since   1.0.0
  */
 
@@ -14,9 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Class RTE_Calculator
+ * Class Nvrtp_Calculator
  */
-class RTE_Calculator {
+class Nvrtp_Calculator {
 
 	/**
 	 * Plugin settings.
@@ -49,7 +49,7 @@ class RTE_Calculator {
 		}
 
 		// Check for per-post override first.
-		$override = get_post_meta( $post->ID, '_rte_reading_time_override', true );
+		$override = get_post_meta( $post->ID, '_nvrtp_reading_time_override', true );
 		if ( '' !== $override && is_numeric( $override ) ) {
 			$minutes = max( 1, (int) $override );
 			return array(
@@ -226,7 +226,7 @@ class RTE_Calculator {
 		 * @param float  $factor     Calculated adjustment factor (0.75–1.0).
 		 * @param string $raw_html   Raw post HTML.
 		 */
-		return (float) apply_filters( 'rte_ai_adjustment_factor', $factor, $raw_html );
+		return (float) apply_filters( 'nvrtp_ai_adjustment_factor', $factor, $raw_html );
 	}
 
 	/**
@@ -248,11 +248,11 @@ class RTE_Calculator {
 	public function format_label( int $minutes ): string {
 		if ( $minutes < 1 ) {
 			return wp_kses_post(
-				str_replace( '{time}', '1', $this->settings['badge_label_under_one'] ?? __( 'Less than 1 min read', 'reading-time-estimator' ) )
+				str_replace( '{time}', '1', $this->settings['badge_label_under_one'] ?? __( 'Less than 1 min read', 'nuvora-reading-time-progress-bar' ) )
 			);
 		}
 
-		$label = $this->settings['badge_label'] ?? __( '{time} min read', 'reading-time-estimator' );
+		$label = $this->settings['badge_label'] ?? __( '{time} min read', 'nuvora-reading-time-progress-bar' );
 		return wp_kses_post( str_replace( '{time}', (string) $minutes, $label ) );
 	}
 

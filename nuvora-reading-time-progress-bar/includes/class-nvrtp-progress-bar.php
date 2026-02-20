@@ -5,7 +5,7 @@
  * Injects the scroll-progress-bar container into the page.
  * All animation logic lives in the accompanying JS file.
  *
- * @package ReadingTimeEstimator
+ * @package NuvoraReadingTime
  * @since   1.0.0
  */
 
@@ -14,9 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Class RTE_Progress_Bar
+ * Class Nvrtp_Progress_Bar
  */
-class RTE_Progress_Bar {
+class Nvrtp_Progress_Bar {
 
 	/**
 	 * Plugin settings.
@@ -60,7 +60,7 @@ class RTE_Progress_Bar {
 	 * Fallback: render in footer if wp_body_open wasn't fired.
 	 */
 	public function render_fallback(): void {
-		if ( did_action( 'rte_progress_rendered' ) ) {
+		if ( did_action( 'nvrtp_progress_rendered' ) ) {
 			return;
 		}
 		if ( ! $this->should_display() ) {
@@ -73,36 +73,36 @@ class RTE_Progress_Bar {
 	 * Mark the bar as rendered (prevents double output).
 	 */
 	public function mark_rendered(): void {
-		do_action( 'rte_progress_rendered' );
+		do_action( 'nvrtp_progress_rendered' );
 	}
 
 	/**
 	 * Output the progress bar HTML markup.
 	 *
 	 * Completely managed via CSS custom properties so JS only needs
-	 * to update --rte-progress: <value>.
+	 * to update --nvrtp-progress: <value>.
 	 */
 	private function output_html(): void {
 		$position = sanitize_key( $this->settings['progress_position'] ?? 'top' );
-		$disabled = get_post_meta( get_the_ID(), '_rte_disable_progress', true );
+		$disabled = get_post_meta( get_the_ID(), '_nvrtp_disable_progress', true );
 		if ( '1' === $disabled ) {
 			return;
 		}
 
 		// Data attributes pass config to JS without extra localization calls.
 		printf(
-			'<div id="rte-progress-bar"
+			'<div id="nvrtp-progress-bar"
 				role="progressbar"
 				aria-valuemin="0"
 				aria-valuemax="100"
 				aria-valuenow="0"
 				aria-label="%s"
 				data-position="%s"
-				style="--rte-progress:0%%;">
-				<div id="rte-progress-bar__fill"></div>
-				<span id="rte-progress-bar__tooltip" aria-hidden="true"></span>
+				style="--nvrtp-progress:0%%;">
+				<div id="nvrtp-progress-bar__fill"></div>
+				<span id="nvrtp-progress-bar__tooltip" aria-hidden="true"></span>
 			</div>',
-			esc_attr__( 'Reading progress', 'reading-time-estimator' ),
+			esc_attr__( 'Reading progress', 'nuvora-reading-time-progress-bar' ),
 			esc_attr( $position )
 		);
 	}

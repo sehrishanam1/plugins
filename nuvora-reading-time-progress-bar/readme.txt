@@ -1,8 +1,8 @@
-=== Reading Time Estimator & Progress Bar ===
+=== Nuvora Reading Time & Progress Bar ===
 Contributors: sehrishanam
 Tags: reading time, progress bar, reading progress, read time, accessibility
 Requires at least: 5.9
-Tested up to: 6.7
+Tested up to: 6.9
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -12,7 +12,7 @@ A minimalist, accessible reading time badge + scroll progress bar. AI-assisted t
 
 == Description ==
 
-**Reading Time Estimator & Progress Bar** is a lightweight, developer-friendly plugin that adds two things readers love:
+**Nuvora Reading Time & Progress Bar** is a lightweight, developer-friendly plugin that adds two things readers love:
 
 1. **A reading time badge** — shown before/after your post content.
 2. **A scroll progress bar** — a sleek bar at the top (or bottom) of the screen that fills as the reader scrolls.
@@ -76,7 +76,7 @@ Use in your theme:
 
 == Installation ==
 
-1. Upload the `reading-time-estimator` folder to `/wp-content/plugins/`
+1. Upload the `nuvora-reading-time-progress-bar` folder to `/wp-content/plugins/`
 2. Activate the plugin through **Plugins** in WordPress admin
 3. Go to **Settings → Reading Time** to configure
 
