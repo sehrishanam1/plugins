@@ -1,0 +1,264 @@
+/* =================================================================
+   Timeline Widget — Style 1
+   Phase 1: boxes appear one by one (staggered by Elementor delay)
+   Phase 2: lines travel item→item after ALL boxes are done
+   Elementor editor: everything visible instantly
+   ================================================================= */
+
+* { box-sizing: border-box; }
+
+/* ── Layout ─────────────────────────────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  position: relative;
+}
+
+.timeline__event {
+  --connector-color: #f6a4ec;
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 6px;
+  align-self: center;
+  width: 50vw;
+}
+
+.timeline__event:nth-child(2n+1)                  { flex-direction: row-reverse; }
+.timeline__event:nth-child(2n+1) .timeline__event__date    { border-radius: 0 6px 6px 0; }
+.timeline__event:nth-child(2n+1) .timeline__event__content { border-radius: 6px 0 0 6px; }
+
+
+/* ─────────────────────────────────────────────────────────────────
+   PHASE 1 — BOX ENTRANCE
+   Default: invisible and shifted down.
+   JS adds .tl-box-done → fades up into place.
+───────────────────────────────────────────────────────────────── */
+.timeline-style1 .timeline__event {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.timeline-style1 .timeline__event.tl-box-done {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity   0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Icon circle — starts small, pops when box enters */
+.timeline-style1 .timeline__event .timeline__event__icon {
+  transform: scale(0.65);
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s;
+}
+.timeline-style1 .timeline__event.tl-box-done .timeline__event__icon {
+  transform: scale(1);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────
+   PHASE 2 — CONNECTOR LINES
+   Both pseudo-elements start at 0 size.
+   JS adds .tl-line-h → horizontal draws out (icon → content side)
+   JS adds .tl-line-v → vertical drops down (icon → next item)
+───────────────────────────────────────────────────────────────── */
+
+/* Vertical line: drops downward from icon center */
+.timeline__event__icon::before {
+  content: "";
+  width: 2px;
+  height: 0;
+  background: var(--connector-color, #f6a4ec);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  transition: height 2.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Horizontal line: even items draw rightward from icon */
+.timeline__event__icon::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--connector-color, #f6a4ec);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%);
+  transition: width 2.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Horizontal line: odd (reversed) items draw leftward */
+.timeline__event:nth-child(2n+1) .timeline__event__icon::after {
+  left: auto;
+  right: 50%;
+}
+
+/* Trigger states */
+.timeline__event.tl-line-h .timeline__event__icon::after  { width: 100%; }
+.timeline__event.tl-line-v .timeline__event__icon::before { height: 100%; }
+
+/* No vertical line on the very last item */
+.timeline__event:last-child .timeline__event__icon::before { display: none; }
+
+
+/* ── No-animation mode (toggle in Elementor) ────────────────────── */
+.timeline-no-animation .timeline__event {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+.timeline-no-animation .timeline__event .timeline__event__icon {
+  transform: scale(1) !important;
+  transition: none !important;
+}
+.timeline-no-animation .timeline__event__icon::before {
+  height: 100% !important;
+  transition: none !important;
+}
+.timeline-no-animation .timeline__event__icon::after {
+  width: 100% !important;
+  transition: none !important;
+}
+
+
+/* ── Icon base styles ───────────────────────────────────────────── */
+.timeline__event__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9251ac;
+  align-self: center;
+  margin: 0 20px;
+  background: #f6a4ec;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  padding: 40px;
+  box-shadow:
+    0 30px 60px -12px rgba(50,50,93,.25),
+    0 18px 36px -18px rgba(0,0,0,.30),
+    0 -12px 36px -8px rgba(0,0,0,.025);
+  position: relative;
+}
+
+.timeline__event__icon i,
+.timeline__event__icon svg,
+.timeline__event__icon .timeline-icon {
+  font-size: 32px;
+  width: 32px !important; height: 32px !important;
+  max-width: 32px;  max-height: 32px;
+  min-width: 32px;  min-height: 32px;
+}
+.timeline__event__icon svg         { fill: currentColor; display: block; }
+.timeline__event__icon svg path    { fill: currentColor; stroke: none; }
+.timeline__event__icon > *         { flex-shrink: 0; }
+.timeline__event__icon svg[viewBox]{ overflow: visible; }
+.timeline__event__icon img         { width: 32px !important; height: 32px !important; object-fit: contain; }
+
+
+/* ── Typography & components ────────────────────────────────────── */
+.timeline__event__title {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #9251ac;
+  letter-spacing: 1.5px;
+}
+
+.timeline__event__content {
+  padding: 20px;
+  box-shadow:
+    0 30px 60px -12px rgba(50,50,93,.25),
+    0 18px 36px -18px rgba(0,0,0,.30),
+    0 -12px 36px -8px rgba(0,0,0,.025);
+  background: #fff;
+  width: calc(40vw - 84px);
+  border-radius: 0 6px 6px 0;
+}
+
+.timeline__event__date {
+  color: #f6a4ec;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: #9251ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0 20px;
+  border-radius: 6px 0 0 6px;
+  z-index: 9;
+}
+
+.timeline__event__description { flex-basis: 60%; }
+
+
+/* ── Color schemes ──────────────────────────────────────────────── */
+.timeline__event--type2 { --connector-color: #87bbfe; }
+.timeline__event--type2 .timeline__event__date  { color: #87bbfe; background: #555ac0; }
+.timeline__event--type2 .timeline__event__icon  { background: #87bbfe; color: #555ac0; }
+.timeline__event--type2 .timeline__event__icon::before,
+.timeline__event--type2 .timeline__event__icon::after { background: var(--connector-color,#87bbfe); }
+.timeline__event--type2 .timeline__event__title { color: #555ac0; }
+
+.timeline__event--type3 { --connector-color: #aff1b6; }
+.timeline__event--type3 .timeline__event__date  { color: #aff1b6; background: #24b47e; }
+.timeline__event--type3 .timeline__event__icon  { background: #aff1b6; color: #24b47e; }
+.timeline__event--type3 .timeline__event__icon::before,
+.timeline__event--type3 .timeline__event__icon::after { background: var(--connector-color,#aff1b6); }
+.timeline__event--type3 .timeline__event__title { color: #24b47e; }
+
+
+/* ── Elementor editor: everything fully visible instantly ───────── */
+.elementor-editor-active .timeline-style1 .timeline__event {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+.elementor-editor-active .timeline-style1 .timeline__event .timeline__event__icon {
+  transform: scale(1) !important;
+  transition: none !important;
+}
+.elementor-editor-active .timeline__event__icon::before {
+  height: 100% !important;
+  transition: none !important;
+}
+.elementor-editor-active .timeline__event__icon::after {
+  width: 100% !important;
+  transition: none !important;
+}
+
+
+/* ── Responsive: mobile ─────────────────────────────────────────── */
+@media (max-width: 786px) {
+  .timeline__event,
+  .timeline__event:nth-child(2n+1) {
+    flex-direction: column;
+    align-self: center;
+  }
+  .timeline__event__content { width: 100%; }
+  .timeline__event__icon {
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+  .timeline__event__icon::before,
+  .timeline__event__icon::after { display: none !important; }
+  .timeline__event__date,
+  .timeline__event:nth-child(2n+1) .timeline__event__date {
+    border-radius: 0;
+    padding: 20px;
+  }
+  .timeline__event:nth-child(2n+1) .timeline__event__icon {
+    border-radius: 6px 6px 0 0;
+    margin: 0;
+  }
+}

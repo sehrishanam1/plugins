@@ -1,5 +1,5 @@
 === Nuvora Reading Time & Progress Bar ===
-Contributors: sehrishanam
+Contributors: meerab123
 Tags: reading time, progress bar, reading progress, read time, accessibility
 Requires at least: 5.9
 Tested up to: 6.9
