@@ -1,10 +1,11 @@
-=== Nuvora Timeline Elementor ===
+=== Nuvora Timeline for Elementor ===
 Contributors: meerab123
-Tags: elementor, timeline, widget, animated, elementor-addon
-Requires at least: 5.0
+Tags: elementor widget, timeline, timeline widget, animated timeline, elementor-addon
+Requires at least: 5.9
 Tested up to: 6.9
-Stable tag: 1.2.1
-Requires PHP: 7.0
+Requires PHP: 8.0
+Requires Plugins: elementor
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,7 +27,7 @@ Nuvora Timeline Elementor adds a fully customizable, animated timeline widget to
 
 == Installation ==
 
-1. Upload the `nuvora-timeline-elementor` folder to the `/wp-content/plugins/` directory, or install via **Plugins > Add New > Upload Plugin**.
+1. Upload the `nuvora-timeline-for-elementor` folder to the `/wp-content/plugins/` directory, or install via **Plugins > Add New > Upload Plugin**.
 2. Activate the plugin through the **Plugins** menu in WordPress.
 3. Open any page or post in Elementor, search for **Timeline** in the widget panel, and drag it onto your page.
 

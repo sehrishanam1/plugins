@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
 /**
  * Elementor Timeline Widget
  */
-class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
+class NUVOTIFO_Timeline_Widget extends \Elementor\Widget_Base {
 
     /**
      * Get widget name
@@ -19,7 +19,7 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
      * Get widget title
      */
     public function get_title() {
-        return __('Timeline', 'nuvora-timeline-elementor');
+        return __('Timeline', 'nuvora-timeline-for-elementor');
     }
 
     /**
@@ -45,7 +45,7 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __('Timeline Items', 'nuvora-timeline-elementor'),
+                'label' => __('Timeline Items', 'nuvora-timeline-for-elementor'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -53,12 +53,12 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'timeline_style',
             [
-                'label' => __('Timeline Style', 'nuvora-timeline-elementor'),
+                'label' => __('Timeline Style', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'style1',
                 'options' => [
-                    'style1' => __('Style 1 - Vertical Alternating', 'nuvora-timeline-elementor'),
-                    'style2' => __('Style 2 - Horizontal Cards', 'nuvora-timeline-elementor'),
+                    'style1' => __('Style 1 - Vertical Alternating', 'nuvora-timeline-for-elementor'),
+                    'style2' => __('Style 2 - Horizontal Cards', 'nuvora-timeline-for-elementor'),
                 ],
             ]
         );
@@ -66,13 +66,13 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'style2_grouping',
             [
-                'label' => __('Grouping Type (Style 2)', 'nuvora-timeline-elementor'),
+                'label' => __('Grouping Type (Style 2)', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'month_and_date',
                 'options' => [
-                    'none' => __('No Grouping', 'nuvora-timeline-elementor'),
-                    'month_only' => __('Group by Month Only', 'nuvora-timeline-elementor'),
-                    'month_and_date' => __('Group by Month and Date', 'nuvora-timeline-elementor'),
+                    'none' => __('No Grouping', 'nuvora-timeline-for-elementor'),
+                    'month_only' => __('Group by Month Only', 'nuvora-timeline-for-elementor'),
+                    'month_and_date' => __('Group by Month and Date', 'nuvora-timeline-for-elementor'),
                 ],
                 'condition' => [
                     'timeline_style' => 'style2',
@@ -85,7 +85,7 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $repeater->add_control(
             'icon',
             [
-                'label' => __('Icon', 'nuvora-timeline-elementor'),
+                'label' => __('Icon', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::ICONS,
                 'default' => [
                     'value' => 'lni-cake',
@@ -97,28 +97,28 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $repeater->add_control(
             'date',
             [
-                'label' => __('Date', 'nuvora-timeline-elementor'),
+                'label' => __('Date', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => __('20-08-2019', 'nuvora-timeline-elementor'),
+                'default' => __('20-08-2019', 'nuvora-timeline-for-elementor'),
             ]
         );
 
         $repeater->add_control(
             'group_title',
             [
-                'label' => __('Group Title (Style 2 Only)', 'nuvora-timeline-elementor'),
+                'label' => __('Group Title (Style 2 Only)', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'default' => '',
-                'description' => __('Used for month/section headers in Style 2', 'nuvora-timeline-elementor'),
+                'description' => __('Used for month/section headers in Style 2', 'nuvora-timeline-for-elementor'),
             ]
         );
 
         $repeater->add_control(
             'title',
             [
-                'label' => __('Title', 'nuvora-timeline-elementor'),
+                'label' => __('Title', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => __('Event Title', 'nuvora-timeline-elementor'),
+                'default' => __('Event Title', 'nuvora-timeline-for-elementor'),
                 'label_block' => true,
             ]
         );
@@ -126,9 +126,9 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $repeater->add_control(
             'description',
             [
-                'label' => __('Description', 'nuvora-timeline-elementor'),
+                'label' => __('Description', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!', 'nuvora-timeline-elementor'),
+                'default' => __('Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!', 'nuvora-timeline-for-elementor'),
                 'rows' => 5,
             ]
         );
@@ -136,10 +136,10 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $repeater->add_control(
             'use_custom_colors',
             [
-                'label' => __('Custom Colors', 'nuvora-timeline-elementor'),
+                'label' => __('Custom Colors', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Yes', 'nuvora-timeline-elementor'),
-                'label_off' => __('No', 'nuvora-timeline-elementor'),
+                'label_on' => __('Yes', 'nuvora-timeline-for-elementor'),
+                'label_off' => __('No', 'nuvora-timeline-for-elementor'),
                 'return_value' => 'yes',
                 'default' => 'no',
             ]
@@ -148,7 +148,7 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $repeater->add_control(
             'primary_color',
             [
-                'label' => __('Primary Color', 'nuvora-timeline-elementor'),
+                'label' => __('Primary Color', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#9251ac',
                 'condition' => [
@@ -160,7 +160,7 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $repeater->add_control(
             'secondary_color',
             [
-                'label' => __('Secondary Color', 'nuvora-timeline-elementor'),
+                'label' => __('Secondary Color', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'default' => '#f6a4ec',
                 'condition' => [
@@ -172,13 +172,13 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $repeater->add_control(
             'color_scheme',
             [
-                'label' => __('Color Scheme', 'nuvora-timeline-elementor'),
+                'label' => __('Color Scheme', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'type1',
                 'options' => [
-                    'type1' => __('Purple/Pink', 'nuvora-timeline-elementor'),
-                    'type2' => __('Blue', 'nuvora-timeline-elementor'),
-                    'type3' => __('Green', 'nuvora-timeline-elementor'),
+                    'type1' => __('Purple/Pink', 'nuvora-timeline-for-elementor'),
+                    'type2' => __('Blue', 'nuvora-timeline-for-elementor'),
+                    'type3' => __('Green', 'nuvora-timeline-for-elementor'),
                 ],
                 'condition' => [
                     'use_custom_colors!' => 'yes',
@@ -189,15 +189,15 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $repeater->add_control(
             'animation_delay',
             [
-                'label' => __('Animation Delay', 'nuvora-timeline-elementor'),
+                'label' => __('Animation Delay', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'delay-1s',
                 'options' => [
-                    '' => __('No Delay', 'nuvora-timeline-elementor'),
-                    'delay-1s' => __('1 Second', 'nuvora-timeline-elementor'),
-                    'delay-2s' => __('2 Seconds', 'nuvora-timeline-elementor'),
-                    'delay-3s' => __('3 Seconds', 'nuvora-timeline-elementor'),
-                    'delay-4s' => __('4 Seconds', 'nuvora-timeline-elementor'),
+                    '' => __('No Delay', 'nuvora-timeline-for-elementor'),
+                    'delay-1s' => __('1 Second', 'nuvora-timeline-for-elementor'),
+                    'delay-2s' => __('2 Seconds', 'nuvora-timeline-for-elementor'),
+                    'delay-3s' => __('3 Seconds', 'nuvora-timeline-for-elementor'),
+                    'delay-4s' => __('4 Seconds', 'nuvora-timeline-for-elementor'),
                 ],
             ]
         );
@@ -205,7 +205,7 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'timeline_items',
             [
-                'label' => __('Timeline Items', 'nuvora-timeline-elementor'),
+                'label' => __('Timeline Items', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => $repeater->get_controls(),
                 'default' => [
@@ -272,7 +272,7 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'style_section',
             [
-                'label' => __('Style', 'nuvora-timeline-elementor'),
+                'label' => __('Style', 'nuvora-timeline-for-elementor'),
                 'tab' => \Elementor\Controls_Manager::TAB_STYLE,
             ]
         );
@@ -280,10 +280,10 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'enable_animation',
             [
-                'label' => __('Enable Animation', 'nuvora-timeline-elementor'),
+                'label' => __('Enable Animation', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => __('Yes', 'nuvora-timeline-elementor'),
-                'label_off' => __('No', 'nuvora-timeline-elementor'),
+                'label_on' => __('Yes', 'nuvora-timeline-for-elementor'),
+                'label_off' => __('No', 'nuvora-timeline-for-elementor'),
                 'return_value' => 'yes',
                 'default' => 'yes',
             ]
@@ -292,7 +292,7 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'timeline_width',
             [
-                'label' => __('Timeline Width', 'nuvora-timeline-elementor'),
+                'label' => __('Timeline Width', 'nuvora-timeline-for-elementor'),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => ['%', 'px', 'vw'],
                 'range' => [
@@ -440,7 +440,7 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
                 <?php foreach ($grouped_items as $group_title => $group_items) : 
                     $entry_count = count($group_items);
                     /* translators: %d: number of entries */
-                    $entries_text = sprintf(_n('%d Entry', '%d Entries', $entry_count, 'nuvora-timeline-elementor'), $entry_count);
+                    $entries_text = sprintf(_n('%d Entry', '%d Entries', $entry_count, 'nuvora-timeline-for-elementor'), $entry_count);
                 ?>
                     <?php if ($group_title !== 'Ungrouped') : ?>
                     <div class="timeline-month">
@@ -477,7 +477,7 @@ class Timeline_Elementor_Widget extends \Elementor\Widget_Base {
                 <?php foreach ($grouped_items as $group_title => $group_items) : 
                     $entry_count = count($group_items);
                     /* translators: %d: number of entries */
-                    $entries_text = sprintf(_n('%d Entry', '%d Entries', $entry_count, 'nuvora-timeline-elementor'), $entry_count);
+                    $entries_text = sprintf(_n('%d Entry', '%d Entries', $entry_count, 'nuvora-timeline-for-elementor'), $entry_count);
                 ?>
                     <?php if ($group_title !== 'Ungrouped') : ?>
                     <div class="timeline-month">

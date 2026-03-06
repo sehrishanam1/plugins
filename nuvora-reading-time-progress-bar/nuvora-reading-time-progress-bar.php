@@ -5,7 +5,7 @@
  * Description:       A minimalist, accessible reading time estimator with a smooth scroll progress bar. Features AI-assisted reading time adjustment, per-post overrides, and full ARIA support. No tracking. No upsells.
  * Version:           1.0.0
  * Requires at least: 5.9
- * Requires PHP:      7.4
+ * Requires PHP:      8.0
  * Author:            Sehrish Anam
  * Author URI:        https://github.com/sehrishanam1/
  * License:           GPL v2 or later
