@@ -1,0 +1,83 @@
+/* Nuvora Pricing Table Block */
+.nuvora-pricing-block {
+	display: block;
+	box-sizing: border-box;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	position: relative;
+}
+.nuvora-pricing-block:hover { transform: translateY(-4px); }
+.nuvora-pt-featured { transform: scale(1.03); }
+.nuvora-pt-featured:hover { transform: scale(1.03) translateY(-4px); }
+
+.nuvora-pt-badge {
+	display: inline-block;
+	padding: 4px 14px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+.nuvora-pt-name { margin: 0 0 6px; font-weight: 700; line-height: 1.2; }
+.nuvora-pt-desc { margin: 0 0 18px; font-size: 14px; line-height: 1.5; }
+
+.nuvora-pt-price-wrap { margin-bottom: 24px; }
+.nuvora-pt-original {
+	display: block;
+	font-size: 15px;
+	text-decoration: line-through;
+	margin-bottom: 4px;
+	opacity: 0.7;
+}
+.nuvora-pt-price {
+	display: flex;
+	align-items: flex-start;
+	justify-content: inherit;
+	line-height: 1;
+}
+.nuvora-pt-currency { font-size: 1.3em; font-weight: 700; padding-top: 8px; }
+.nuvora-pt-amount   { font-weight: 800; line-height: 1; letter-spacing: -2px; }
+.nuvora-pt-period   { font-size: 14px; align-self: flex-end; padding-bottom: 6px; margin-left: 2px; }
+
+.nuvora-pt-features {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 28px;
+	text-align: left;
+}
+.nuvora-pt-feature {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 7px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.06);
+	line-height: 1.5;
+}
+.nuvora-pt-layout-style3 .nuvora-pt-feature { border-bottom-color: rgba(255,255,255,0.15); }
+.nuvora-pt-feat-icon { display: inline-flex; flex-shrink: 0; }
+
+.nuvora-pt-btn {
+	display: block;
+	width: 100%;
+	padding: 14px 24px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 15px;
+	text-decoration: none;
+	transition: opacity 0.2s ease, transform 0.2s ease;
+	box-sizing: border-box;
+	letter-spacing: 0.5px;
+}
+.nuvora-pt-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+
+/* Style 2 gradient header */
+.nuvora-pt-layout-style2 .nuvora-pt-name,
+.nuvora-pt-layout-style2 .nuvora-pt-price .nuvora-pt-currency,
+.nuvora-pt-layout-style2 .nuvora-pt-price .nuvora-pt-amount,
+.nuvora-pt-layout-style2 .nuvora-pt-price .nuvora-pt-period { color: #fff !important; }
+.nuvora-pt-layout-style2 .nuvora-pt-header-grad .nuvora-pt-badge {
+	background: rgba(255,255,255,0.2);
+	color: #fff;
+}
+.nuvora-pt-layout-style2 .nuvora-pt-body { background: #fff; }

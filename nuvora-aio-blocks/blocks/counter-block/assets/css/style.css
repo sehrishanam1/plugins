@@ -1,0 +1,151 @@
+/* Nuvora Counter Block - Frontend Styles */
+
+.nuvora-counter-block {
+	display: block;
+	box-sizing: border-box;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nuvora-counter-block:hover {
+	transform: translateY(-3px);
+}
+
+/* Inner wrapper */
+.nuvora-counter-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: inherit;
+	gap: 8px;
+}
+
+/* Inline layout (style4) */
+.nuvora-counter-inline {
+	flex-direction: row !important;
+	align-items: center;
+	gap: 16px;
+}
+
+.nuvora-counter-inline .nuvora-counter-content {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+/* Icon */
+.nuvora-counter-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+}
+
+.nuvora-counter-icon svg {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* Number */
+.nuvora-counter-number {
+	display: block;
+	line-height: 1.1;
+	letter-spacing: -1px;
+}
+
+/* Title */
+.nuvora-counter-title {
+	display: block;
+	line-height: 1.4;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* Description */
+.nuvora-counter-desc {
+	margin: 4px 0 0;
+	line-height: 1.6;
+}
+
+/* ---- Style 1: Clean card ---- */
+.nuvora-layout-style1 {
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.nuvora-layout-style1:hover {
+	box-shadow: 0 8px 40px rgba(0, 0, 0, 0.14);
+}
+
+/* ---- Style 2: Bordered card ---- */
+.nuvora-layout-style2 {
+	position: relative;
+	overflow: hidden;
+}
+
+.nuvora-layout-style2::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: inherit;
+	border-color: inherit;
+	background: var(--nuvora-border-color, currentColor);
+	opacity: 0.5;
+}
+
+/* ---- Style 3: Gradient ---- */
+.nuvora-layout-style3 {
+	position: relative;
+	overflow: hidden;
+}
+
+.nuvora-layout-style3::after {
+	content: '';
+	position: absolute;
+	top: -50%;
+	right: -50%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 50%;
+	pointer-events: none;
+}
+
+.nuvora-layout-style3:hover {
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ---- Style 4: Left border inline ---- */
+.nuvora-layout-style4 {
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* ---- Style 5: Minimal ---- */
+.nuvora-layout-style5 {
+	border-bottom: 2px solid currentColor;
+}
+
+/* ---- Animation entry ---- */
+.nuvora-animate .nuvora-counter-number {
+	opacity: 0;
+	transform: translateY(10px);
+	transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.nuvora-animate.nuvora-counted .nuvora-counter-number {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Icon pulse on hover */
+.nuvora-counter-block:hover .nuvora-counter-icon {
+	animation: nuvora-icon-bounce 0.5s ease;
+}
+
+@keyframes nuvora-icon-bounce {
+	0%   { transform: scale(1); }
+	40%  { transform: scale(1.2); }
+	70%  { transform: scale(0.9); }
+	100% { transform: scale(1); }
+}

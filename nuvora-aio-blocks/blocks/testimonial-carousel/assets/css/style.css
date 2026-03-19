@@ -1,0 +1,78 @@
+/* Nuvora Testimonial Carousel Block */
+.nuvora-testimonial-block { position: relative; }
+
+.nuvora-tc-track-wrap { position: relative; overflow: hidden; }
+.nuvora-tc-track {
+	display: flex;
+	transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.nuvora-tc-slide { flex: 0 0 100%; min-width: 100%; box-sizing: border-box; padding: 8px; }
+
+.nuvora-tc-card { position: relative; overflow: hidden; transition: box-shadow 0.3s ease; }
+.nuvora-tc-quote-icon { margin-bottom: 8px; line-height: 1; }
+.nuvora-tc-quote { line-height: 1.7; margin: 0 0 16px; font-style: italic; }
+.nuvora-tc-stars { display: flex; justify-content: center; gap: 2px; margin-bottom: 18px; }
+.nuvora-tc-stars svg { display: inline-block; }
+
+.nuvora-tc-author {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: 16px;
+}
+.nuvora-tc-layout-style1 .nuvora-tc-author,
+.nuvora-tc-layout-style2 .nuvora-tc-author,
+.nuvora-tc-layout-style3 .nuvora-tc-author { justify-content: center; flex-direction: column; }
+
+.nuvora-tc-avatar { flex-shrink: 0; line-height: 1; }
+.nuvora-tc-author-info { display: flex; flex-direction: column; gap: 2px; text-align: center; }
+.nuvora-tc-layout-style4 .nuvora-tc-author { flex-direction: row; }
+.nuvora-tc-layout-style4 .nuvora-tc-author-info { text-align: left; }
+.nuvora-tc-layout-style4 .nuvora-tc-stars { justify-content: flex-start; }
+
+.nuvora-tc-name { display: block; font-weight: 700; }
+.nuvora-tc-role { display: block; font-size: 13px; }
+
+/* Navigation arrows */
+.nuvora-tc-prev,
+.nuvora-tc-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: #fff;
+	border: 1px solid rgba(0,0,0,0.12);
+	border-radius: 50%;
+	width: 40px; height: 40px;
+	display: flex; align-items: center; justify-content: center;
+	cursor: pointer;
+	z-index: 2;
+	transition: background 0.2s, box-shadow 0.2s;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+	color: #333;
+	padding: 0;
+}
+.nuvora-tc-prev { left: -12px; }
+.nuvora-tc-next { right: -12px; }
+.nuvora-tc-prev:hover,
+.nuvora-tc-next:hover { background: #6c63ff; color: #fff; border-color: #6c63ff; }
+
+/* Dots */
+.nuvora-tc-dots {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 20px;
+}
+.nuvora-tc-dot {
+	width: 10px; height: 10px;
+	border-radius: 50%;
+	border: none;
+	background: rgba(0,0,0,0.18);
+	cursor: pointer;
+	padding: 0;
+	transition: background 0.2s, transform 0.2s;
+}
+.nuvora-tc-dot.active {
+	background: var(--dot-color, #6c63ff);
+	transform: scale(1.3);
+}

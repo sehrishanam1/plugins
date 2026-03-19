@@ -1,0 +1,16 @@
+/* Nuvora Counter Block - Editor Styles */
+
+.nuvora-counter-block {
+	cursor: default;
+}
+
+/* Prevent hover lift in editor */
+.wp-block-nuvora-counter-block:hover .nuvora-counter-block {
+	transform: none;
+}
+
+/* Show number even when animate=true in editor */
+.nuvora-animate .nuvora-counter-number {
+	opacity: 1 !important;
+	transform: none !important;
+}

@@ -1,0 +1,49 @@
+/* Nuvora Advanced Tabs Block */
+.nuvora-tabs-block { display: block; }
+
+.nuvora-tabs-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	margin-bottom: 0;
+}
+
+.nuvora-tab-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	border: none;
+	font-weight: 600;
+	transition: background 0.2s, color 0.2s, border-color 0.2s;
+	white-space: nowrap;
+	line-height: 1.4;
+}
+.nuvora-tab-btn:focus { outline: 2px solid currentColor; outline-offset: 2px; }
+.nuvora-tab-icon { display: inline-flex; line-height: 1; flex-shrink: 0; }
+.nuvora-tab-icon svg { width: 1em; height: 1em; fill: currentColor; }
+
+.nuvora-tabs-content { position: relative; }
+
+.nuvora-tab-panel { display: none; }
+.nuvora-tab-panel.active { display: block; }
+
+.nuvora-panel-icon { margin-bottom: 8px; line-height: 1; }
+.nuvora-panel-icon svg { width: 1em; height: 1em; fill: currentColor; }
+.nuvora-panel-desc { margin: 0; }
+
+/* Panel fade-in */
+.nuvora-tab-panel.active {
+	animation: nuvora-tab-fade 0.25s ease;
+}
+@keyframes nuvora-tab-fade {
+	from { opacity: 0; transform: translateY(6px); }
+	to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Style 2 – underline: no gap needed */
+.nuvora-tabs-layout-style2 .nuvora-tabs-nav { gap: 0; }
+.nuvora-tabs-layout-style2 .nuvora-tab-btn { border-radius: 0; }
+
+/* Style 4 – card tabs: overlap bottom border */
+.nuvora-tabs-layout-style4 .nuvora-tab-btn { margin-bottom: -1px; }
