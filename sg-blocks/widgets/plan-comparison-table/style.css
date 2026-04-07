@@ -1,0 +1,259 @@
+/* =========================================
+   SG Blocks – Plan Comparison Table
+   ========================================= */
+
+.sg-pct {
+    width: 100%;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.sg-pct__inner {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+/* ── Header ── */
+.sg-pct__header-top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sg-pct__badge {
+    display: inline-block;
+    border: 1px solid #3a3a3a;
+    border-radius: 999px;
+    padding: 6px 20px;
+    font-size: 13px;
+    color: #cccccc;
+    letter-spacing: 0.01em;
+    background: transparent;
+}
+
+.sg-pct__heading {
+    text-align: center;
+    font-size: clamp(24px, 3.5vw, 44px);
+    font-weight: 700;
+    margin: 0 0 48px;
+    line-height: 1.2;
+}
+
+.sg-pct__heading-plain {
+    color: #ffffff;
+}
+
+.sg-pct__heading-hi {
+    /* color set inline */
+}
+
+/* ── Table wrapper (horizontal scroll on mobile) ── */
+.sg-pct__table-wrap {
+    overflow-x: auto;
+    border-radius: 14px;
+    border: 1px solid var(--sg-pct-divider, #222);
+}
+
+.sg-pct__table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* ── Header row ── */
+.sg-pct__th {
+    padding: 22px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: bottom;
+    border-bottom: 1px solid var(--sg-pct-divider, #222);
+}
+
+.sg-pct__th--label {
+    text-align: left;
+    width: 220px;
+    border-radius: 14px 0 0 0;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.sg-pct__th--plan {
+    border-left: 1px solid var(--sg-pct-divider, #222);
+}
+
+.sg-pct__plan-name {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.sg-pct__plan-price {
+    display: block;
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.sg-pct__plan-price-suffix {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-left: 3px;
+    opacity: 0.75;
+}
+
+/* ── Section heading row ── */
+.sg-pct__section-row td {
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.55;
+    border-bottom: 1px solid var(--sg-pct-divider, #222);
+    border-top: 1px solid var(--sg-pct-divider, #222);
+}
+
+/* ── Data rows ── */
+.sg-pct__row {
+    border-bottom: 1px solid var(--sg-pct-divider, #222);
+    transition: opacity 0.15s;
+}
+
+.sg-pct__row:last-child {
+    border-bottom: none;
+}
+
+.sg-pct__cell {
+    padding: 13px 20px;
+    font-size: 13.5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.sg-pct__cell--label {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.sg-pct__cell--value {
+    border-left: 1px solid var(--sg-pct-divider, #222);
+}
+
+/* ── Icons ── */
+.sg-pct__icon--check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.07);
+    color: var(--sg-pct-check, #e0445e);
+}
+
+.sg-pct__icon--check svg {
+    display: block;
+}
+
+.sg-pct__icon--dash {
+    font-size: 18px;
+    color: #444;
+    display: inline-block;
+}
+
+.sg-pct__text-value {
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* ── CTA row ── */
+.sg-pct__cta-row td {
+    padding: 20px 20px;
+    border-top: 1px solid var(--sg-pct-divider, #222);
+}
+
+.sg-pct__cta-cell {
+    border-left: 1px solid var(--sg-pct-divider, #222);
+}
+
+.sg-pct__btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 999px;
+    border: 1.5px solid rgba(255,255,255,0.3);
+    background: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.sg-pct__btn:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.55);
+    color: #ffffff;
+}
+
+/* ── Footer note ── */
+.sg-pct__footer-note {
+    text-align: left;
+    margin-top: 14px;
+    font-size: 12px;
+    color: #555;
+    padding: 0 4px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 680px) {
+    .sg-pct {
+        padding: 56px 20px;
+    }
+
+    .sg-pct__table-wrap {
+        border-radius: 10px;
+    }
+
+    .sg-pct__th--label,
+    .sg-pct__cell--label {
+        width: 130px;
+        min-width: 130px;
+        font-size: 12px;
+        padding: 11px 12px;
+    }
+
+    .sg-pct__cell {
+        padding: 11px 12px;
+    }
+
+    .sg-pct__plan-name {
+        font-size: 14px;
+    }
+
+    .sg-pct__plan-price {
+        font-size: 22px;
+    }
+
+    .sg-pct__btn {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+}

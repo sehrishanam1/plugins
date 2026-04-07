@@ -1,0 +1,84 @@
+/* =========================================
+   SG Blocks – Logo Slider
+   ========================================= */
+
+.sg-ls {
+    max-width: 100%!important;
+    overflow: hidden;
+    padding: 100px 0 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #B9C0BF29;
+}
+
+/* Title */
+.sg-ls__title {
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+/* Slider viewport — clips overflow */
+.sg-ls__viewport {
+    width: 100%;
+    margin-top: 25px;
+    overflow: hidden;
+    padding: 28px 16px;
+    background-color: #171717;
+    
+}
+
+/* The moving track — contains logos twice for seamless loop */
+.sg-ls__track {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    animation-name: sg-ls-scroll;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 30s; /* overridden inline */
+    will-change: transform;
+}
+
+/* Pause on hover */
+.sg-ls:hover .sg-ls__track {
+    animation-play-state: paused;
+}
+
+/* Individual logo item */
+.sg-ls__item {
+    display: flex;
+    align-items: center;
+    width: 20%; 
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 0 48px;
+    flex-shrink: 0;
+}
+
+.sg-ls__item img {
+    display: block;
+    max-width: 150px;
+    width: auto;
+    object-fit: contain;
+    /* grayscale + opacity for the muted look */
+    filter: grayscale(100%) brightness(1.2);
+    transition: opacity 0.3s, filter 0.3s;
+}
+
+.sg-ls__item img:hover {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1 !important;
+}
+
+/* Keyframe — scroll exactly 50% (one full set of logos) */
+@keyframes sg-ls-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .sg-ls__track {
+        animation: none;
+    }
+}

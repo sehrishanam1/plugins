@@ -1,0 +1,236 @@
+/* =========================================
+   SG Blocks – Hero Split
+   ========================================= */
+
+.sg-hs {
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100% !important;
+}
+
+/* Sticky-right background image */
+.sg-hs__bg-image {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+    /* Fade out toward left so text stays readable */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 1) 60%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 1) 60%);
+    pointer-events: none;
+}
+
+.sg-hs__inner {
+    position: relative;
+    z-index: 2;
+    padding: 70.5px 53px 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sg-hs__content {
+    max-width: 707px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Breadcrumb */
+.sg-hs__breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    margin-bottom: 10.5px;
+}
+
+.sg-hs__breadcrumb-link {
+    color: #B9C0BF;
+    font-size: 14px;
+    font-family: 'Fustat', sans-serif;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.sg-hs__breadcrumb a.sg-hs__breadcrumb-link {
+    text-decoration: none;
+}
+
+.sg-hs__breadcrumb-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.sg-hs__breadcrumb-current {
+    color: #F6F7F7;
+    font-weight: 500;
+}
+
+.sg-hs__breadcrumb-sep {
+    color: #B9C0BF;
+    font-size: 14px;
+    user-select: none;
+}
+
+/* Title */
+.sg-hs__title {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 40px;
+    line-height: 140%;
+    font-family: 'Fustat', sans-serif;
+}
+
+.sg-hs__title-line1 {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.sg-hs__title-line2 {
+    display: block;
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.sg-hs__title-accent {
+    /* color set inline via primaryColor attr */
+}
+
+/* Description */
+.sg-hs__desc {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #B9C0BF;
+    font-family: 'Fustat', sans-serif;
+    margin-bottom: 10px !important;
+}
+
+/* Icon list */
+.sg-hs__icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 55px;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.sg-hs__icon-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sg-hs__icon-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+}
+
+.sg-hs__icon-check {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.sg-hs__icon-label {
+    /* color set inline */
+}
+
+/* Buttons */
+.sg-hs__buttons {
+    padding: 30px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 35px;
+    align-items: center;
+}
+
+.sg-hs__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    border-radius: 40px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.sg-hs__btn--solid {
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #ffffff;
+}
+
+.sg-hs__btn--outline {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Stars */
+.sg-hs__stars {
+    padding: 20px 0 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #888;
+    flex-wrap: wrap;
+}
+
+
+.sg-hs__stars-text {
+    font-size: 16px;
+    color: #B9C0BF;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* =========================================
+   Responsive
+   ========================================= */
+@media (max-width: 768px) {
+    .sg-hs__inner {
+        padding: 48px 24px;
+    }
+
+    .sg-hs__bg-image {
+        width: 100%;
+        opacity: 0.15;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .sg-hs__content {
+        max-width: 100%;
+    }
+}
+
+/* =========================================
+   Editor overrides (inside iframe)
+   ========================================= */
+.editor-styles-wrapper .sg-hs {
+    /* show in editor */
+}

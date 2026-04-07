@@ -1,0 +1,229 @@
+/* =========================================
+   SG Blocks – Pricing Table
+   ========================================= */
+
+.sg-pt {
+    width: 100%;
+	max-width: 100% !important;
+    padding: 80px 0 40px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.sg-pt__inner {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+/* ── Header ── */
+.sg-pt__header-top {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sg-pt__badge {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+	font-weight: 500;
+}
+
+.sg-pt__heading {
+    text-align: center;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 16px;
+    line-height: 1.15;
+}
+
+.sg-pt__subheading {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #B9C0BF;
+    max-width: 600px;
+    margin: 0 auto 52px;
+}
+
+/* ── Grid ── */
+.sg-pt__grid {
+    display: grid;
+    gap: 24px 44px;
+    align-items: start;
+	max-width: 794px;
+}
+
+/* Dynamic column counts */
+.sg-pt__grid--count-1 { grid-template-columns: minmax(0, 480px); justify-content: center; }
+.sg-pt__grid--count-2 { grid-template-columns: repeat(2, 1fr); }
+.sg-pt__grid--count-3 { grid-template-columns: repeat(3, 1fr); }
+.sg-pt__grid--count-4 { grid-template-columns: repeat(4, 1fr); }
+.sg-pt__grid--count-5 { grid-template-columns: repeat(3, 1fr); }
+.sg-pt__grid--count-6 { grid-template-columns: repeat(3, 1fr); }
+
+/* ── Card ── */
+.sg-pt__card {
+    border-radius: 10px;
+    padding: 27px 36px;
+    box-sizing: border-box;
+	background: linear-gradient(47.26deg, rgba(33, 32, 32, 0.2) 10.5%, rgba(255, 255, 255, 0.2) 73.04%), #0F0F0F !important;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    position: relative;
+}
+
+.sg-pt__card--featured {
+	background: linear-gradient(226.46deg, #00BFC4 2.63%, #212020 97.58%) !important;
+}
+
+.sg-pt__card--featured:hover {
+    box-shadow: 0 20px 60px rgba(13,148,136,0.35);
+    border-color: rgba(255,255,255,0.25);
+}
+
+/* ── Price ── */
+.sg-pt__price {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    color: #ffffff;
+    margin-bottom: 21px;
+    line-height: 1.2;
+    text-align: right;
+}
+
+/* ── Plan name ── */
+.sg-pt__plan-name {
+	font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 16px;
+    line-height: 1;
+}
+
+/* ── Description ── */
+.sg-pt__plan-desc {
+    font-size: 13px;
+	font-family: 'DM Sans', sans-serif;
+    line-height: 1;
+    color: #fff;
+    margin: 0 0 16px !important;
+}
+
+/* ── Features ── */
+.sg-pt__features {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+ul.sg-pt__features {
+	margin: 0 0 35px;
+	padding-left: 30px;
+}
+
+.sg-pt__feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.5;
+}
+
+.sg-pt__check {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.sg-pt__check svg {
+    display: block;
+}
+
+.sg-pt__check svg path,
+.sg-pt__check svg polyline {
+	stroke: white;
+}
+
+/* ── Button ── */
+.sg-pt__btn-wrap {
+    margin-top: auto;
+}
+
+.sg-pt__btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px 24px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255);
+    background: transparent;
+    text-decoration: none !important;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+    box-sizing: border-box;
+}
+
+.sg-pt__btn:hover {
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.6);
+    color: #ffffff;
+}
+
+/* ── Footer note ── */
+.sg-pt__footer-note {
+    text-align: center;
+	font-family: 'DM Sans', sans-serif;
+    margin-top: 34px;
+    font-size: 16px;
+    color: #A1A1AA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px 20px;
+}
+
+.sg-pt__footer-text {
+    color: #888888;
+}
+
+/* ── Responsive ── */
+@media ( max-width: 900px ) {
+    .sg-pt__grid--count-3,
+    .sg-pt__grid--count-4,
+    .sg-pt__grid--count-5,
+    .sg-pt__grid--count-6 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media ( max-width: 600px ) {
+    .sg-pt {
+        padding: 56px 20px;
+    }
+    .sg-pt__grid--count-2,
+    .sg-pt__grid--count-3,
+    .sg-pt__grid--count-4,
+    .sg-pt__grid--count-5,
+    .sg-pt__grid--count-6 { grid-template-columns: 1fr; }
+
+    .sg-pt__card {
+        padding: 28px 24px 24px;
+    }
+}

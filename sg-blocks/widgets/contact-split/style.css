@@ -1,0 +1,262 @@
+/* =========================================
+   SG Blocks – Contact Split
+   ========================================= */
+
+.sg-cs {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.sg-cs__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* ── Panels ── */
+.sg-cs__panel {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.sg-cs__panel--image {
+    overflow: hidden;
+}
+
+.sg-cs__img-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.sg-cs__panel--form {
+    padding: 52px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ── Badge ── */
+.sg-cs__badge-wrap {
+    margin-bottom: 16px;
+}
+
+.sg-cs__badge {
+    display: inline-block;
+    border: 1px solid #333;
+    border-radius: 999px;
+    padding: 5px 18px;
+    font-size: 12px;
+    color: #aaa;
+    background: transparent;
+    letter-spacing: 0.03em;
+}
+
+/* ── Header text ── */
+.sg-cs__heading {
+    font-size: clamp(22px, 2.5vw, 34px);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px;
+    line-height: 1.2;
+}
+
+.sg-cs__subheading {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #888;
+    margin: 0 0 28px;
+}
+
+/* ── Form grid ── */
+.sg-cs__form {
+    width: 100%;
+}
+
+.sg-cs__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 16px;
+}
+
+.sg-cs__field--full {
+    grid-column: 1 / -1;
+}
+
+.sg-cs__field--half {
+    grid-column: span 1;
+}
+
+/* ── Label ── */
+.sg-cs__label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--sg-cs-label, #ccc);
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.sg-cs__req {
+    color: #e05c5c;
+    margin-left: 3px;
+}
+
+/* ── Inputs ── */
+.sg-cs__input {
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--sg-cs-input-bg, #111);
+    border: 1px solid var(--sg-cs-input-bdr, #2a2a2a);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: var(--sg-cs-input-txt, #fff);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-family: inherit;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.sg-cs__input::placeholder {
+    color: var(--sg-cs-ph, #555);
+}
+
+.sg-cs__input:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 3px rgba(255,255,255,0.05);
+}
+
+.sg-cs__textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ── Checkbox group ── */
+.sg-cs__checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    padding-top: 4px;
+}
+
+.sg-cs__cb-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 13.5px;
+    color: var(--sg-cs-cb-lbl, #ccc);
+    user-select: none;
+}
+
+.sg-cs__cb-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.sg-cs__cb-box {
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid var(--sg-cs-cb-bdr, #444);
+    border-radius: 4px;
+    background: transparent;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.sg-cs__cb-input:checked + .sg-cs__cb-box {
+    background: #00bcd4;
+    border-color: #00bcd4;
+}
+
+.sg-cs__cb-input:checked + .sg-cs__cb-box::after {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 5px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: rotate(-45deg) translateY(-1px);
+}
+
+/* ── Submit ── */
+.sg-cs__submit-wrap {
+    margin-top: 22px;
+}
+
+.sg-cs__btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--sg-cs-btn-bg, #00bcd4);
+    color: var(--sg-cs-btn-txt, #000);
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    font-family: inherit;
+    white-space: nowrap;
+}
+
+.sg-cs__btn:hover {
+    background: var(--sg-cs-btn-hover, #00acc1);
+    transform: translateY(-1px);
+}
+
+.sg-cs__btn:active {
+    transform: translateY(0);
+}
+
+/* ── Success message ── */
+.sg-cs__success {
+    margin-top: 24px;
+    padding: 20px 24px;
+    background: rgba(0,188,212,0.1);
+    border: 1px solid rgba(0,188,212,0.3);
+    border-radius: 10px;
+    color: #00bcd4;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 860px) {
+    .sg-cs__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .sg-cs__panel--image {
+        min-height: 280px;
+    }
+
+    .sg-cs__panel--form {
+        padding: 40px 32px;
+    }
+}
+
+@media (max-width: 560px) {
+    .sg-cs__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sg-cs__field--half {
+        grid-column: 1 / -1;
+    }
+
+    .sg-cs__panel--form {
+        padding: 32px 20px;
+    }
+}
