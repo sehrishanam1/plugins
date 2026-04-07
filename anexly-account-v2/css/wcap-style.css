@@ -1,0 +1,630 @@
+/* ============================================================
+   WC Auth Popup — wcap-style.css
+   ============================================================ */
+
+:root {
+    --wcap-primary:     #E8584A;
+    --wcap-primary-h:   #d44538;
+    --wcap-text:        #1a1a1a;
+    --wcap-muted:       #888;
+    --wcap-border:      #e0e0e0;
+    --wcap-bg:          #ffffff;
+    --wcap-overlay-bg:  rgba(0,0,0,0.55);
+    --wcap-radius:      12px;
+    --wcap-input-h:     56px;
+    --wcap-error:       #e05252;
+    --wcap-success:     #28a745;
+    --wcap-font:        'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* ---------- Trigger Button ---------- */
+.wcap-trigger-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 26px;
+    background: var(--wcap-primary);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--wcap-font);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s, transform .15s;
+}
+.wcap-trigger-btn:hover {
+    background: var(--wcap-primary-h);
+    transform: translateY(-1px);
+}
+
+/* ---------- Logged-in Message ---------- */
+.wcap-logged-in {
+    font-family: var(--wcap-font);
+    font-size: 14px;
+    color: var(--wcap-text);
+}
+.wcap-logged-in a {
+    color: var(--wcap-primary);
+    text-decoration: none;
+}
+.wcap-logged-in a:hover { text-decoration: underline; }
+
+/* ---------- Overlay ---------- */
+.wcap-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    background: var(--wcap-overlay-bg);
+    backdrop-filter: blur(3px);
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+.wcap-overlay.wcap-open {
+    display: flex;
+    animation: wcapFadeIn .22s ease;
+}
+@keyframes wcapFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* ---------- Modal ---------- */
+.wcap-modal {
+    position: relative;
+    background: white;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 508px;
+    padding: 40px 24px;
+    animation: wcapSlideUp .25s ease;
+    max-height: 92vh;
+    overflow-y: auto;
+}
+@keyframes wcapSlideUp {
+    from { opacity: 0; transform: translateY(24px) scale(.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ---------- Close Button ---------- */
+.wcap-close {
+    position: absolute;
+    top: 34px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: var(--wcap-muted);
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: color .15s, background .15s;
+    font-weight: 400 !important;
+}
+
+#wcap-forgot-link,
+#wcap-close {
+	/*display: none;*/
+}
+
+#wcap-panel-forgot .wcap-close {
+	display: block;
+}
+
+.wcap-close:hover {
+    color: #F3536D;
+}
+
+/* ---------- Tabs ---------- */
+.wcap-tabs {
+    display: flex;
+    border-bottom: 2px solid #D2D2DA;
+    margin-bottom: 40px;
+    gap: 0;
+}
+
+.wcap-field-wrap input[type="text"], .wcap-field-wrap input[type="email"], .wcap-field-wrap input[type="password"] {
+	height: 60px;
+    padding: 0 44px 0 18px;
+	color: #7B7B7F;
+	font-size: 16px;
+}
+
+
+.wcap-field-wrap input[type="text"]:focus, .wcap-field-wrap input[type="email"]:focus, .wcap-field-wrap input[type="password"]:focus {
+	background-color: white !important;
+	border: 2px solid #111013;
+	box-shadow: none !important;
+}
+
+.wcap-tab {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 12px 0;
+	font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    color: #737175;
+    cursor: pointer;
+    position: relative;
+    transition: color .2s;
+}
+.wcap-tab::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #F3536D;
+    border-radius: 2px 2px 0 0;
+    transform: scaleX(0);
+    transition: transform .22s;
+}
+.wcap-tab.active {
+    color: var(--wcap-primary);
+    background: #FDF0EE;
+    opacity: 1;
+    gap: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    
+    font-family: DM Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #F3536D;
+
+
+}
+.wcap-tab.active::after {
+    transform: scaleX(1);
+}
+
+/* ---------- Fields ---------- */
+.wcap-field-wrap {
+    position: relative;
+    margin-bottom: 20px;
+}
+.wcap-field-wrap input[type="text"],
+.wcap-field-wrap input[type="email"],
+.wcap-field-wrap input[type="password"] {
+    width: 100%;
+    height: 60px;
+    padding: 0 44px 0 18px;
+    border-radius: 8px;
+    font-family: var(--wcap-font);
+    font-size: 16px;
+    color: #111013;
+    background: #fff;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+    box-sizing: border-box;
+    border: 1px solid #D2D2DA;
+}
+.wcap-field-wrap input:focus {
+    border-color: var(--wcap-primary);
+    box-shadow: 0 0 0 3px rgba(232,88,74,.12);
+}
+.wcap-field-wrap input.wcap-error {
+    border-color: #F6425A;
+}
+.wcap-field-wrap input.wcap-valid {
+    border-color: #30AE65;
+	background-color: white !important;
+}
+
+.wcap-password-wrap br,.wcap-forgot-footer br,.wcap-checkbox-label br,.wcap-terms-wrap br {
+	display: none !important;
+}
+
+.wcap-field-msg {
+    /*display: block;*/
+    font-size: 16px;
+    margin-top: 8px;
+    min-height: 1.5;
+}
+
+.wcap-google-btn {
+	margin-bottom: 20px;
+}
+
+.wcap-field-msg.error  { color: #F6425A; }
+.wcap-field-msg.success{ color: #30AE65; }
+
+/* ---------- Password Toggle ---------- */
+.wcap-password-wrap input { padding-right: 44px; }
+.wcap-toggle-pw {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--wcap-muted);
+    padding: 0;
+    line-height: 0;
+    transition: color .15s;
+}
+.wcap-toggle-pw:hover { color: var(--wcap-text); }
+.wcap-toggle-pw svg { width: 18px; height: 18px; }
+
+/* ---------- Forgot Link ---------- */
+.wcap-forgot-wrap {
+    text-align: right;
+    margin: -4px 0 20px;
+}
+
+/* ---------- Server Messages ---------- */
+.wcap-server-msg {
+    padding: 10px 14px;
+    border-radius: 7px;
+    font-size: 13px;
+    margin-bottom: 14px;
+    display: none;
+}
+.wcap-server-msg.error {
+    background: #fdf2f2;
+    color: var(--wcap-error);
+    border: 1px solid #f5c6c6;
+    display: block;
+}
+.wcap-server-msg.success {
+    background: #f2fdf5;
+    color: var(--wcap-success);
+    border: 1px solid #c6f0d0;
+    display: block;
+}
+
+#wcap-forgot-form .wcap-submit-btn {
+	margin-bottom: 24px;
+}
+
+/* ---------- Submit Button ---------- */
+#wcap-forgot-form .wcap-submit-btn,
+#wcap-signup-form .wcap-submit-btn,
+#wcap-login-form .wcap-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 48px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background .2s, transform .15s, box-shadow .2s;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    background: linear-gradient(180deg, #EC4C62 0%, #F57957 127.5%) !important;
+    border-radius: 20px;
+}
+
+#wcap-forgot-form .wcap-submit-btn:hover,
+#wcap-signup-form .wcap-submit-btn:hover,
+#wcap-login-form .wcap-submit-btn:hover {
+	    background: linear-gradient(180deg, #F57957 0%, #EC4C62 127.5%) !important;
+}
+
+.wcap-submit-btn:disabled {
+    opacity: .7;
+    cursor: not-allowed;
+}
+
+/* ---------- Spinner ---------- */
+.wcap-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2.5px solid rgba(255,255,255,.4);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: wcapSpin .7s linear infinite;
+}
+@keyframes wcapSpin {
+    to { transform: rotate(360deg); }
+}
+
+/* ---------- Divider ---------- */
+.wcap-divider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+	margin: 32px 0;
+    color: #737175;
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+.wcap-divider::before,
+.wcap-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #F4677E80;
+}
+
+/* ---------- Social Buttons ---------- */
+.wcap-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 56px;
+    border: 1px solid #D2D2DA;
+    border-radius: 8px;
+    color: #262626;
+    text-decoration: none;
+    transition: background .15s, border-color .15s, box-shadow .15s;
+    background: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-align: center;
+    opacity:1 !important;
+}
+.wcap-social-btn:hover {
+    background: #f7f7f7;
+    border-color: #ccc;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+/* ---------- Guest / Switch ---------- */
+.wcap-guest-wrap {
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+#wcap-guest-btn {
+	color: #737175;
+    height: auto;
+    padding: 0;
+    font-size: 16px;
+    width: max-content;
+    border-radius: 0;
+    position: initial;
+    border-bottom: 1px solid #737175;
+}
+
+#wcap-guest-btn:hover {
+	color: #262626;
+} 
+
+.wcap-link-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #F3536D;
+    cursor: pointer;
+    text-underline-offset: 2px;
+    transition: color .15s;
+    font-family: Roboto !important;
+    font-weight: 400 !important;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-align: right;
+    vertical-align: middle;
+
+}
+.wcap-link-btn:hover { color: var(--wcap-primary-h); }
+
+.wcap-switch-text {
+    text-align: center;
+    font-size: 13px;
+    color: var(--wcap-muted);
+    margin: 14px 0 0;
+    display:none;
+}
+
+/* ---------- Terms Checkbox ---------- */
+.wcap-terms-wrap { margin-bottom: 20px; }
+.wcap-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: var(--wcap-text);
+    user-select: none;
+    font-family: Roboto;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+input[type=checkbox] + label, input[type=checkbox] + span, input[type=radio] + label, input[type=radio] + span {
+	margin-left: 0 !important;
+}
+
+#wcap-signup-form .wcap-checkbox-label {
+	color: #F3536D;
+}
+
+.wcap-checkbox-label input[type="checkbox"] { display: none; }
+.wcap-custom-check {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #7B7B7F;
+    border-radius: 8px;
+    background: #fff;
+    position: relative;
+    transition: border-color .15s, background .15s;
+}
+.wcap-checkbox-label input:checked ~ .wcap-custom-check {
+    background: #F68396;
+    border-color: #F68396;
+}
+.wcap-custom-check::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    width: 5px;
+    height: 9px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity .1s;
+}
+.wcap-checkbox-label input:checked ~ .wcap-custom-check::after { opacity: 1; }
+.wcap-checkbox-label a { color: #F3536D; }
+
+/* ---------- Password Strength ---------- */
+.wcap-strength-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: -6px 0 12px;
+}
+.wcap-strength-bar {
+    flex: 1;
+    height: 5px;
+    background: var(--wcap-border);
+    border-radius: 3px;
+    overflow: hidden;
+}
+.wcap-strength-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width .3s, background .3s;
+    width: 0;
+}
+.wcap-strength-label {
+    font-size: 11px;
+    font-weight: 600;
+    width: 48px;
+    text-align: right;
+}
+
+/* ---------- Forgot Password Panel ---------- */
+.wcap-forgot-header {
+    text-align: center;
+    margin-bottom: 22px;
+}
+.wcap-forgot-title {
+    font-size: 20px;
+    color: #111013;
+    font-family: Roboto;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.wcap-forgot-sub {
+    color: #737175;
+    margin-top: 0px !important;
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 767px) {
+    .wcap-modal {
+padding: 24px 24px 32px;
+        border-radius: 24px;
+    }
+	.wcap-tab {
+		padding: 8px 0;
+	}
+	.wcap-tabs {
+    margin-bottom: 32px;
+}
+	.wcap-field-wrap input[type="text"], .wcap-field-wrap input[type="email"], .wcap-field-wrap input[type="password"] {
+		height: 56px;
+	}
+	.wcap-field-wrap {
+    margin-bottom: 16px;
+}
+	#wcap-forgot-form .wcap-submit-btn, #wcap-signup-form .wcap-submit-btn, #wcap-login-form .wcap-submit-btn {
+    height: 44px;
+	}
+	.wcap-divider {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+}
+	.wcap-social-btn {
+		margin-bottom: 16px;
+	}
+}
+
+/* ---------- Social Login — Not Configured State ---------- */
+.wcap-social-btn.wcap-social-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    position: relative;
+}
+.wcap-social-btn[data-wcap-not-configured="1"] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ---------- Forgot Password Footer — Back to Login ---------- */
+.wcap-forgot-footer {
+    text-align: center;
+    margin-top: 14px;
+    color: #737175;
+    font-family: Roboto;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+.wcap-forgot-footer .wcap-link-btn {
+    font-family: Roboto;
+    font-weight: 600 !important;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+	position: relative;
+    right: 7px;
+}

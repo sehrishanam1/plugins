@@ -1,0 +1,675 @@
+/* =============================================
+   Anexly AJAX Filter — filter.css (Slider Version)
+   ============================================= */
+
+:root {
+  --af-primary: #f04e3e;
+  --af-primary-lt: #ff6b5b;anexly-product-card
+  --af-pink-bg: #fde8e6;
+  --af-white: #ffffff;
+  --af-gray-100: #f0f0f5;
+  --af-gray-200: #e2e2ee;
+  --af-gray-400: #a0a0b8;
+  --af-gray-700: #3a3a55;
+  --af-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.07);
+  --af-shadow-md: 0 6px 24px rgba(0, 0, 0, 0.1);
+  --af-shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.14);
+  --af-radius: 16px;
+  --af-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ══ FILTER WRAPPER ══ */
+.anexly-filter-wrapper {
+  max-width: 900px;
+  margin: 0 auto 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 0 16px;
+}
+
+/* ══ CATEGORY TABS ══ */
+.anexly-category-tabs {
+	position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.anexly-category-tabs:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: 1px;
+	width: calc(100% - 68px);
+	background-color: #989898;
+} 
+.anexly-cat-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px;
+  background: var(--af-white);
+  border: 2px solid transparent;
+  border-radius: var(--af-radius);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.05);
+  min-width: 80px;
+  color: var(--af-gray-700);
+  font-family: inherit;
+}
+.anexly-cat-btn.active  {
+	color: white;
+background: linear-gradient(180deg, #EC4C62 0%, #F57957 127.5%), #5F5A67;
+}
+
+.cat-icon img {
+	transition: all .3s linear;
+}
+
+.anexly-cat-btn.active .cat-icon img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(19%) saturate(2%) hue-rotate(137deg) brightness(112%) contrast(100%);
+}  
+
+.anexly-cat-btn.active .cat-label {
+	color: white;
+}
+
+.cat-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cat-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+}
+.cat-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+.cat-label {
+  display: inline-block;
+  line-height: 1.9;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  color: #5F5A67;
+  letter-spacing: 2%;
+}
+
+/* ══ SEARCH BAR ══ */
+.anexly-search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+}
+#anexly-search-input {
+    width: 100%;
+    padding: 14px 52px 14px 28px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #737175 !important;
+  background: var(--af-white);
+  outline: none;
+box-shadow: 0px 4px 17px rgba(90, 15, 15, 0.1);
+  transition: all var(--af-transition);
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.anexly-search-btn {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+	background-image: url(https://test.anexly.us/wp-content/uploads/2026/03/Vector-8.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 18px;
+	background-color: transparent !important;
+}
+
+.anexly-search-btn svg {
+		display: none;
+}
+
+/* ══ PRODUCTS SECTION ══ */
+.anexly-products-section {
+  position: relative;
+}
+
+/* ══ SLIDER WRAPPER ══ */
+.anexly-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Viewport — clips overflow */
+.anexly-slider-viewport {
+	overflow: hidden;
+  flex: 1;
+  cursor: grab;
+}
+
+.anexly-slider-viewport.is-dragging {
+  cursor: grabbing;
+}
+
+/* ══ PRODUCTS GRID (now a flex row for slider) ══ */
+.anexly-products-grid {
+	padding-bottom: 1px;
+	padding-left: 213px;
+  display: flex;
+  gap: 20px;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.anexly-products-grid.is-loading {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* ══ PRODUCT CARD ══ */
+.anexly-product-card {
+  position: relative;
+  border-radius: 32px;
+  width: 296px !important;
+  border: 1px solid #EEEEEE;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+  flex-shrink: 0;
+  transition:
+    transform var(--af-transition);
+  animation: cardFadeIn 0.4s ease both;
+}
+}
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Badges */
+.card-badge {
+  position: absolute;
+  top: 12px;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.save-badge {
+  left: 12px;
+  background: var(--af-primary);
+  color: var(--af-white);
+}
+.type-badge {
+  right: 12px;
+  background: var(--af-pink-bg);
+  color: var(--af-primary);
+}
+
+/* Image */
+.card-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img.card-image {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 18px;
+  transition: transform var(--af-transition);
+	margin-bottom: 16px;
+}
+.anexly-product-card:hover .card-image {
+  transform: scale(1.08);
+}
+
+.sch-total-savings {
+	color: #666666;
+}
+
+.anexly-pc-savings-header {
+	margin-bottom: 17px;
+}
+
+.anexly-pc-brand {
+	font-size: 0;
+	max-width: 130px;
+	min-height: 52px;
+	background-image: url(https://test.anexly.us/wp-content/uploads/2026/03/ANEXLY.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto 12px;
+}
+
+.card-image-placeholder {
+  width: 80px;
+  height: 80px;
+  background: var(--af-gray-100);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--af-gray-400);
+}
+.card-image-placeholder svg {
+  width: 36px;
+  height: 36px;
+}
+
+/* Body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.anexly-product-card .woocommerce-Price-amount {
+	font-weight: 700;
+	font-family: 'Roboto';
+	letter-spacing: 1px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111013;
+  margin-bottom: 10px;
+  line-height: 1.33;
+	letter-spacing: 2%;
+}
+
+.card-price {
+	margin-top: 0 !important;
+	justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+/* 	flex-wrap: wrap; */
+  align-items: baseline;
+  gap: 4px;
+  text-align: center;
+}
+
+.woocommerce-Price-amount {
+	font-size: 24px;
+	color: #F3536D;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.screen-reader-text {
+	font-weight: 400;
+}
+
+.price-period {
+  font-size: 16px;
+  font-weight: 400;
+  color: #737175;
+}
+.card-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 30px auto 24px;
+  padding: 6px 76px 6px 50px;
+  color: var(--af-white) !important;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family :'DM Sans', sans-serif !important;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: all var(--af-transition);
+  letter-spacing: 0.3px;
+background: 
+  linear-gradient(180deg, #EC4C62 0%, #F57957 127.5%);
+	width: max-content;
+}
+
+.card-cta::after {
+	content: "";
+	position: absolute;
+	top: 11px;
+	right: 50px;
+	width: 18px;
+	height: 18px;
+	background: url('https://test.anexly.us/wp-content/uploads/2026/03/Vector-2.svg');
+background-position: center;
+background-size: 12px;
+background-repeat: no-repeat;
+}
+
+.card-cta svg {
+	display: none;
+}
+.card-cta:hover {
+	  font-weight: 700 !important;
+background: 
+  linear-gradient(180deg, #F57957 0%, #EC4C62 127.5%) !important;
+}
+.card-cta:hover svg {
+  transform: translateX(3px);
+}
+
+/* ══ SLIDER DOTS ══ */
+.anexly-slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 50px;
+  min-height: 12px;
+}
+.slider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #DDD6D5;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--af-transition);
+}
+.slider-dot.active {
+	border-radius: 8px;
+	transform: translateY(-2px);
+width: 24px;
+height: 12px;
+background: linear-gradient(180deg, #EC4C62 0%, #F57957 127.5%), #111013;
+}
+
+/* ══ LOADER ══ */
+.anexly-loader-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(4px);
+  border-radius: var(--af-radius);
+  min-height: 200px;
+}
+.anexly-loader-overlay.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.anexly-loader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.anexly-spinner {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinner-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid transparent;
+}
+.spinner-ring:nth-child(1) {
+  border-top-color: var(--af-primary);
+  animation: spin 1s linear infinite;
+}
+.spinner-ring:nth-child(2) {
+  inset: 8px;
+  border-right-color: var(--af-primary-lt);
+  animation: spin 0.75s linear infinite reverse;
+}
+.spinner-ring:nth-child(3) {
+  inset: 18px;
+  border-bottom-color: #ffb3ad;
+  animation: spin 0.5s linear infinite;
+}
+.spinner-core {
+  position: relative;
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  background: var(--af-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+.spinner-core svg {
+  width: 14px;
+  height: 14px;
+  stroke: #fff;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(240, 78, 62, 0.4);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 8px rgba(240, 78, 62, 0);
+  }
+}
+.loader-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--af-gray-400);
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+.dot-anim {
+  animation: dots 1.4s steps(4, end) infinite;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 0;
+}
+@keyframes dots {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 0.5em;
+  }
+  50% {
+    width: 1em;
+  }
+  75% {
+    width: 1.5em;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* ══ NO RESULTS ══ */
+.anexly-no-results {
+  text-align: center;
+  padding: 60px 20px;
+}
+.no-results-inner {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--af-gray-400);
+}
+.no-results-inner svg {
+  width: 64px;
+  height: 64px;
+  stroke: var(--af-gray-200);
+}
+.no-results-inner h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--af-gray-700);
+  margin: 0;
+}
+.no-results-inner p {
+  font-size: 14px;
+  margin: 0;
+}
+.reset-btn {
+  margin-top: 8px;
+  padding: 10px 28px;
+  background: var(--af-primary);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--af-transition);
+}
+.reset-btn:hover {
+  background: var(--af-primary-lt);
+  transform: translateY(-1px);
+}
+
+@media screen and (min-width: 1441px) {
+	.anexly-product-card{
+		width: clamp(18.5rem, 24.217vw + -3.311rem, 25.75rem) !important;
+	}
+}
+
+/* ══ RESPONSIVE ══ */
+@media (max-width: 768px) {
+  .anexly-slider-prev,
+  .anexly-slider-next {
+    width: 34px;
+    height: 34px;
+  }
+  .cat-label {
+    font-size: 10px;
+  }
+	/* width */
+.anexly-category-tabs:-webkit-scrollbar {
+  width: 3px;
+}
+	
+	.anexly-category-tabs {
+		gap: 7px;
+        padding: 0 10px 0 14px;
+        margin-bottom: 14px;
+        width: calc(100% + 48px);
+        margin-left: -24px;
+		border-bottom: none;
+	}
+	.anexly-search-btn {
+    	right: 18px;
+   		top: 10px;
+	}
+	.anexly-category-tabs {
+		  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  /* Firefox */
+  scrollbar-width: thin;
+	}
+
+/* Track */
+.anexly-category-tabs:-webkit-scrollbar-track {
+  background: #DDD6D5; 
+}
+ 
+/* Handle */
+.anexly-category-tabs:-webkit-scrollbar-thumb {
+  background: #F3536D; 
+	}
+}
+
+.card-body-container {
+	background-color: white;
+	padding: 44px 24px 24px;
+	border-radius: 32px;
+	box-shadow: 0px 16px 32px -4px rgba(104, 106, 103, 0.05);
+}
+
+/* ══ INLINE BADGES (title ke saath) ══ */
+.card-title {
+  display: flex;
+	justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.anexly-inline-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Badge 1 — Red/Coral (Premium) */
+.badge-type-1 {
+  background: #fde8e6;
+  color: #f04e3e;
+}
+
+/* Badge 2 — Blue (Limited) */
+.badge-type-2 {
+  background: #e6f0fd;
+  color: #3e7cf0;
+}
+
+/* ══ SINGLE PRODUCT PAGE BADGE ══ */
+.anexly-single-badge-wrap {
+  margin-bottom: 10px;
+}

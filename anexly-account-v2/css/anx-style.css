@@ -1,0 +1,1254 @@
+#anx-account,
+#anx-account *,
+#anx-account *::before,
+#anx-account *::after {
+  box-sizing: border-box;
+}
+.anx-wrapper.anx-tab-dashboard,
+.anx-wrapper.anx-tab-orders {
+  max-width: 1440px;
+}
+#anx-account.anx-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 85px;
+}
+#anx-account {
+  --anx-primary: #f05f64;
+  --anx-primary-2: #f37a49;
+  --anx-primary-soft: #fff1f1;
+  --anx-text: #1d1b23;
+  --anx-muted: #7f7d86;
+  --anx-border: #ece9e9;
+  --anx-bg: #f7f7f7;
+  --anx-panel: #ffffff;
+  --anx-shadow: 0 10px 35px rgba(0, 0, 0, 0.045);
+  --anx-radius: 22px;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: var(--anx-text);
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+#anx-account a,
+#anx-account button,
+#anx-account input,
+#anx-account textarea,
+#anx-account select {
+  font-family: inherit;
+}
+
+#anx-account .anx-body {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#anx-account .anx-sidebar {
+  width: 233px;
+  background: #fff;
+  border-right: 1px solid #e6e6e6;
+  padding: 40px 16px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 8px 0 25px rgba(0, 0, 0, 0.03);
+}
+
+#anx-account .anx-content {
+    padding: 40px 40px 75px;
+	width: 80%;
+}
+
+#anx-account .anx-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.anx-nav br,.anx-settings-section-title br,.anx-pagination p {
+	display: none;
+}
+
+#anx-account .anx-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  color: #111013;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Roboto';
+  line-height: 1.5;
+  font-weight: 600;
+  transition: 0.18s ease;
+  width: max-content;
+}
+
+#anx-account .anx-nav-item svg {
+  width: 18px;
+  height: 18px;
+}
+
+#anx-account .anx-nav-item:hover {
+  background: #faf6f6;
+}
+
+#anx-account .anx-nav-item.active {
+  background: #EF5C5E;
+  color: #fff;
+}
+
+
+#anx-account .anx-nav-item svg path {
+	transition: all .3s ease-in-out
+}
+
+#anx-account .anx-nav-item.active svg path {
+	fill: white;
+}
+
+#anx-account .anx-nav-divider {
+  height: 1px;
+  background: #737175;
+	margin: -10px 0 10px;
+}
+
+#anx-account .anx-welcome {
+  margin: 0 0 32px;
+}
+
+#anx-account .anx-welcome h1 {
+	font-family: var(--acp-font-head);
+    margin: 0 0 8px;
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #111013;
+}
+
+#anx-account .anx-welcome p {
+    margin: 0;
+    color: #737175;
+    font-family: Roboto;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0px;
+
+}
+
+#anx-account .anx-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px 24px;
+  margin-bottom: 60px;
+}
+
+#anx-account .anx-stat-card,
+#anx-account .anx-section,
+#anx-account .anx-settings-card {
+  background: var(--anx-panel);
+  border-radius: var(--anx-radius);
+  box-shadow: 0px 4px 92px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+}
+
+#anx-account .anx-stat-card {
+  min-height: 132px;
+  padding: 12px 24px;
+}
+
+#anx-account .anx-stat-icon {
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+	background: linear-gradient(180deg, #EC4C62 0%, #F57957 127.5%), #5F5A67;
+	border-radius: 16px;
+  margin-bottom: 8px;
+}
+
+#anx-account .anx-stat-icon svg {
+  width: 32px;
+  height: 32px;
+}
+#anx-account .anx-stat-value .woocommerce-Price-amount,
+#anx-account .anx-stat-value {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+    color: #111013;
+}
+
+#anx-account .anx-stat-label {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #737175;
+    margin-bottom: 6px;
+}
+#anx-account .anx-stat-change .woocommerce-Price-amount,
+#anx-account .anx-stat-change {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+#anx-account .anx-stat-change.positive {
+  color: #3AE377;
+}
+
+#anx-account .anx-stat-change.negative {
+  color: #ef5d64;
+}
+
+#anx-account .anx-section{
+    background: transparent;
+    box-shadow: none;
+}
+
+.anx-stat-change.positive {
+	padding-left: 24px;
+	background-image: url(https://test.anexly.us/wp-content/uploads/2026/04/Vector-14.svg);
+	background-size: 10px;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+#anx-account .anx-section {
+  /*padding: 24px 22px;*/
+
+}
+#anx-account .anx-settings-card {
+  padding: 40px;
+  margin-bottom: 32px;
+
+}
+
+#anx-account .anx-dashboard-orders,
+#anx-account .anx-orders-panel {
+  max-width: 1400px;
+}
+#anx-account .anx-section-title{
+     margin-top: 80px;
+}
+#anx-account .anx-section-title {
+    margin: 0 0 8px;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    margin-bottom: 32px;
+   
+}
+#anx-account .anx-settings-section-title {
+    margin: 0 0 12px;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+   
+}
+
+#anx-account .anx-settings-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#anx-account .anx-settings-lock-title svg {
+  width: 18px;
+  height: 18px;
+}
+
+#anx-account .anx-settings-section-desc {
+    margin: 0 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #737175;
+}
+
+#anx-account .anx-table-wrap {
+  overflow-x: auto;
+	box-shadow: 0px 4px 92px rgba(0, 0, 0, 0.05);
+	border-radius: 12px;
+  background: #FFFFFF;
+  padding: 24px;
+}
+
+#anx-account .anx-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 760px;
+}
+
+#anx-account .anx-table thead th {
+  padding: 12px 16px;
+	min-width: 155px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #737175;
+  text-transform: uppercase;
+  background: #F7F7F7;
+  border-bottom: none;
+  border: 0px;
+}
+
+#anx-account .anx-table thead th:first-child {
+  border-radius: 12px 0 0 12px;
+}
+
+#anx-account .anx-table thead th:last-child {
+  border-radius: 0 12px 12px 0;
+  text-transform: none;
+}
+table:not(.-unstyle) td{
+    border-top: 0px !important;
+}
+
+#anx-account .anx-table td,#anx-account .anx-table td .woocommerce-Price-amount {
+	  color: #111013;
+	  font-size: 16px;
+}
+
+#anx-account .anx-table td {
+  padding: 20px 16px;
+  border-bottom: 1px solid #EAEAEA;
+  background: transparent;
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: Regular;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+#anx-account .anx-dashboard .anx-table tbody tr:last-child td,
+#anx-account .anx-orders-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+#anx-account .anx-order-row.anx-row-expanded td {
+  background: #FEF5F3;
+  border-bottom-color: #EAEAEA;
+}
+
+#anx-account .anx-badge.anx-badge-checkout-draft,#anx-account .anx-badge-pending {
+	background-color: #FFD26A47;
+	color: #E4A104;
+}
+
+#anx-account .anx-badge {
+	white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+#anx-account .anx-badge-processing {
+  color: #45c7de;
+  background: #d9f7fb;
+}
+
+#anx-account .anx-badge-completed,
+#anx-account .anx-badge-active {
+  color: #16B64F;
+  background: #D6FAE3;
+}
+
+#anx-account .anx-badge-expired, #anx-account .anx-badge-cancelled, #anx-account .anx-badge-on-hold {
+    color: #626262;
+    background: #F0F0F0;
+}
+
+#anx-account .anx-link-btn {
+    color: #EC4C62;
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;;
+}
+
+#anx-account .anx-link-btn:hover {
+  text-decoration: underline;
+}
+
+#anx-account .anx-table tbody td:last-child {
+	text-align: center;
+}
+
+#anx-account .anx-toggle-btn {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid #737175;
+  border-radius: 4px;
+  background: #fff;
+  color: #6c696f;
+  cursor: pointer;
+}
+
+#anx-account .anx-toggle-icon {
+  display: inline-flex;
+  transition: transform 0.2s ease;
+}
+
+#anx-account .anx-toggle-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+#anx-account .anx-toggle-btn.open {
+color: #EC4C62;
+    border-color: #EC4C62;
+}
+
+#anx-account .anx-toggle-btn.open .anx-toggle-icon {
+  transform: rotate(180deg);
+}
+
+#anx-account .anx-order-detail-row td {
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid #efeded;
+}
+
+#anx-account .anx-order-detail {
+  padding: 18px 12px 6px;
+}
+
+#anx-account .anx-detail-product {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+  gap: 18px;
+}
+
+.anx-detail-product-inner {
+	display: flex;
+    align-items: center;
+	justify-content: space-between;
+    text-align: left;
+	box-shadow: 0px 4px 92px rgba(0, 0, 0, 0.05);
+	border-radius: 20px;
+	padding: 12px 20px;
+	width: 80%;
+}
+
+.anx-detail-product p {
+	display: none;
+}
+
+#anx-account .anx-detail-leftgroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#anx-account .anx-product-thumb,
+#anx-account .anx-product-thumb-placeholder {
+  min-width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+  flex: 0 0 56px;
+}
+
+#anx-account .anx-product-thumb-placeholder svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#anx-account .anx-detail-name {
+  margin-bottom: 2px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  color: #111013;
+ 
+}
+
+#anx-account .anx-detail-duration {
+  color: #F3536D;
+  margin-bottom: 3px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+#anx-account .anx-detail-price .woocommerce-Price-amount {
+    font-family: DM Sans;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #111013 !important;
+}
+
+#anx-account .anx-detail-right,
+#anx-account .anx-detail-purchased{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 24px;
+    color: #111013;
+}
+
+
+#anx-account .anx-detail-right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px 20px;
+}
+
+#anx-account .anx-detail-right strong,
+#anx-account .anx-detail-purchased strong {
+  font-weight: 700;
+  color: #111013;
+}
+
+#anx-account .anx-detail-actions {
+  justify-self: end;
+}
+
+#anx-account .anx-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 8px 9px;
+  border: 0;
+  border-radius: 999px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#anx-account .anx-btn-primary {
+  color: #fff;
+  background: linear-gradient(180deg, #EC4C62 0%, #F57957 127.5%);
+  border: 1px solid;
+  border-image-source: linear-gradient(180deg, #EC4C62 0%, #F57957 127.5%);
+  height: 44px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  background-image: linear-gradient(180deg, #EC4C62 0%, #F57957 127.5%) !important;	
+}
+
+.anx-pagination-controls br,
+#anx-account .anx-btn-primary br {
+	display: none;
+}
+
+#anx-account .anx-btn-outline {
+  color: var(--anx-primary);
+  background: transparent;
+  border: 1px solid #f2c0c2;
+}
+
+body.anx-creds-open {
+  overflow: hidden;
+}
+
+#anx-account .anx-creds-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+}
+
+#anx-account .anx-creds-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.22);
+  backdrop-filter: blur(2px);
+}
+
+#anx-account .anx-creds-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  margin: 200px auto;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 28px 28px 24px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
+  z-index: 2;
+}
+
+#anx-account .anx-creds-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+  color: #8d8d8d;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+#anx-account .anx-creds-icon-wrap {
+  margin: 18px 0 16px;
+}
+
+.anx-creds-close:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8F8;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.anx-detail-product:nth-child(n + 2) {
+	margin-top: 20px;
+}
+
+.anx-orders-table tbody tr:nth-last-child(2) td {
+	border-bottom: none;
+}
+
+#anx-account .anx-creds-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 999px;
+  background: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#anx-account .anx-creds-title {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #171717;
+}
+
+#anx-account .anx-creds-field {
+  margin-bottom: 16px;
+}
+
+#anx-account .anx-creds-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #717171;
+  font-weight: 500;
+}
+
+#anx-account .anx-creds-input-wrap {
+  position: relative;
+}
+
+#anx-account .anx-creds-input-wrap input {
+  width: 100%;
+  height: 46px;
+  border: 0;
+  border-radius: 8px;
+  background: #f7f7f7;
+  color: #222222;
+  font-size: 15px;
+  padding: 0 44px 0 14px;
+  box-shadow: none;
+  outline: none;
+}
+
+#anx-account .anx-creds-input-wrap input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#anx-account .anx-creds-copy {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #7b7b7b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#anx-account .anx-creds-copy:hover,
+#anx-account .anx-creds-close:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  #anx-account .anx-creds-dialog {
+    max-width: calc(100% - 24px);
+    margin: 24px auto;
+    padding: 24px 18px 20px;
+    border-radius: 18px;
+  }
+
+  #anx-account .anx-creds-title {
+    font-size: 18px;
+  }
+}
+
+#anx-account .anx-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+    padding: 20px 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 92px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+#anx-account .anx-pagination-info {
+    color: #9E9E9E;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#anx-account .anx-pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#anx-account .anx-page-btn,
+#anx-account .anx-page-dots {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  gap: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Roboto';
+}
+
+#anx-account .anx-page-btn {
+  border: 1px solid #d4d1d1;
+  color: #000;
+  background: #fff;
+}
+
+#anx-account .anx-page-btn.active {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(180deg, #EC4C62 0%, #F57957 127.5%);
+  border-radius: 8px;
+}
+
+#anx-account .anx-page-btn.is-disabled {
+  opacity: 0.45;
+	color: #7D7B7B;
+  pointer-events: none;
+}
+
+#anx-account .anx-page-btn svg path {
+	stroke: #2F2F30;
+	}
+
+#anx-account .anx-page-btn.is-disabled svg path {
+	stroke: #7D7B7B;
+	}
+
+#anx-account .anx-page-dots {
+  color: #8d8a90;
+  border: 1px solid #d4d1d1;
+  background: #fff;
+}
+
+#anx-account .anx-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#anx-account .anx-form-group {
+  position: relative;
+}
+
+#anx-account .anx-input {
+    width: 100%;
+    height: 64px;
+    border: 1px solid #D2D2DA;
+    border-radius: 8px;
+    padding: 20px;
+    background: #fff;
+    color: #111013;
+    font-size: 16px;
+    outline: none;
+}
+
+#anx-account .anx-input:focus {
+	border: 2px solid #111013;
+}
+
+#anx-account .anx-input::placeholder {
+    color: #7B7B7F;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+
+}
+
+#anx-account .anx-password-field .anx-input {
+  padding-right: 44px;
+}
+
+#anx-account .anx-eye-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #8f8a92;
+  cursor: pointer;
+}
+
+#anx-account .anx-eye-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+#anx-account .anx-hint {
+    margin: -10px 0 -4px;
+    color: #7B7B7F;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#anx-account .anx-password-strength-bar {
+  height: 8px;
+  margin-top: -6px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #D9D9D9;
+}
+
+#anx-account .anx-strength-fill {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--anx-primary), var(--anx-primary-2));
+  border-radius: inherit;
+}
+
+#anx-account .anx-form-submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+#anx-account .anx-form-submit .anx-btn {
+  min-width: 236px;
+	height: 40px;
+}
+
+#anx-account .anx-notice {
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#anx-account .anx-notice-success {
+  background: #daf3e4;
+  color: #1d6f3d;
+}
+
+#anx-account .anx-notice-error {
+  background: #fde6e6;
+  color: #a83838;
+}
+
+#anx-account .anx-login-wrap {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+#anx-account .anx-login-box {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: var(--anx-shadow);
+}
+
+#anx-account .anx-logo-center {
+  text-align: center;
+  display: block;
+  margin-bottom: 16px;
+}
+
+#anx-account .anx-logo-text {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+#anx-account .anx-logo-text span {
+  color: var(--anx-primary);
+}
+
+#anx-account .anx-login-box h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+#anx-account .anx-mobile-tab-indicator,
+#anx-account .anx-header,
+#anx-account .anx-header-right,
+#anx-account .anx-logo {
+  display: none !important;
+}
+
+/* Mobile header bar — hidden on desktop */
+#anx-account .anx-mobile-header {
+  display: none;
+  align-items: center;
+  padding: 12px 16px;
+  background: #fff;
+}
+
+#anx-account .anx-hamburger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px 10px 14px;
+  background: var(--anx-primary, #E84040);
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#anx-account .anx-hamburger span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#anx-account .anx-hamburger-arrow {
+  margin-left: 2px;
+}
+
+#anx-account .anx-mobile-logo,
+#anx-account .anx-mobile-header-right {
+  display: none;
+}
+
+/* Overlay */
+#anx-account .anx-overlay {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 300;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+#anx-account .anx-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+@media (max-width: 1024px) {
+  #anx-account .anx-stats-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  #anx-account .anx-detail-product {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  #anx-account .anx-detail-actions {
+    justify-self: start;
+  }
+}
+
+  #anx-account .anx-order-detail{
+    padding: 20px 0px;
+  }
+#anx-account .anx-welcome p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+}
+  /*.anx-orders-panel .anx-table-wrap{*/
+  /*    display:none;*/
+  /*}*/
+}
+/* end mobile drawer */
+
+/* ── Checkout order review — product image row ─────────────────── */
+.anx-checkout-product-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 0;
+}
+
+.anx-checkout-thumb-wrap {
+    flex: 0 0 46px;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4f4f4;
+    border: 1px solid #ebebeb;
+}
+
+.anx-checkout-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.anx-checkout-product-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.anx-checkout-name-row {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.anx-checkout-product-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.3;
+}
+
+.anx-checkout-qty {
+    font-size: 12px;
+    color: #999;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.anx-checkout-meta-row {
+    font-size: 11.5px;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+}
+
+.anx-meta-key {
+    color: #bbb;
+    font-weight: 500;
+}
+
+.anx-meta-val {
+    color: #777;
+}
+
+@media (max-width: 767px) {
+
+  /* Show mobile header */
+  #anx-account .anx-mobile-header {
+    display: flex;
+  }
+
+  /* Body: single column, content fills width */
+  #anx-account .anx-body {
+    display: block;
+  }
+
+  /* Sidebar: slide-in drawer from the left */
+  #anx-account .anx-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    max-width: 80vw;
+    z-index: 400;
+    transform: translateX(-100%);
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    border-right: 1px solid #F0F0F0;
+    box-shadow: 4px 0 24px rgba(0,0,0,0.12);
+    padding: 24px 16px;
+    overflow-y: auto;
+    background: #fff;
+    flex-basis: auto;
+  }
+	
+	#anx-account div.anx-creds-dialog {
+		padding: 44px 16px 10px;
+	}
+	
+	#anx-account div.anx-creds-icon {
+		margin: 0;
+		width: 20px;
+		height: 20px;
+		background-color: transparent;
+}
+	
+	.anx-creds-icon-wrap {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+	
+	#anx-account h3.anx-creds-title {
+		margin: 0;
+		font-size: 16px;
+}
+	
+	#anx-account div.anx-creds-input-wrap input {
+    	height: 40px;
+	}
+	
+	#anx-account div.anx-creds-field {
+   		margin-bottom: 20px;
+}
+	
+  #anx-account .anx-sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* Nav: vertical stack like Figma */
+  #anx-account .anx-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  #anx-account .anx-nav-divider {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .anx-nav-item br {
+    display: none;
+  }
+
+  #anx-account .anx-nav-item,
+  #anx-account .anx-logout {
+    justify-content: flex-start;
+  }
+
+  /* Content: full width */
+  #anx-account .anx-content {
+    padding: 24px 16px 75px;
+    width: 100%;
+  }
+
+  #anx-account .anx-welcome h1 {
+    font-size: 24px;
+  }
+
+  #anx-account .anx-section,
+  #anx-account .anx-settings-card,
+  #anx-account .anx-stat-card {
+    border-radius: 18px;
+  }
+
+  #anx-account .anx-settings-card {
+    padding: 16px;
+  }
+
+	#anx-account .anx-creds-icon-wrap {
+		margin-bottom: 20px;
+	}
+	
+}

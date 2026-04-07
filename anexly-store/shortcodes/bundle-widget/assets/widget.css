@@ -1,0 +1,262 @@
+/* ================================================================
+   Bundle Widget — widget.css
+   ================================================================ */
+
+.abw-wrap {
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #111;
+}
+
+/* ── Card ──────────────────────────────────────────────────────── */
+.abw-card {
+    background: #fff;
+    border-radius: 18px;
+	box-shadow: 0px -2px 28px rgba(0, 0, 0, 0.04), 0px 12px 40px rgba(0, 0, 0, 0.04);
+	border-radius: 32px;
+    padding: 32px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* ── Header ────────────────────────────────────────────────────── */
+.abw-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.abw-title { font-size: 24px; font-weight: 700; color: #111013; font-family: 'DM Sans'; }
+.abw-badges { display: flex; align-items: center; gap: 4px; }
+.abw-limited { font-size: 16px; color: #F3536D; font-weight: 700; font-family: 'DM Sans'; background-color: #FFFFFFB2; padding: 4px 24px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08); border-radius: 12px; }
+.abw-timer {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'DM Sans';
+    color: #111013;
+    background: #FBC8C0;
+    padding: 4px 16px;
+    border-radius: 12px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 1.75;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Product rows ──────────────────────────────────────────────── */
+.abw-list { display: flex; flex-direction: column; gap: 16px; }
+.abw-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 20px;
+    border: 1px solid #FDE2E7;
+    cursor: pointer;
+    user-select: none;
+    transition: background .1s;
+    border-radius: 16px;
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.04);
+}
+
+.abw-chk {
+    width: 28px; height: 28px; border-radius: 8px;
+    border: 1px solid #F3536D; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    transition: all .15s; background: #fff;
+	margin-right: 8px;
+}
+
+.abw-chk.on { background: #F3536D; border-color: #F3536D; }
+
+.abw-chk svg {
+    width: 13px;
+    height: 10px;
+}
+
+.abw-logo {
+    width: 84px;
+    height: 76px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abw-logo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.abw-logo-letter { font-size: 18px; font-weight: 700; color: #ccc; }
+
+.abw-info { flex: 1; min-width: 0; }
+.abw-name {
+	line-height: 1.6;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111013;
+    font-family: 'Roboto';
+}
+.abw-badge {
+    font-size: 12px;
+    color: #F3536D;
+	    font-family: 'Roboto';
+}
+
+.abw-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111013;
+    font-family: 'DM Sans';
+    white-space: nowrap;
+}
+
+/* ── Totals ────────────────────────────────────────────────────── */
+.abw-totals {
+	padding: 0 20px;
+}
+
+.abw-trow.abw-disc-row {
+	padding-top: 0;
+}
+
+.abw-dval {
+	color: #30AE65 !important;
+    font-weight: 400 !important;
+    font-size: 20px;
+    font-family: 'Roboto';
+    line-height: 1.6;
+}
+
+.abw-trow {
+    display: flex; justify-content: space-between; align-items: center; 
+	    font-family: 'Roboto';
+    font-size: 20px; color: #737175; line-height: 1.6; padding: 16px 0;
+}
+
+.abw-total-row {
+    margin-top: 0;
+    padding-top: 12px;
+    border-top: 1px solid #CCCCCC;
+}
+
+.abw-total-row span {
+    font-size: 24px;
+    color: #111013;
+    font-family: 'Roboto';
+    line-height: 1.66;
+}
+
+/* ── Footer ────────────────────────────────────────────────────── */
+.abw-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.abw-social {
+    display: flex; align-items: center; gap: 12px;
+}
+.abw-social span {
+	font-size: 12px; 
+	color: #737175;
+	line-height: 1.5;
+	    font-family: 'Roboto';
+}
+
+.abw-social strong {
+	font-size: 13px;
+	color: #111013;
+	line-height: 1.54;
+	font-weight: 700;
+}
+
+.abw-sp-icon {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: #1db954; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+}
+
+/* ── Button ────────────────────────────────────────────────────── */
+.abw-btn {
+    background: linear-gradient(180deg, #EC4C62 0%, #F57957 127.5%);
+    color: #fff; border: none; border-radius: 50px;
+    padding: 10.5px 22px; font-size: 16px; font-weight: 700;
+	font-family: 'DM Sans';	
+    cursor: pointer; white-space: nowrap;
+    transition: opacity .15s, transform .1s; letter-spacing: .2px;
+}
+.abw-btn:hover   { opacity: .88; }
+.abw-btn:active  { transform: scale(.97); }
+.abw-btn:disabled { opacity: .6; cursor: not-allowed; }
+
+/* ── Messages ──────────────────────────────────────────────────── */
+.abw-msg {
+    font-size: 12px; margin-top: 10px; padding: 6px 12px;
+    border-radius: 8px; text-align: center; min-height: 0;
+}
+.abw-ok  { background: #eafaf1; color: #1e8449; }
+.abw-err { background: #fdecea; color: #c0392b; }
+
+/* ── Responsive ────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+    .abw-card {
+		max-width: 100%; border-radius: 16px; padding: 18px 16px 16px;
+        border-radius: 0;
+        padding: 0;
+		background: transparent;
+		box-shadow: none;
+	}
+	
+	.abw-logo {
+		width: 52px;
+		height: 52px;
+    }
+	
+	.abw-chk {
+		order: 4;
+	}
+	
+	.abw-logo {
+		order: 1;
+	}
+	
+	.abw-info {
+		order: 2;
+	}
+		
+	.abw-price {
+		order: 3;
+	}
+	
+	.abw-head {
+		flex-wrap:wrap;
+		justify-content: center;
+		gap: 12px;
+		margin-bottom: 40px;
+	}
+	
+	.abw-row {
+    	padding: 20px 16px;
+	}	
+	
+	.abw-total-row span {
+    	font-size: 16px;
+	}
+	
+	.abw-trow {
+		font-size: 16px;
+		padding: 8px 0;
+	}
+	
+    .abw-social { display: none; }
+    .abw-foot { flex-direction: column; align-items: stretch; }
+    .abw-btn {
+        padding: 8.5px 20px;
+    }
+    }
+	.anexly-ps-btn {
+    padding: 5px 28px;
+}
+}

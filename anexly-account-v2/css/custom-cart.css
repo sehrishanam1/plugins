@@ -1,0 +1,316 @@
+/* ================================================================
+   ANEXLY CUSTOM CART STYLES
+   ================================================================ */
+
+:root {
+    --anxa-pink:        #F05C70;
+    --anxa-pink-light:  #FAB3BE;
+    --anxa-text:        #111013;
+    --anxa-muted:       #888896;
+    --anxa-border:      #F0F0F0;
+    --anxa-white:       #ffffff;
+    --anxa-radius:      16px;
+    --anxa-shadow:      0 2px 16px rgba(0,0,0,0.07);
+}
+
+/* ── Suppress default WooCommerce cart table ── */
+.woocommerce-cart-form table.shop_table,
+.woocommerce table.cart { display: none !important; }
+.anxa-item-name .woo-category{display: none;}
+/* ── Page wrapper ── */
+.anxa-cart-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 36px 20px 80px;
+    font-family: inherit;
+}
+
+.anxa-cart-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--anxa-text);
+    margin: 0 0 28px;
+}
+
+/* ── Two-column layout ── */
+.anxa-cart-layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* ── Left column ── */
+.anxa-cart-items {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ════════════════════════
+   CART ITEM CARD
+════════════════════════ */
+.anxa-cart-item {
+    background: var(--anxa-white);
+    border-radius: var(--anxa-radius);
+    box-shadow: var(--anxa-shadow);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    position: relative;
+}
+
+/* Remove × button */
+.anxa-item-remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.anxa-remove-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background: #FDDDE1;
+    color: var(--anxa-pink);
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1;
+    transition: background 0.18s, color 0.18s;
+}
+.anxa-remove-btn:hover {
+    background: var(--anxa-pink);
+    color: #fff;
+}
+
+/* Product image */
+.anxa-item-image { flex-shrink: 0; }
+.anxa-item-image img {
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Product info */
+.anxa-item-info {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-right: 28px;
+}
+
+.anxa-item-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--anxa-text);
+    margin-bottom: 2px;
+}
+.anxa-item-name a { color: inherit; text-decoration: none; }
+.anxa-item-name a:hover { color: var(--anxa-pink); }
+
+/* Variation / meta (e.g. "1 month") */
+.anxa-item-info dl.variation,
+.anxa-item-info .wc-item-meta {
+    font-size: 13px;
+    color: var(--anxa-muted);
+    margin: 0 0 4px;
+}
+.anxa-item-info dl.variation dt,
+.anxa-item-info dl.variation dd { display: inline; margin: 0; }
+.anxa-item-info dl.variation dt::after { content: ': '; }
+
+/* Price */
+.anxa-item-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--anxa-text);
+    margin-top: 4px;
+}
+
+/* ════════════════════════
+   QTY STEPPER  − 1 +
+════════════════════════ */
+.anxa-item-qty { flex-shrink: 0; }
+
+.anxa-item-qty .quantity {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid var(--anxa-border);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--anxa-white);
+}
+
+.anxa-qty-btn {
+    background: none;
+    border: none;
+    padding: 6px 11px;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--anxa-text);
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.15s;
+}
+.anxa-qty-btn:hover { color: var(--anxa-pink); }
+
+.anxa-item-qty .quantity input[type="number"] {
+    width: 32px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--anxa-text);
+    background: transparent;
+    -moz-appearance: textfield;
+    padding: 6px 0;
+}
+.anxa-item-qty .quantity input[type="number"]::-webkit-inner-spin-button,
+.anxa-item-qty .quantity input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+/* ════════════════════════
+   RIGHT COLUMN — SUMMARY
+════════════════════════ */
+.anxa-cart-summary {
+    width: 296px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* ── Promo code ── */
+.anxa-coupon {
+    display: flex;
+    border: 1px solid var(--anxa-pink-light);
+    border-radius: var(--anxa-radius);
+    overflow: hidden;
+    background: var(--anxa-white);
+    box-shadow: var(--anxa-shadow);
+}
+.anxa-coupon-input {
+    flex: 1 1 0;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: var(--anxa-muted);
+    background: transparent;
+}
+.anxa-coupon-input::placeholder { color: #C5C5D0; }
+
+.anxa-coupon-btn {
+    flex-shrink: 0;
+    background: #FAB3BE !important;
+    color: var(--anxa-pink) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: background 0.18s, color 0.18s;
+}
+.anxa-coupon-btn:hover {
+    background: var(--anxa-pink) !important;
+    color: #fff !important;
+}
+
+/* ── Totals ── */
+.anxa-cart-totals {
+    display: flex;
+    flex-direction: column;
+}
+
+.anxa-totals-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--anxa-border);
+    font-size: 15px;
+    color: var(--anxa-text);
+}
+.anxa-totals-row:last-child { border-bottom: none; }
+
+.anxa-discount-amount,
+.anxa-discount-row .anxa-discount-amount { color: #22c55e; font-weight: 500; }
+.anxa-discount-amount bdi { color: #22c55e; }
+.anxa-coupon-code { font-size: 11px; font-weight: 400; color: #9ca3af; }
+
+.anxa-total-row {
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 14px;
+}
+.anxa-total-amount { font-size: 19px; font-weight: 800; }
+.anxa-total-amount .woocommerce-Price-amount { font-size: 19px; font-weight: 800; }
+
+/* ── Checkout button ── */
+.anxa-checkout-btn-wrap .checkout-button,
+.anxa-checkout-btn-wrap a.checkout-button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #F68396 0%, #F05C70 100%) !important;
+    color: #fff !important;
+    text-align: center;
+    border-radius: 50px !important;
+    padding: 15px 24px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    border: none !important;
+    cursor: pointer;
+    box-shadow: 0 4px 18px rgba(240, 92, 112, 0.35) !important;
+    transition: opacity 0.18s, transform 0.15s;
+    box-sizing: border-box;
+}
+.anxa-checkout-btn-wrap .checkout-button:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+}
+
+/* ── Visibility helpers ── */
+.anxa-desktop-only { display: block; }
+.anxa-mobile-only  { display: none;  }
+
+/* ── WooCommerce notices ── */
+.woocommerce-notices-wrapper { margin-bottom: 16px; }
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info { border-radius: 10px; }
+
+/* ================================================================
+   MOBILE ≤ 768px — stacked layout
+   ================================================================ */
+@media ( max-width: 768px ) {
+
+    .anxa-cart-wrapper { padding: 20px 14px 80px; }
+    .anxa-cart-title   { font-size: 22px; margin-bottom: 20px; }
+
+    .anxa-cart-layout  { flex-direction: column; gap: 8px; }
+    .anxa-cart-items,
+    .anxa-cart-summary { width: 100%!important; }
+
+    .anxa-desktop-only { display: none !important; }
+    .anxa-mobile-only  { display: block !important; }
+    
+    .anxa-cart-item    { padding: 14px 12px; gap: 10px; }
+    .anxa-item-image img { width: 50px; height: 50px; border-radius: 10px; }
+    .anxa-item-name    { font-size: 14px; }
+    .anxa-item-price   { font-size: 13px; }
+    .anxa-cart-summary { gap: 12px; }
+}

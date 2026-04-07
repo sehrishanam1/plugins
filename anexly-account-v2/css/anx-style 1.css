@@ -1,0 +1,5 @@
+@media (max-width: 767px) { /* mobile only */
+.anxa-cart-items {
+    width: 100%!important; 
+}
+}

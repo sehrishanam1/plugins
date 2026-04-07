@@ -1,0 +1,266 @@
+/* ═══════════════════════════════════════════════════════════════
+   Anexly Plan Selector — style.css
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Root tokens ── */
+.anexly-ps-wrap {
+    --ps-accent:        #F04E3E;
+    --ps-accent-light:  #fff8f7;
+    --ps-accent-border: #F04E3E;
+    --ps-badge-bg:      #FDE8E6;
+    --ps-badge-color:   #F04E3E;
+    --ps-border:        #ebebeb;
+    --ps-radius:        12px;
+    --ps-text:          #111111;
+    --ps-muted:         #666666;
+    --ps-was:           #aaaaaa;
+    --ps-discount:      #1e8a3e;
+
+    font-family: 'Roboto';
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--ps-text);
+}
+
+/* ── Title ── */
+.anexly-ps-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: #111013;
+    line-height: 1.5;
+}
+
+
+
+/* ── Attribute group ── */
+.anexly-ps-group {
+    margin-bottom: 20px;
+}
+
+.anexly-ps-group-label {
+	display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111013;
+    margin: 0 0 16px;
+}
+
+/* ── Row item ── */
+.anexly-ps-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    background: #fff;
+    transition: border-color .15s ease, background .15s ease, box-shadow .15s ease;
+    position: relative;
+    user-select: none;
+	border: 1px solid #FDE2E7;
+    -webkit-user-select: none;
+	box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.04);
+}
+
+.anexly-ps-item:last-child { margin-bottom: 0; }
+
+/* ── Custom checkbox circle ── */
+.anexly-ps-checkbox {
+    width: 26px;
+    height: 26px;
+    min-width: 22px;
+    border-radius: 8px;
+    border: 1px solid #F3536D;
+    background: #fff;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background .15s, border-color .15s;
+}
+
+.anexly-ps-checkbox svg {
+    width: 13px;
+    height: 10px;
+    opacity: 0;
+    transition: opacity .12s;
+    display: block;
+}
+
+.anexly-ps-item.is-checked .anexly-ps-checkbox {
+	background-color: #F3536D;
+}
+
+.anexly-ps-item.is-checked .anexly-ps-checkbox svg {
+    opacity: 1;
+}
+
+.anexly-ps-price .woocommerce-Price-amount {
+	font-size: 26px;
+	color: #111013;
+	font-family: 'DM Sans';
+	font-weight: 700;
+}
+
+/* ── Name + badge ── */
+.anexly-ps-name {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #737175;
+    line-height: 1.45;
+}
+
+.anexly-ps-badge {
+    display: inline-block;
+	padding: 8px 16px;
+    font-size: 16px;
+	font-family: 'DM Sans';
+    font-weight: 700;
+	background: linear-gradient(180deg, rgba(236, 76, 98, 0.5) 0%, rgba(245, 121, 87, 0.5) 127.5%);
+	border-radius: 44px;
+    color: white;
+    white-space: nowrap;
+    line-height: 1.6;
+}
+
+/* ── Per-row price ── */
+.anexly-ps-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1px;
+    white-space: nowrap;
+	    margin-right: 0;
+    margin-left: auto;
+}
+
+.anexly-ps-was {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--ps-was);
+    text-decoration: line-through;
+}
+
+.anexly-ps-was .woocommerce-Price-amount {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--ps-was);
+}
+
+/* ── Totals bar ── */
+.anexly-ps-totals {
+    border-top: 1px solid #CCCCCC;
+    margin: 16px 0 18px;
+    padding-top: 12px;
+}
+
+.anexly-ps-totals-row.is-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: #111013;
+}
+
+.anexly-ps-totals-row .anexly-ps-total {
+	font-weight: 700;
+}
+
+.anexly-ps-totals-row span {
+	font-weight: 400;
+}
+
+/* ── CTA button ── */
+.anexly-ps-btn {
+    display: block;
+    width: 100%;
+	padding: 8px 28px;
+	background: linear-gradient(180deg, #EC4C62 0%, #F57957 127.5%);
+	border-radius: 36px;
+    color: #fff;
+    font-size: 15px;
+	font-family: 'DM Sans';
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: opacity .18s, transform .15s, box-shadow .18s;
+    line-height: 1.75;
+}
+
+.anexly-ps-btn:hover:not(:disabled) {
+	background: linear-gradient(180deg, #F57957 0%, #EC4C62 127.5%);
+}
+
+.anexly-ps-btn:disabled {
+    opacity: .55;
+    cursor: not-allowed;
+}
+
+/* ── Feedback message ── */
+.anexly-ps-msg {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 9px 14px;
+    border-radius: 8px;
+}
+
+.anexly-ps-msg.is-success { background: #e6f9ee; color: #1a7a3a; }
+.anexly-ps-msg.is-error   { background: #fde8e6; color: #c0392b; }
+
+/* ── Error placeholder ── */
+.anexly-ps-error {
+    color: #c0392b;
+    font-size: 13px;
+    background: #fde8e6;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+	.anx-rating-num {
+    	font-size: 20px;
+	}
+	
+	.anx-rating-wrap {
+		gap: 4px;
+		padding-bottom: 4px;
+		margin-bottom: 0;
+		border-bottom: none;
+	}
+	
+	.anexly-ps-title {
+   		font-size: 20px;
+	}
+	
+	span.anexly-ps-price .woocommerce-Price-amount,
+	.anexly-ps-name {
+   		font-size: 16px;
+	}
+	
+	.anexly-ps-item {
+		margin-bottom: 16px;
+	}
+	
+	.anexly-ps-badge {
+		position: absolute;
+		top: -12px;
+		left: 8px;
+		padding: 4px 12px;
+		font-size: 12px;
+		background: #FDF0EE;
+   		box-shadow: 0px 7.57396px 22.7219px -7.57396px rgba(235, 71, 99, 0.12);
+		color: #EC4C62;
+	}
+	.anexly-ps-totals-row.is-total {
+		font-size: 20px;
+		padding: 5px 28px;
+	}
+}

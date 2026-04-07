@@ -1,0 +1,345 @@
+@media (max-width: 768px) {
+
+
+.anexly-pc-cards {
+	position: relative;
+   grid-template-columns: 1fr 1fr;
+}
+
+  .card-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 9px;
+  }
+
+.anexly-pc-cards {
+	gap: 0 15px;
+}
+
+	.anexly-pc-brand,
+	.anexly-pc-card-label {
+		min-height: 30px;
+	}
+	
+	.anexly-pc-brand {
+		max-width: 120px;
+	}
+	
+	.anexly-category-tabs:after {
+		display: none;
+	}
+	
+	.anexly-pc-card-label {
+		font-size: 20px;
+	}
+	
+.anexly-pc-green {
+    color: #30AE65 !important;
+}
+
+.anexly-pc-row {
+    font-size: 12px;
+    margin: 10px 0 8px;
+}
+
+  /* ── Image ── */
+  .card-image-wrap {
+    padding: 20px 20px 0;
+    min-height: 80px;
+  }
+
+  .card-body {
+    padding-top: 0;
+	gap: 0;
+  }
+
+  img.card-image {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+  }
+
+  .card-image-placeholder {
+    width: 64px;
+    height: 64px;
+  }
+
+  /* ── Category Tabs ── */
+  .anexly-category-tabs {
+    display: flex;
+	  justify-content: start !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 8px;
+    padding: 14px 5px;
+    margin-bottom: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .anexly-category-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .anexly-cat-btn {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 8px;
+    border-radius: 50px;
+    white-space: nowrap;
+    background: #FFFAFA;
+	min-width: 58px;
+  }
+
+  .cat-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .cat-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .cat-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cat-label {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  /* ── Search ── */
+  .anexly-search-bar {
+    max-width: 100%;
+  }
+
+  #anexly-search-input {
+    height: 52px;
+	font-size: 16px;
+  }
+
+  /* ── Products Section ── */
+  .anexly-products-section {
+    padding-left: 12px;
+  }
+
+  /* ── Slider ── */
+  .anexly-slider-wrapper {
+    overflow: visible;
+  }
+
+  .anexly-slider-viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin: 0 0 0 -100px;
+    scroll-snap-type: x mandatory;
+  }
+
+	.single-page-calculator .anexly-pc-cards {
+		margin-top: 52px;
+	}
+	
+	.site-footer .page-container + .site-footer-copyright .holder {
+    border-top-color: #f4677e80;
+}
+	
+	.site-footer .widgets {
+    padding-top: 30px;
+    padding-bottom: 0;
+	}
+	
+  .anexly-slider-viewport::-webkit-scrollbar {
+    display: none;
+  }
+
+  .anexly-products-grid {
+    margin-left: -100px;
+    display: flex;
+    gap: 12px;
+    padding-right: 12px;
+    transform: none;
+    transition: none;
+    scroll-snap-type: x mandatory;
+  }
+
+  /* ── Card Body ── */
+  .card-body {
+    padding: 0;
+    gap: 4px;
+  }
+
+  .card-price {
+    font-size: 14px;
+  }
+
+  .price-period {
+    font-size: 12px;
+	  color: #858586;
+  }
+
+  .card-cta {
+    display: block;
+    width: auto;
+    padding: 7px 49px 7px 19px;
+    margin: 10px 12px 12px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .card-cta::after {
+    top: 9px;
+    right: 19px;
+  }
+
+  /* ── Badges ── */
+  .card-badge {
+    font-size: 9px;
+    padding: 3px 8px;
+    top: 8px;
+  }
+
+  .save-badge {
+    left: 8px;
+  }
+
+  .anexly-inline-badge {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
+
+  /* ── Dots ── */
+  .anexly-slider-dots {
+    margin-top: 14px;
+  }
+
+  /* ── Loader ── */
+  .anexly-loader-overlay {
+    border-radius: 12px;
+  }
+	
+	.anx-review-count {
+    font-size: 12px;
+}
+	
+	.anexly-pc-subtitle {
+    font-size: 12px;
+    margin: 0 0 24px;
+}
+	
+	.anexly-ps-price .woocommerce-Price-amount {
+    font-size: 16px;
+	}
+	
+	.anexly-ps-group {
+    margin-bottom: 16px;
+}
+	
+  /* ── Product Card ── */
+  .anexly-product-card {
+    width: max-content !important;
+    flex-shrink: 0;
+    border-radius: 24px;
+    scroll-snap-align: start; /* merged here */
+  }
+
+	.anexly-product-card .card-image-wrap {
+		padding: 0;
+		min-height: 52px;
+	}
+	
+	.card-body-container {
+		    padding: 20px 10px 12px;
+		border-radius: 16px;
+	}
+	
+  /* ── Filter Wrapper ── */
+  .anexly-filter-wrapper {
+    flex-direction: column-reverse;
+    gap: 0;
+    padding: 0 12px;
+    margin-bottom: 0;
+    align-items: stretch;
+  }
+
+	.anexly-pc-title {
+		font-size: 24px;	
+		margin-bottom: 8px;
+		padding: 0 60px;
+	}
+	
+  span.woocommerce-Price-amount {
+    font-size: 16px;
+    padding: 0;
+    border-radius: 24px;
+  }
+	
+	.anexly-pc-subtitle {
+		font-size: 12px;
+		margin-top: 8px;
+	}
+
+	.anexly-sch-dropdown-wrap {
+	    padding: 1px 24px;
+	}
+	.anexly-sch-header {
+		margin-bottom: 0px;
+	}
+
+	.anexly-sch-icon-slot,
+    .anexly-sch-divider-v {
+    margin-right: 12px;
+}
+
+.anexly-sch-badge-row{
+	display: none !important;
+}
+
+.anexly-sch-selector-row {
+	margin-bottom: 40px;
+}
+	
+.anexly-pc-card {
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+	.main-calculator-container {
+    	padding: 0;
+	}	
+	
+	.products-grid.list-view .product-cta {
+        position: initial;
+        margin-top: 10px;
+    }
+	
+	.products-grid.list-view  .product-name {
+		text-align: left;
+	}
+	
+.anexly-pc-card {
+    width: calc(50% - 7.5px);
+}
+
+.anexly-pc-card--savings {
+	width: 100%;
+	        background: transparent;
+        box-shadow: none;
+        padding: 0;
+}
+}
+
+/* ── Extra Small ── */
+@media (max-width: 320px) {
+ 
+}

@@ -1,0 +1,282 @@
+/* ==========================================================================
+   Anexly Leads — Frontend Styles
+   Matches the Anexly website design from screenshots
+   ========================================================================== */
+
+/* ---- Newsletter Form ---------------------------------------------------- */
+.anexly-newsletter-wrap {
+    font-family: inherit;
+}
+
+.anexly-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.anexly-input-row {
+    display: flex;
+    gap: 8px;
+    align-items: stretch;
+}
+
+.anexly-email-input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #e0d9d3;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #fff;
+    color: #222;
+    outline: none;
+    transition: border-color .2s;
+    min-width: 0;
+}
+
+.anexly-email-input:focus {
+    border-color: #222;
+}
+
+.anexly-email-input::placeholder {
+    color: #aaa;
+}
+
+/* Primary "Sign Up" button — matches screenshot: dark rounded */
+.anexly-btn-primary {
+    padding: 10px 20px;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background .2s, transform .1s;
+    line-height: 1.2;
+}
+
+.anexly-btn-primary:hover  { background: #333; }
+.anexly-btn-primary:active { transform: scale(.97); }
+.anexly-btn-primary:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+/* Consent checkbox row */
+.anexly-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.anexly-consent input[type="checkbox"] {
+    margin-top: 2px;
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    accent-color: #1a1a1a;
+    cursor: pointer;
+}
+
+/* Success / error message */
+.anexly-msg {
+    font-size: 13px;
+    padding: 0;
+    min-height: 0;
+    transition: all .2s;
+}
+.anexly-msg.success { color: #2e7d32; }
+.anexly-msg.error   { color: #c62828; }
+
+/* ==========================================================================
+   Popup Overlay — Pixel-perfect match to Anexly screenshot
+   ========================================================================== */
+.anexly-popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .50);
+    z-index: 999999;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.anexly-popup-overlay.is-open {
+    display: flex;
+    animation: anexlyFadeIn .2s ease forwards;
+}
+
+@keyframes anexlyFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Card — white, rounded corners, no heavy shadow */
+.anexly-popup-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 36px 32px 28px;
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, .15);
+    animation: anexlySlideUp .25s ease forwards;
+}
+
+@keyframes anexlySlideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0);    }
+}
+
+/* ✕ close button — top-right, small "×" */
+.anexly-popup-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    line-height: 1;
+    color: #aaa;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: color .15s;
+}
+.anexly-popup-close:hover { color: #444; }
+
+/* ---- Shopping bag icon circle ---- */
+.anexly-popup-icon {
+    width: 68px;
+    height: 68px;
+    /* Light salmon background circle */
+    background: #fdecea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+}
+/* The SVG bag inside */
+.anexly-popup-icon svg {
+    width: 34px;
+    height: 34px;
+    color: #e05240;
+    stroke: #e05240;
+}
+
+/* ---- Heading ---- */
+.anexly-popup-box h2 {
+    font-size: 21px;
+    font-weight: 800;
+    color: #111111;
+    line-height: 1.25;
+    margin: 0 0 6px;
+    letter-spacing: -.2px;
+}
+
+/* ---- Sub-text ---- */
+.anexly-popup-sub {
+    font-size: 14px;
+    color: #666666;
+    margin: 0 0 22px;
+    font-weight: 400;
+}
+
+/* ---- Input wrapper (icon + text field) ---- */
+.anexly-popup-input-wrap {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+/* Small envelope icon inside input */
+.anexly-mail-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: #bbb;
+    pointer-events: none;
+    flex-shrink: 0;
+}
+
+/* The email input inside the popup */
+.anexly-popup-input-wrap .anexly-email-input {
+    padding: 11px 14px 11px 36px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 13.5px;
+    color: #333;
+    background: #fff;
+    outline: none;
+    transition: border-color .2s;
+}
+.anexly-popup-input-wrap .anexly-email-input:focus {
+    border-color: #999;
+}
+.anexly-popup-input-wrap .anexly-email-input::placeholder {
+    color: #bbb;
+    font-size: 13px;
+}
+
+/* ---- "Get My Discount" button — salmon/coral gradient ---- */
+.anexly-btn-discount {
+    display: block;
+    width: 100%;
+    padding: 13px 16px;
+    /* Exact coral gradient from screenshot */
+    background: linear-gradient(90deg, #f06b50 0%, #e84f35 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14.5px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: .1px;
+    transition: opacity .18s, transform .1s;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+.anexly-btn-discount:hover  { opacity: .88; }
+.anexly-btn-discount:active { transform: scale(.985); }
+.anexly-btn-discount:disabled {
+    opacity: .55;
+    cursor: not-allowed;
+}
+
+/* ---- "Unsubscribe anytime" text ---- */
+.anexly-unsub {
+    font-size: 11.5px;
+    color: #b0b0b0;
+    margin: 6px 0 0;
+    letter-spacing: .1px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 480px) {
+    .anexly-input-row {
+        flex-direction: column;
+    }
+    .anexly-btn-primary {
+        width: 100%;
+    }
+    .anexly-popup-box {
+        padding: 32px 20px 24px;
+    }
+    .anexly-popup-box h2 {
+        font-size: 20px;
+    }
+}
