@@ -1,0 +1,233 @@
+/* ============================================================
+   Team Members Plugin – Frontend Styles
+   ============================================================ */
+
+/* ── CSS Custom Properties ─────────────────────────────────── */
+:root {
+  --tm-accent:      #6c63ff;
+  --tm-text:        #1a1a2e;
+  --tm-text-muted:  #64748b;
+  --tm-white:       #ffffff;
+  --tm-radius:      12px;
+  --tm-transition:  0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --tm-shadow:      0 4px 20px rgba(0, 0, 0, 0.08);
+  --tm-shadow-hover:0 12px 32px rgba(108, 99, 255, 0.18);
+}
+
+/* ── Grid ───────────────────────────────────────────────────── */
+.tm-grid {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+}
+
+.tm-grid--cols-1 { grid-template-columns: 1fr; }
+.tm-grid--cols-2 { grid-template-columns: repeat(2, 1fr); }
+.tm-grid--cols-3 { grid-template-columns: repeat(3, 1fr); }
+.tm-grid--cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* ── Card ───────────────────────────────────────────────────── */
+.tm-card {
+  background: var(--tm-white);
+  border-radius: var(--tm-radius);
+  box-shadow: var(--tm-shadow);
+  overflow: hidden;
+  transition: transform var(--tm-transition), box-shadow var(--tm-transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.tm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--tm-shadow-hover);
+}
+
+/* ── Image Wrap + Zoom + Overlay ────────────────────────────── */
+.tm-card__image-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;         /* square image area */
+}
+
+.tm-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform var(--tm-transition);
+}
+
+.tm-card:hover .tm-card__image {
+  transform: scale(1.08);       /* zoom on hover */
+}
+
+/* Overlay */
+.tm-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(108, 99, 255, 0.82) 0%,
+    rgba(108, 99, 255, 0.20) 60%,
+    transparent 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 18px;
+  opacity: 0;
+  transition: opacity var(--tm-transition);
+}
+
+.tm-card:hover .tm-card__overlay {
+  opacity: 1;
+}
+
+/* ── Social Links ───────────────────────────────────────────── */
+.tm-card__social {
+  display: flex;
+  gap: 10px;
+  transform: translateY(10px);
+  transition: transform var(--tm-transition);
+}
+
+.tm-card:hover .tm-card__social {
+  transform: translateY(0);
+}
+
+.tm-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--tm-white);
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+  transition: background var(--tm-transition), transform var(--tm-transition);
+}
+
+.tm-social-link:hover {
+  background: var(--tm-white);
+  color: var(--tm-accent);
+  transform: scale(1.15);
+}
+
+/* ── Card Body ──────────────────────────────────────────────── */
+.tm-card__body {
+  padding: 20px 22px 22px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tm-card__name {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--tm-text);
+  line-height: 1.3;
+}
+
+.tm-card__position {
+  margin: 0 0 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--tm-accent);
+}
+
+.tm-card__excerpt {
+  flex: 1;
+}
+
+.tm-card__excerpt p,
+.tm-card__full-bio p {
+  margin: 0 0 8px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--tm-text-muted);
+}
+
+/* ── Toggle Button ──────────────────────────────────────────── */
+.tm-card__toggle {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--tm-accent);
+  font-size: 0.83rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s;
+}
+
+.tm-card__toggle:hover {
+  opacity: 0.75;
+}
+
+/* ── Full Bio (expanded) ────────────────────────────────────── */
+.tm-card__full-bio {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.tm-card__full-bio.is-open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* hidden attribute reset – JS removes `hidden` and adds .is-open */
+.tm-card__full-bio[hidden] {
+  display: block !important;  /* override browser hidden so CSS transition works */
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ── No Results ─────────────────────────────────────────────── */
+.tm-no-members {
+  color: var(--tm-text-muted);
+  font-style: italic;
+  text-align: center;
+  padding: 24px;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
+/* Tablet ≤ 1024px */
+@media (max-width: 1024px) {
+  .tm-grid--cols-4 { grid-template-columns: repeat(2, 1fr); }
+  .tm-grid--cols-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Mobile ≤ 640px */
+@media (max-width: 640px) {
+  .tm-grid--cols-1,
+  .tm-grid--cols-2,
+  .tm-grid--cols-3,
+  .tm-grid--cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .tm-card__image-wrap {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Always show overlay controls on touch devices */
+  .tm-card__overlay {
+    opacity: 1;
+  }
+  .tm-card__social {
+    transform: translateY(0);
+  }
+}
